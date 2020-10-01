@@ -1,4 +1,4 @@
-### CIDR
+## CIDR
 
 - `Classless Inter-Domain Routing`
 - Used in
@@ -11,7 +11,7 @@
   - **Subnet Mask** (/XX)
     - Determine how many bits can be change in the `IP`
 
-#### Subnet Mask
+### Subnet Mask
 
 - Calculate `IP Ranges`
   - Formula (2^(32-subnetMaskNumber))
@@ -51,12 +51,12 @@
       - Range be `0.0.0.0` to `255.255.255.255` (`ALL` IP)
       - Alternate `2^(32-0)` = `2^32` IP = `ALL` IP
 
-#### Private IP
+### Private IP
 
 - **Big Network** Range `10.0.0.0` - `10.255.255.255` and CIDR (`10.0.0.0/8`)
 - **AWS Default** Range `172.16.0.0` - `172.31.255.255` and CIDR (`172.16.0.0/12`)
 - **Home Network** Range `192.168.0.0` - `192.168.255.255` and CIDR (`192.168.0.0/16`)
 
-#### Public IP
+### Public IP
 
 - Any IP but `Private IP`

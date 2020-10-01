@@ -1,8 +1,8 @@
-### NACL
+## NACL
 
 - Use to block certain `IP` / `IP Range`
 
-### HOST Based Firewall
+## HOST Based Firewall
 
 - Use to block certain `IP` / `IP Range`
 - `HOST Based Firewalls` are
@@ -12,7 +12,7 @@
   - Windows Firewall
 - `HOST Based Firewalls` do not work when `ALB` is being used. Here `NACL` be used in `ALB`. (**Think Why?**)
 
-### WAF
+## WAF
 
 - `Web Application Firewall`
 - Used for

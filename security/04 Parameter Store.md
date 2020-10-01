@@ -1,4 +1,4 @@
-### System Manager Parameter Store (SSM)
+## System Manager Parameter Store (SSM)
 
 - `Parameter Store` is a component of AWS `System Manager`
 - Manage secrets and configurations securely
