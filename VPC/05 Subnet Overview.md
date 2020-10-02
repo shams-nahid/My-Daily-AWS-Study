@@ -1,0 +1,22 @@
+## Subnet
+
+- `Subnets` are tied to specific `AZ`
+- Two types of `Subnets`
+  - `Public Subnet` use to put `Load balancer`
+  - `Private Subnet` use to put `Applications` and `DB Servers`
+- Every time create a `Subnet`, loose 5 `IP` address.
+  - First 4 and the last one
+  - First one for `Network Address`
+  - Second one for `VPC Router`, reserved by AWS
+  - Third one for `AWS Provided DNS`, reserved by AWS
+  - Fourth one for future use, reserved by AWS
+  - Last one for `Broadcast Address`, although AWS does not support `Broadcast`
+- Exercise
+  - Can `/27` handle 29 `IP Address`?
+    - It has `2^(32-27)` = 32 `IP Address`
+    - Since 5 IP address is not usable, we can use `32-5` = 27 `IP Address`
+    - So `/27` can not handle more than 27 `IP Address`
+    - To handle 29 `IP Address` we might need at least `/26` i.e. `2^(32-26)` = 64 `IP Address`
+    - In this case we can use `64-5` = 59 `IP Address`, that matches the requirements
+- We can enable `Auto Assign Public IPv4 Address` features, so any instance being created within the subnet, will have a public IP.
+- In `Custom VPC`, the feature `Auto Assign Public IPv4 Address` is `disabled` by default, whereas in `Default VPC` it is `enabled` by default.
