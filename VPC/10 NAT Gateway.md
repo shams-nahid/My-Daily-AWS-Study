@@ -10,3 +10,4 @@
 - `NAT Gateway` is resilient withing a `Single AZ`. For `fault-tolerance`, require multiple `NAT Instance` in `Multiple AZ`
 - `Private Route Table` security rules
   - Any connection outgoing to the internet `(0.0.0.0/0)`, be target to `NAT Gateway`
+- In `VPC Peering`, `Nat Gateway` can not be shared. Need to use separate `Nat Gateway`

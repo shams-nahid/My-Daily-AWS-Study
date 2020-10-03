@@ -13,4 +13,7 @@
 - To establish a `VPC Endpoint`
   - Check `DNS Resolution`
   - Check `Route Table`
--
+- When there is `VPC Endpoint` and a `Public Internet Connection`, `VPC Endpoint` got priority.
+- `VPC Endpoint` does not support cross region request
+- From a single `Route Table`, can not have multiple `VPC Endpoints` of the same service.
+  - FYI, A service can have multiple endpoints

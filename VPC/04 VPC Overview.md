@@ -11,3 +11,7 @@
   - **AWS Default** Range `172.16.0.0` - `172.31.255.255` and CIDR (`172.16.0.0/12`)
   - **Home Network** Range `192.168.0.0` - `192.168.255.255` and CIDR (`192.168.0.0/16`)
 - `CIDR` should not overlap other networks
+- `AZ` name varies from `Account` to `Account`
+  - `us-east-1a` can be different `AZ` to another account
+  - `AWS` randomize the `AZ` name
+- When `IP Address` is not available in defined `CIDR` range, can be added `Secondary CIDR`
