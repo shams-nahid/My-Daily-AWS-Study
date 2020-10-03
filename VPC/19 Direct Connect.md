@@ -1,0 +1,32 @@
+## Direct Connect
+
+- Provide `Dedicated Private Connection` from `Remote Network` to `VPC`
+- Need to establish physical connection between `Corporate Data Center` and `AWS Direct Connect Location`
+- `Corporate Data Center` => `AWS Direct Connect Location` => `VPC`
+- In `VPC` a `Virtual Private Gateway` is required
+- `DC` allow both `Public` and `Private` resources
+- Supports `IPv4` and `IPv6`
+- Two types of `DC` available
+  - `Dedicated Connection`
+    - Bandwidth be `1Gbps` to `10Gbps`
+    - A dedicated physical `ethernet port` will be available in `AWS` for the customer
+    - To establish `Dedicated Connection`, first request `AWS` and complete by `AWS Direct Connect Partners`
+  - `Hosted Connection`
+    - To establish `Hosted Connection`, don't need to request `AWS`, can be completed by `AWS Direct Connect Partners`
+  - `Hosted Connection`
+- `Direct Connect` is a time consuming process (approximately 1 month)
+- Encryption
+  - `Data In Transit` is not `encrypted`
+  - `Data In Transit` is private between `Corporate Data Center`, `Direct Connect Partner` and `AWS Cloud`
+  - Encryption can be established by `IPsec-encrypted` private connection
+    - `IPsec-encryption` is combination of `Direct Connect` and `VPN`
+    - This `VPN` is between `Corporate Data Center` and `AWS Direct Connect Partner`
+- Used for
+  - Increase bandwidth throughput
+    - Working with large data set
+    - lower bandwidth cost
+  - Consistent network to avoid
+    - data drops
+    - connection shut down
+    - real time data feeds
+  - Hybrid environments (`On Premise Data Center` and `Cloud Data Center`)
