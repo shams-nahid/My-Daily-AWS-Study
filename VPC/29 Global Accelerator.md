@@ -1,0 +1,25 @@
+## Global Accelerator
+
+- Improve `Availability` and `Performance` of the applications
+- `Global Accelerator` provides 2 IP address, we can also bring ours
+- How `Global Accelerator` works
+  - Users connect to the `Edge Location`
+  - `Edge Location` pass traffic to `Global Accelerator`
+  - `Global Accelerator` pass the traffic to the `Endpoint Group`
+- Without `Global Accelerator` user have to go through a lot of `ISP Provider` to reach the `AWS Region`
+- `Global Accelerator` provides the following components
+  - Static IP Address
+    - Provide 2 static `IP Address`
+    - We can also bring our own
+  - Accelerator
+    - Direct traffic from the `Edge Location` to `Optimal Endpoint` through the `AWS Global Network`
+  - DNS Name
+    - `DNS Name` is provided to the `IP Address`
+  - Network Zone
+    - Similar to `AZ`
+    - Each `Network Zone` provide the `Static IP`
+    - If one `Network Zone` is blocked/not-available, it use the healthy one
+  - Listener
+    - Traffic can be distributed using `Traffic Dial`
+  - Endpoint Group
+  - Endpoint

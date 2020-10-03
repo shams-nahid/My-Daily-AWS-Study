@@ -1,6 +1,8 @@
 ## Subnet
 
 - `Subnets` are tied to specific `AZ`
+  - Multiple `Subnets` can be provisioned in one `AZ`
+  - One `Subnet` can not be provisioned in `multi-AZ`
 - Two types of `Subnets`
   - `Public Subnet` use to put `Load balancer`
   - `Private Subnet` use to put `Applications` and `DB Servers`
