@@ -1,0 +1,24 @@
+## Blocking IP Address
+
+- For `EC2` instance
+  - `NACL` in `Subnet Level`
+  - `Security Group` in `Instance Level`
+  - Run `Firewall Software` in `EC2` instance
+    - This includes `CPU` cost
+- When using a `ALB`
+  - `NACL` in `Subnet Level`
+  - `Security Group` in `ALB`
+    - `Security Group` does not work in the `instance` level, it only shows the `ALB IP`
+  - `WAF` in `ALB`
+    - Can be used for `IP Filtering`
+- When using a `NLB`
+  - `NACL` in `Subnet Level`
+  - `Security Group` in `Instance Level`
+  - Run `Firewall Software` in `EC2` instance
+    - This includes `CPU` cost
+- When using a `Cloudfront`
+  - `NACL` and `Security Group` does not work here
+    - `NACL` and `Security Group` only sees the `Cloudfront IP` and `ALB IP` respectively
+  - `Cloudfront Geo Restriction`
+  - `WAF` in `Cloudfront`
+    - Can be used for `IP Filtering`
