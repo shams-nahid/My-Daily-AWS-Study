@@ -1,0 +1,27 @@
+## Disaster Recovery
+
+- `DR` is all about preparing and recovering from disaster
+- `DR` can be
+  - `On-premise` to `On-premise` is an expensive one
+  - `On-premise` to `AWS Cloud` is hybrid one
+  - `AWS Cloud` to `AWS Cloud`
+    - Could be `multi-AZ`
+    - Could be `cross-region`
+- `AWS Service` for `DR`
+  - Backup
+    - EBS Snapshots
+    - RDS auto backup/snapshot
+    - S3 replication, glacier, lifecycle policy, cross-region-replication
+    - snowball, snowmobile, storage gateway
+  - HA
+    - cross-region
+    - multi-az
+    - site-to-site vpn, direct connect
+  - Replication
+    - RDS, Aurora Global
+  - Automation
+    - Cloudformation
+    - Elastic Beanstalk
+    - AWS lambda
+  - Chaos
+    - simian army
