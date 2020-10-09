@@ -1,0 +1,3 @@
+## AppSync
+
+- Managed `GraphQL`

@@ -1,0 +1,22 @@
+## ECS
+
+- `Elastic Container Service`
+- Run docker containers in `EC2` machines
+- Components
+  - `ECS Core` provision `EC2` instance to run `docker` container
+  - `Fargate` run `ECS` task to `AWS Provide Compute`, more serverless than `ECS Core`
+  - `EKS` is `Elastic Kubernetes Service` by `AWS`
+  - `ECR` is `Elastic Container Registry` by `AWS`
+- **`IAM Security` and `Roles` are in `ECS Task` level**
+- `ECS` and `ALB`
+  - Enable dynamic port mapping
+- `ECS` setup
+  - For regular `EC2 Instance` install the `ECS Agent` and edit `config` file
+  - For `ECS ready Linux AMI` edit the `config` file
+  - Editing the `config` filr
+    - Location `/etc/ecs/ecs.config`
+    - There are `35 Configuration` to edit
+      - `ECS CLUSTER`
+      - `ECS_ENGINE_AUTH_DATA`
+      - `ECS_AVAILABLE_LOGGING_DRIVER`
+      - `ECS_ENABLE_TASK_IAM_ROLE`
