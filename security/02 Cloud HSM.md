@@ -17,3 +17,7 @@
   - PKCS#11
   - Java Cryptography Extensions
   - Microsoft CryptoNG
+- To keep `Cloud HSM` backup in `secure` and `durable` way
+  - Use `EBK` i.e. `Ephemeral Backup Key` to encrypt data
+  - Use `PBK` i.e. `Persistent Backup Key` to encrypt `EBK`
+  - Save the data to `S3`

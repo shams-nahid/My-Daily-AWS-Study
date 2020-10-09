@@ -12,7 +12,7 @@
     - EBS Snapshots
     - RDS auto backup/snapshot
     - S3 replication, glacier, lifecycle policy, cross-region-replication
-    - snowball, snowmobile, storage gateway
+    - snowball, snowmobile, **storage gateway**
   - HA
     - cross-region
     - multi-az
