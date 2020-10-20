@@ -1,5 +1,7 @@
 ## Data Retrieval
 
+### AWS Glacier
+
 - 4 Types of `Data Retrieval`
 - `Vault Lock`
   - Used for long term record retention
@@ -13,3 +15,10 @@
   - Used to retrieved large amount of data with `lowest cost`
 - `Standard Retrieval`
   - Data is retrieved within few hours `3-5 hours`
+- Minimum storage charge 90 days duration
+
+### AWS Glacier Deep Archive
+
+- Standard - 12 hours
+- Bulk - 48 hours
+- Minimum storage charge 180 days duration

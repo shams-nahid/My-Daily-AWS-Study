@@ -1,0 +1,6 @@
+## Access Logs
+
+- Logs may be required for audit purposes
+- `Access Logs` log any authorized/deny request
+- Logs can be analyzed using `Athena`
+- Do not store logs in the same bucket (Think::: It will make the bucket grow exponentially)

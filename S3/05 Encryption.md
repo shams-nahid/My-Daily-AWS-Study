@@ -38,3 +38,5 @@
     - `SSE-S3`
     - `SSE-KMS`
   - It does not accept `SSE-C` and `Client Side Encryption` as `Default Encryption`
+  - `Bucket Policy` evaluated before the `Default Encryption`
+  - `Bucket Policy` is the old way of `Default Encryption`
