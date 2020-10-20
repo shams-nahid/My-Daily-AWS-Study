@@ -1,0 +1,40 @@
+## Encryption
+
+- 4 types of `Encryption` is available
+  - `SSE-S3`
+    - Server side encryption handled by `AWS` (`S3`)
+    - Data key is managed by `S3`
+    - Use `AES-256` algorithm
+    - Header should be `x-amz-server-side-encryption: AES-256`
+    - Completely free
+  - `SSE-KMS`
+    - Server side encryption
+    - Key is managed by `KMS`
+    - Header should be `x-amz-server-side-encryption: aws:kms`
+    - Useful because
+      - Using `KMS`, we can determine who has access keys
+      - Audit Trail
+  - `SSE-C`
+    - Server side encryption
+    - Key is provided by us
+    - `S3` does not store the key
+    - Must be use `HTTPS`
+      - Since every time we pass the `Encryption Key` using `HTTP Header`
+  - Client Side Encryption
+    - We encrypt the object before uploading
+    - We decrypt object after retrieving from the `S3`
+    - To `encrypt` and `decrypt` object in client we can use
+      - `S3 Encryption Client`
+      - Or other tools
+- `Encryption in Transit`
+  - Also known as `SSL/TLS`
+  - `S3` exposes both
+    - `HTTP`
+    - `HTTPS`
+- `Default Encryption`
+  - We can use `Bucket Level Default Encryption`
+  - So any object uploaded to the bucket will be automatically encrypted, even though the we do not pass appropriate `header`
+  - Default encryption only accepts
+    - `SSE-S3`
+    - `SSE-KMS`
+  - It does not accept `SSE-C` and `Client Side Encryption` as `Default Encryption`
