@@ -1,12 +1,19 @@
 ## S3 Performance
 
+### Prefix
+
+-
+
 ### Baseline
 
+- `S3` prefix is the text between `Bucket Name` and `File Name`
+  - If `object` name is `bucketName/folder1/folder2/object.jpeg`, then the prefix is `folder1/folder2`
 - By default `S3` is automatically scales at hight request rates
 - For each prefix it is possible to
   - 3500 PUT/COPY/POST/DELETE request
   - 5500 GET/HEAD request
 - There is no limit of prefix
+- The more prefix we use, the more request we can made
 
 ### S3 KMS Limitation
 
