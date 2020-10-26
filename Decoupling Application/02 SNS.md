@@ -1,0 +1,42 @@
+## SNS
+
+- Simple Notification Service
+- Pub/Sub Model
+- `Event Producer` send the message to the `SNS`
+- `Event Receiver` receive notification from the `SNS`
+- Subscriber can be
+  - SQS
+  - HTTP/HTTPS Endpoint
+  - Lambda Function
+  - Email
+  - SMS
+  - Mobile Notification
+- Use Case
+  - Cloudwatch alarm
+  - ASG Notification
+  - S3 bucket Events
+  - Cloudformation State Change
+- Publish
+  - Topic Publish
+    - Create a topic
+    - Create subscription
+    - Publish Topic
+  - Direct Publish (In Platform)
+    - Create Platform
+    - Create Platform Endpoint
+    - Publish to Platform Endpoint
+    - Works with
+      - Google GCM
+      - Apple APNS
+      - Amazon ADM
+- Security
+  - Encryption
+    - In flight encryption by `HTTPS` endpoint
+    - At rest encryption by `KMS`
+    - Client side encryption and decryption
+      - Publisher is responsible to encrypt the message
+      - Subscriber is responsible to decrypt the message
+  - Access Controls by `IAM Policy`
+  - `SNS Access Policy`
+    - Sharing cross-account `SNS`
+    - Allow other service to allow `Publish Topic`
