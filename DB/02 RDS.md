@@ -1,0 +1,24 @@
+## RDS
+
+- `OLTP` i.e. `Online Transaction Processing`
+- Relational Database
+  -Managed
+  - PostgreSQL
+  - MySQL
+  - Oracle
+  - MSSQL
+- Must provision
+  - `EC2 Instance`
+  - `EBS Volume`
+- Support
+  - `Read Replica` for performance
+  - `Multi AZ` for digester recovery and availability
+- Have
+  - Backup
+  - Snapshot
+  - Point in time restore
+- Managed and scheduled maintenance
+- Monitoring through `Cloudwatch`
+- `IAM` authentication can be used as a feature in
+  - PostgreSQL
+  - MySQL
