@@ -64,6 +64,7 @@
   - 300 msg/s without batching
   - 3000 msg/s with batching
 - De duplication ensure multiple message with same ID does not appear
+- Message group Id ensure the order of message is being proceed
 
 ### SQS With ASG
 
@@ -72,3 +73,10 @@
   - Using `Cloudwatch ApproximateNumberOfMessages` can be scaled up/down the `EC2 Instances`
   - Need two alarm to scale up/down the instance
   - `Step Scaling` is being used here
+
+### Migration, Queue to Fifo Queue
+
+- Need
+  - Message deduplication Id (As token while sending the message)
+  - Message group ID (As tag, to make message group)
+-

@@ -30,6 +30,7 @@
     - `SG` of the `EC2 Instance` must allow the `Cloudfront Public IP`
   - S3 Static Website
   - Any HTTP Backend (AWS Internal / on-premise)
+- `On Premise` server can be used as a origin of `Cloudfront`
 
 ### Cloudfront Geo Restriction
 

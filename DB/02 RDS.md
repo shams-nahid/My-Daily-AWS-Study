@@ -22,3 +22,7 @@
 - `IAM` authentication can be used as a feature in
   - PostgreSQL
   - MySQL
+- To increase the number of db connection
+  - Create a parameter group
+  - Attach parameter group to DB Instance
+  - Change the parameter group settings

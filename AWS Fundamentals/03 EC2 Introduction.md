@@ -90,3 +90,9 @@
   - Burstble instance
   - Provide good performance according to the capacity
   - There is a criteria, where `unlimited burst` is provided
+
+### Terminating a EC2 Instance
+
+- For production `EC2 Instance`
+  - Need a tag
+  - In resource level there should be explicit deny for production tag for not to terminates

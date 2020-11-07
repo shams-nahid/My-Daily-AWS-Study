@@ -16,3 +16,7 @@
   - `VPN Concentrator` in the `AWS` side of the `VPN Connection`
   - `VGW` is created and attached to `VPC`
   - Possible to customize `Autonomous System Number` i.e. (`ASN`)
+- To improve performance need to use `ECMP` protocol
+  - This protocol be enabled in `VGW`
+  - Need to implement this for each `VPN Tunnel`
+  - Result faster data transfers

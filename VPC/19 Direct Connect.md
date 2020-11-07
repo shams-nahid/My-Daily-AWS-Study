@@ -30,3 +30,4 @@
     - connection shut down
     - real time data feeds
   - Hybrid environments (`On Premise Data Center` and `Cloud Data Center`)
+- `LAG` can be used ti aggregate maximum throughput

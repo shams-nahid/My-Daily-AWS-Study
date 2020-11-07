@@ -17,3 +17,5 @@
   - Scheduled Maintenance
 - Monitoring through `Cloudwatch`
 - `Redis` has authentication feature `Redis Auth`
+- To secure the redis cluster access
+  - Use redis auth in transit encryption, enabled for clusters

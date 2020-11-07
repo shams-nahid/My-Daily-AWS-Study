@@ -54,3 +54,6 @@
   - No need to write custom code
   - Only provide `Authentication`
   - `Authorization` must be provided from the backend code
+- Access of developer and users can be separated using `IAM Permission`
+  - Developer can manage and deploy API
+  - User can call API
