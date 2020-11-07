@@ -6,7 +6,7 @@
 
 - Use to block certain `IP` / `IP Range`
 - `HOST Based Firewalls` are
-  - firewalld
+  - firewall
   - iptables
   - ufw
   - Windows Firewall
@@ -15,7 +15,7 @@
 ## WAF
 
 - `Web Application Firewall`
-- Used for
+- Used for `Common Security Threats`
   - Check `Origin IP` address
   - SQL Injection
   - Cross Site Scripting

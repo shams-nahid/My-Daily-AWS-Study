@@ -114,3 +114,7 @@
   - SNS
   - Kinesis
 - `Cloudwatch Event` create a sample document to give information about the change
+- Use case in `S3` and `Code Pipeline`
+  - `Code` can be uploaded to `S3`
+  - `Cloudwatch Event` trigger the `Code Pipeline`
+  - `Code` will be deployed to the `Elastic Beanstalk`

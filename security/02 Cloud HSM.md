@@ -12,6 +12,7 @@
 - Single tenant, dedicated hardware, multi AZ cluster
 - Use industry standard API
 - Required when
+  - Need complete control over keys, including the underlying hardware and manage the lifecycle of keys
   - Strict regulatory compliance is needed
   - Level 3 compliance is needed
   - PKCS#11

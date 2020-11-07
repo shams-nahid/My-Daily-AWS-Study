@@ -27,4 +27,20 @@
     - `Infrequently` Used `Throughput` optimized
     - Used for large amount of data which are infrequently used
 
+- `EBS` transfer
+
+  - `EBS` volumes are `AZ Locked`
+  - First need to take a `Snapshot`
+  - Create the volume from the `Snapshot` to another `AZ`
+
+- `EBS Backup`
+
+  - Can take snapshot of the `EBS Volume`
+  - Theses snapshot can be made available to other `Regions`
+
+- `EBS Backup`
+
+  - Using lifecycle policy, can automate the `Snapshot`
+  - Using the retention policy, can be delete the old `Snapshot`
+
 - [Reference For EBS Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)

@@ -16,7 +16,7 @@
 
 ### FSx for Lustre
 
-- Parallel distributed file system for linix
+- Parallel distributed file system for linux
 - Stands for `FSx for Linux Cluster`
 - Use for _`HPC (High Performance Computing)`_
 - Seamless integration with `S3`
