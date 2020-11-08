@@ -3,6 +3,8 @@
 - `CDN` (Content Delivery Network)
 - Content is cached in the `Edge Location`
 - There are more than 200 `Edge Location` all over the world
+- This is a global service
+- Only support web distribution
 - Improve `Read Performance`
 - Can expose any
   - Internal HTTP endpoints
@@ -58,3 +60,8 @@
 - When content must be available in certain region in very low latency
 - Content is always available
 - Use for `READ Only`
+
+### Cloudfront Query String
+
+- The delimiter character should be `$`
+- Parameter's name and values are case sensitive

@@ -11,3 +11,4 @@
   - Enable `MFA Delete`
   - Enable `Versioning`
   - Put appropriate `IAM Role`
+- In a bucket, various objects can have various storage class

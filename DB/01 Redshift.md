@@ -28,7 +28,7 @@
 - Snapshots can be restored to a new cluster
 - Snapshots can be copied to another `AWS Region`
 - Manual `snapshot` does not delete automatically
-- Automatic snapshot has an automatic retention period
+- Automatic snapshot has an automatic retention period (35 days)
 - Monitor performance of `Redshift Cluster` by `Cloudwatch` and `AWS Trusted Advisor`
 - Can be enabled cross-region snapshots for `Redshift Cluster`
 

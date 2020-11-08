@@ -26,3 +26,7 @@
   - Create a parameter group
   - Attach parameter group to DB Instance
   - Change the parameter group settings
+- When the db instance CpU is 100% and stopped working, we can
+  - Use read replica
+  - Use elastic cache in the application layer
+  - Shard data among multiple RDS DB instance

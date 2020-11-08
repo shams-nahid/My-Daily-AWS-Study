@@ -35,3 +35,8 @@
 - Backup process use `Physical Tape`
 - `Backup with iSCSI Protocol`
 - Use `VTL (Virtual Tape Library)`
+
+### Misc Notes
+
+- When we need low latency data access, use `Storage Gateway Stored Volumes`, it keeps all data in on-premise data center and make backup to cloud time basis
+- In `Storage Gateway Cached Volumes`, only recent data are cached in the on-premise center

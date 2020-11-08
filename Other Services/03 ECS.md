@@ -13,7 +13,7 @@
 - `ECS` setup
   - For regular `EC2 Instance` install the `ECS Agent` and edit `config` file
   - For `ECS ready Linux AMI` edit the `config` file
-  - Editing the `config` filr
+  - Editing the `config` file
     - Location `/etc/ecs/ecs.config`
     - There are `35 Configuration` to edit
       - `ECS CLUSTER`

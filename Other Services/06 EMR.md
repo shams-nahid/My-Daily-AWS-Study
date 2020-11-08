@@ -12,3 +12,4 @@
   - `Presto`
   - `Flink`
 - To save cost, the `EC2` instances are used to run in `SPot Instances`
+- When it comes to process lot of log files, `EMR` could be a go to move
