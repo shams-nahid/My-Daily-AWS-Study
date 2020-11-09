@@ -12,3 +12,6 @@
   - `AWS Code Deploy`
     - Responsible for `Deploy` portion
     - Ues `AWS Beanstalk` or `AWS Cloudformation` to provision the code
+- While deploying a code base
+  - `Code commit` can be a source stage
+  - `Beanstalk` can be a deploy stage

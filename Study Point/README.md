@@ -1,1 +1,7 @@
 - ALB is not a regional service
+- NLB
+  - does not support custom security policy
+  - consists of Protocols and ciphers
+  - Terminate TLS connection in NLB
+    - Require one certificate for each TLS connection to encrypt traffic between client and NLB
+    - AWS Certificate manager can be used, since it it automatically renew on expiry
