@@ -26,7 +26,9 @@
   - Create a parameter group
   - Attach parameter group to DB Instance
   - Change the parameter group settings
-- When the db instance CpU is 100% and stopped working, we can
+- When the db instance CPU is 100% and stopped working, we can
   - Use read replica
   - Use elastic cache in the application layer
   - Shard data among multiple RDS DB instance
+- For async database copy, use `READ Replica`
+- While using `READ Replica`, in these `READ Replica`, there should be some replication lag

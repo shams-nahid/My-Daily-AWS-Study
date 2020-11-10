@@ -40,3 +40,10 @@
   - It does not accept `SSE-C` and `Client Side Encryption` as `Default Encryption`
   - `Bucket Policy` evaluated before the `Default Encryption`
   - `Bucket Policy` is the old way of `Default Encryption`
+- Example of in house key management for `S3`
+  - Create customer managed `CMK`
+  - Encrypt data with the `CMK`
+  - Store encrypted data and data key in `S3`
+  - Delete the data keys
+  - For decrypt, use CMK to decrypt `data key`
+  - Now delete the data using the `Decrypted data key`

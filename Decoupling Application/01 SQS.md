@@ -64,6 +64,8 @@
   - 300 msg/s without batching
   - 3000 msg/s with batching
 - De duplication ensure multiple message with same ID does not appear
+  - When message has identical bodies, use unique de duplication id
+  - When message has unique message bodies, use content-based de duplication ID
 - Message group Id ensure the order of message is being proceed
 
 ### SQS With ASG
@@ -77,6 +79,5 @@
 ### Migration, Queue to Fifo Queue
 
 - Need
-  - Message deduplication Id (As token while sending the message)
-  - Message group ID (As tag, to make message group)
--
+  - Message deduplication Id (As token while sending the message, ensure no message duplication happen)
+  - Message group ID (As tag, to make message group, ensure order of message been proceed)

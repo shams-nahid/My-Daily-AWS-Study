@@ -24,13 +24,13 @@
 
 - 3 types of `API Gateway Endpoints`
   - Edge Optimized
-    - This is `default` behaviour
+    - This is `default` behavior
     - `API` is only one region
     - But to improve latency, request is routed through `Cloudfront Edge Locations`
   - Regional
     - `API` is in the one region
     - With combination of `Cloudfront`
-      - We can get `Edge Optimized` behaviour
+      - We can get `Edge Optimized` behavior
       - In this case, we have more control over
         - Caching
         - Strategies

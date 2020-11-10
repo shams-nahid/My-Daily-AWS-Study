@@ -5,3 +5,5 @@
   - Terminate TLS connection in NLB
     - Require one certificate for each TLS connection to encrypt traffic between client and NLB
     - AWS Certificate manager can be used, since it it automatically renew on expiry
+- CLB (Classic load balancer)
+  - Supports the `ASG`
