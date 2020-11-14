@@ -9,3 +9,4 @@
   - POST
   - DELETE
   - HEAD
+- To allow sites, `http` and `https`, we have to put 2 `Allow Origin` URL

@@ -23,3 +23,4 @@
 - We can enable `Auto Assign Public IPv4 Address` features, so any instance being created within the subnet, will have a public IP.
 - In `Custom VPC`, the feature `Auto Assign Public IPv4 Address` is `disabled` by default, whereas in `Default VPC` it is `enabled` by default.
 - To ensure the `Public Subnet` can access the `Private Subnet`, need to ensure, the `SG` have the required rules defined to allow traffic
+- Since `internet` and `intranet` is corresponding to separate AZ, need separate AZ for them
