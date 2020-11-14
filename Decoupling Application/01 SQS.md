@@ -19,6 +19,7 @@
 - Message can be consumed by `AWS Lambda`, `EC2 Instance`
 - Consumer can pull max `10 messages` at a time
 - After process the message, the consumer has to delete the message, otherwise the message will be appeared in the queue again
+- Can be use to handle extended number of db writ operations
 
 ### Security
 

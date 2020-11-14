@@ -5,6 +5,8 @@
 ### Problem
 
 - When we have an `Application` in another region, we have to reach that application through lots of `ISP Provider`
+- When `EC2` has a `Public IP` and some regions having difficulties with this `Public IP` access
+  - Since `AWS Accelerator` is using `Any Cast`, this problem can be resolved
 
 ### UniCast and Any Cast IP
 

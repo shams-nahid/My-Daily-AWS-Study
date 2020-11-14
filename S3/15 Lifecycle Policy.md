@@ -2,6 +2,7 @@
 
 - We can change object storage class using the `Lifecycle Policy`
 - Can not change storage class from `Glacier` or `Glacier Archive`
+- To abort/delete in-complete multipart files after certain time period, lifecycle policy can be used
 
 ### Actions
 

@@ -4,6 +4,7 @@
 - Columnar Storage
 - `MPP` i.e. `Massively Parallel Query`
 - Pay as instance provisioned
+- For long term consider using `Reserved Instance`
 - Has `SQL` interface to perform query
 - `BI` tools are integrated with it
   - AWS Quicksight

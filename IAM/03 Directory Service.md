@@ -5,6 +5,7 @@
     - Hybrid solution
     - Users can be from `AWS Directory` and `On premise Directory`
     - Both `AWS Directory` and `On premise Directory` are connected through a `TRUST` connection
+    - This `TRUST` connection can be set up using `VPN` or `Direct Connect`
   - AD Connector
     - Directory Gateway (Proxy)
     - Users managed by only `On premise AD`

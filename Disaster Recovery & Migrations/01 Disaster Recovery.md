@@ -9,7 +9,8 @@
     - Could be `cross-region`
 - `AWS Service` for `DR`
   - Backup
-    - EBS Snapshots
+    - EBS Snapshots (copy to destination region)
+    - AMI Snapshots (Copy to destination region)
     - RDS auto backup/snapshot
     - S3 replication, glacier, lifecycle policy, cross-region-replication
     - snowball, snowmobile, **storage gateway**

@@ -16,6 +16,10 @@
 - `Standard Retrieval`
   - Data is retrieved within few hours `3-5 hours`
 - Minimum storage charge 90 days duration
+- To transfer `object` object from `S3 Glacier` to `S3 Regular Class`
+  - First need to restore the objects
+  - Then copy to the `S3 Regular Class`
+  - `S3 Regular Class` means not the `Glacier` / `Deep Archive`
 
 ### AWS Glacier Deep Archive
 

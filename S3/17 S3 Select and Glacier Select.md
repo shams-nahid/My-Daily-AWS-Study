@@ -6,6 +6,12 @@
 - Example
   - There is a `CSV` file in `S3`
   - Using `S3 Select` we can select certain rows and columns
+- Fos `S3 Select` we can store files as
+  - CSV
+  - JSON
+- For `CSV` and `JSON` files, supported compression is
+  - G-ZIP
+  - B-ZIP2
 
 ## Glacier Select
 
