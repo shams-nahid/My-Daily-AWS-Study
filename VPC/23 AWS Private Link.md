@@ -12,9 +12,10 @@
       - Need to update route table
       - Other services will be accessible as well
 - To establish `Private Link`
-  - Create a `Network Load Balance` in `Service VPC`
+  - Create a `Network Load Balancer` in `Service VPC`
   - Create a `ENI` in the `Customer VPC`
   - Connect `NLB` with `ENI` using the `AWS Private Link`
   - To make it scalable
     - Launch `NLB` in `multi-AZ`
     - Create `ENI` in `multi-AZ`
+- `Private Link` can be used with `inter-region VPC Peering`

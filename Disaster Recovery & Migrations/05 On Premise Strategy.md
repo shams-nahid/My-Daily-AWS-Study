@@ -7,3 +7,5 @@
   - Gather info about `on-premise` servers and plan migration
 - `AWS Server Migration Service`, i.e. `SMS`
   - Incremental replication of live server to `AWS`
+  - Automate, schedule, track incremental of live volumes
+  - Can be used for `Hyper V` machines

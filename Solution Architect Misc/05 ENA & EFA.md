@@ -7,6 +7,7 @@
   - `Enhanced Networking` i.e. SRIOV
   - Higher Bandwidth
   - Higher PPS (Packet Per Second)
+  - High performance inter instance performance
 - `EFA` special use case
   - Leverage `MPI`, i.e. `Message Passing Interface`
   - This bypass underlying Linus OS for low latency

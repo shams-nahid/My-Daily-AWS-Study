@@ -7,4 +7,6 @@
     - AWS Certificate manager can be used, since it it automatically renew on expiry
 - CLB (Classic load balancer)
   - Supports the `ASG`
-- AWS well architected framework includes monitoring and alerts using `Cloudtrail` and `Cloudwatch`
+- AWS well architect framework includes
+  - Monitoring and alerts using `Cloudtrail` and `Cloudwatch`
+  - Spread `EC2 Instances` across multiple AZ

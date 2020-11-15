@@ -6,12 +6,13 @@
     - Integrate with api gateway
   - Cognito Identity Pools
     - Provide `AWS Credentials` to access `AWS Resource` directly
-    - Integrate with `CUP` as `Indentity Provider`
+    - Integrate with `CUP` as `Identity Provider`
   - Cognito Sync
     - Sync data to multiple device
     - Deprecated, using `AppSync` instead
 - `User pools` are list of user with credentials
 - `Identity pools` are users from 3rd party
+- `Cognito User Pool` and `Identity Pool` are independent with each other
 
 ### CUP
 
