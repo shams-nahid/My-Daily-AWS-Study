@@ -10,3 +10,6 @@
 - AWS well architect framework includes
   - Monitoring and alerts using `Cloudtrail` and `Cloudwatch`
   - Spread `EC2 Instances` across multiple AZ
+- When web distribution falls under `PCI` distribution
+  - Enable `Cloudfront Logs`
+  - Capture request, sent to the `Cloudfront API`

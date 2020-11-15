@@ -13,6 +13,11 @@
 - `User pools` are list of user with credentials
 - `Identity pools` are users from 3rd party
 - `Cognito User Pool` and `Identity Pool` are independent with each other
+- Has `Guest User` facility, so users can access limited resource without authentication
+- Cognito Supports
+  - OIDC (Open ID Connect)
+  - SAML based identity providers
+  - Social identity providers
 
 ### CUP
 

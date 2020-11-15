@@ -10,6 +10,7 @@
   - For all `Organization Account`
   - Pricing benefits are calculated by `Consolidated Billing`
 - `API` is available to automate creating the `AWS Account`
+- Resource sharing can be done by individual account even though the resource sharing is not enabled by `SCP`
 
 ### SCP
 

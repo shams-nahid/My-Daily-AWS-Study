@@ -13,3 +13,6 @@
     - Hourly
     - Daily
     - Weekly
+- While transfer data from on-premise to `EFS`, to ensure all data is copied, we can do the following for faster transfer
+  - Disable verification during initial file transfer
+  - Enable it post last data transfer
