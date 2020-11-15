@@ -32,3 +32,20 @@
   - Shard data among multiple RDS DB instance
 - For async database copy, use `READ Replica`
 - While using `READ Replica`, in these `READ Replica`, there should be some replication lag
+
+### Automated Backup
+
+- Take snapshot every `24 hours`
+- `RDS` take `Snapshot` of the whole database instance
+- It captures the transaction logs of every 5 minutes
+- A new DB Instance can be created from the from the `DB Snapshot`
+
+### Encryption
+
+- Un-encrypted database can not be encrypted on the fly (This is a limitation)
+- Un-encrypted database read replica can not be encrypted
+- To encrypted the un-encrypted database
+  - Create a DB snapshot
+  - Copy the snapshot
+  - Encrypt the copied snapshot
+  - Restore database from the `Encrypted Snapshot`

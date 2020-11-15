@@ -20,6 +20,8 @@
   - `Leader Node`, do the planning and results aggregation
   - `Compute Node`, perform queries and send results to the leader
 
+- Using `VPC Enhanced Routing`, `Redshift Clusters` can be access through the `AWS Private Network`
+
 ### Snapshot and DR
 
 - Snapshots are

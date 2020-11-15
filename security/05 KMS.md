@@ -9,3 +9,4 @@
   - For decryption
     - Use CMK to decrypt data key
     - Decrypt data using `Decrypted data key`
+- `KMS Master Key` is region specific

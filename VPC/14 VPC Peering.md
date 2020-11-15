@@ -3,7 +3,7 @@
 - Connect two `VPC` using AWS network
 - After `VPC Peering` communication between two `VPC` use `AWS Network` instead of `Public Internet`
 - Two `VPC` can not be peered, if
-  - have overlapping `CIDR`
+  - Have overlapping `CIDR`
   - Any transitive peering with `on-premise` server
 - A `Peered Connection` is to be created between two `VPC`
 - `Peered Connection` can be established with an `VPC` in another `Region` and another `Account` (`inter-region`, `cross-account`)
