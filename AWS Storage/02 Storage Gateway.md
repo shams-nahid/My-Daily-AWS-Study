@@ -35,6 +35,7 @@
 - Backup process use `Physical Tape`
 - `Backup with iSCSI Protocol`
 - Use `VTL (Virtual Tape Library)`
+- Allow archive data to Glacier directly from the on-premise
 
 ### Misc Notes
 

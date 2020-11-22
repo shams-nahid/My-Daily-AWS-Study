@@ -20,6 +20,7 @@
 - Used when
   - External Signal is is required to intervene
   - When child process return value to parent process
+- Can be used to de couple an application
 
 ## Step Function vs SWF
 

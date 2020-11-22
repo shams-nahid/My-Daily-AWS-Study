@@ -17,7 +17,7 @@
       - When required more than 16000 `IO/PS` is required
       - Large Database
       - Critical business operation, require high sustained `IO/PS`
-      - When hig load and performance for the NoSQL database
+      - When huge load and performance for the NoSQL database
   - `ST1`
     - `Throughput` optimized
     - Used for
@@ -27,6 +27,7 @@
   - `SC1`
     - `Infrequently` Used `Throughput` optimized
     - Used for large amount of data which are infrequently used
+    - For sequential I/O operations
 
 - `EBS` transfer
 

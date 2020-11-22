@@ -17,3 +17,4 @@
 - `VPC Endpoint` does not support cross region request
 - From a single `Route Table`, can not have multiple `VPC Endpoints` of the same service.
   - FYI, A service can have multiple endpoints
+- To allow `S3` to as `VPC Endpoint Gateway`, needs `Endpoint Policy` for trusted `VPC`
