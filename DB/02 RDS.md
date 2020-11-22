@@ -49,3 +49,10 @@
   - Copy the snapshot
   - Encrypt the copied snapshot
   - Restore database from the `Encrypted Snapshot`
+
+### Security
+
+- IAM DB Authentication can be used for `MySQL` and `PostgreSQL`
+- `IAM DB Authentication` has following feature
+  - SSL Encryption of Network Traffic
+  - Application runs in `EC2 Instance` can connect with database without password

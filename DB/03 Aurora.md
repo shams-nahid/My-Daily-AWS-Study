@@ -11,3 +11,6 @@
 - Using `Aurora Serverless` does not require `instance` and `volume`
 - `5x` faster than regular `RDMS`
 - Support `MAX 15 Read Replicas`
+- We can create custom endpoint for
+  - Production Database
+  - Reporting queries

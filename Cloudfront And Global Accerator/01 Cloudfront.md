@@ -23,9 +23,9 @@
   - `OAI`
     - Origin Access Identity
     - `S3` Bucket only be accessed through `Cloudfront`
-- As `Custom Origin` HTtP
+- As `Custom Origin` HTTP
   - Application Load Balancer
-    - `EC2` instance cna be private
+    - `EC2` instance can be private
     - `SG` of `ALB` must allow the `Cloudfront Public IP`
   - `EC2 Instance`
     - `EC2 Instance` must be public
@@ -65,3 +65,13 @@
 
 - The delimiter character should be `$`
 - Parameter's name and values are case sensitive
+
+## Cloudfront Origin Group
+
+- Origin failover can be handled with using two origin
+- Has two origin
+  - One is primary origin
+  - Other can be treated as secondary origin
+- Cloudfront switch to secondary origin from primary origin if
+  - Primary origin fails
+  - Primary origin sends `HTTP Fail Status Code`

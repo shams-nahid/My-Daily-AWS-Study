@@ -9,3 +9,7 @@
 - To save cost
   - Use reserved instance (Save up to 54%)
   - Use `EC2 Instance Saving Plan` (For same instance family, save up to 72%)
+- Nitro based instance
+  - Regular instance can handle only 32000 IO/ps
+  - Nitro based instance can handle more
+- SSH protocol use TCP connection with PORT 22
