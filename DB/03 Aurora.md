@@ -14,3 +14,4 @@
 - We can create custom endpoint for
   - Production Database
   - Reporting queries
+- Built in `reader-endpoint` can be used for distribute the traffic between read-replicas

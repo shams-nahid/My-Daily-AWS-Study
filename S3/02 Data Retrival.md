@@ -20,6 +20,7 @@
   - First need to restore the objects
   - Then copy to the `S3 Regular Class`
   - `S3 Regular Class` means not the `Glacier` / `Deep Archive`
+- `Provisioned Capacity` allows to use `Expedited Retrieval` whenever necessary
 
 ### AWS Glacier Deep Archive
 

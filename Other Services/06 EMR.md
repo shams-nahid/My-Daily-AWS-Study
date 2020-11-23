@@ -6,6 +6,7 @@
     - `Hadoop Clusters`
     - `Apache Spark`
   - Collect and process `EC2` log files
+  - Collect and process `ALB` log files
 - Supports
   - `Apache Spark`
   - `HBase`

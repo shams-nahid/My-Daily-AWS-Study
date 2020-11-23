@@ -3,6 +3,7 @@
 - While restart an `EC2` instance
   - Public IP changes
   - Both `IP6` and private IP does not change
+  - It is possible to change the underlying hardware
 - Pre warm for minimum launching time
   - Launch `EC2 Instance` with `EBS Volume`
   - Enable Hibernate
@@ -13,3 +14,13 @@
   - Regular instance can handle only 32000 IO/ps
   - Nitro based instance can handle more
 - SSH protocol use TCP connection with PORT 22
+- EC2 instance billing
+  - When in `running` state
+  - When preparing to `hibernate` from the `stopping` state
+  - When `reserved` instance is in `terminate` state
+- For `High Performance EC2 Instance`
+  - Use `EFA`
+  - Use `Dedicated Instance`
+- When a reserved instance is no longer required
+  - Stop the instance, so it wont billed after expiration
+  - Sell the instance to the `Reserved Instance Marketplace`
