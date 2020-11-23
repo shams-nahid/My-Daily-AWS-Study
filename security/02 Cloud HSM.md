@@ -1,5 +1,6 @@
 ## Cloud HSM
 
+- Use `key`, not `password`
 - Stands for `Hardware Security Module`
 - **Provide temper resistance environment for managing keys**
 - Its a dedicated hardware security module

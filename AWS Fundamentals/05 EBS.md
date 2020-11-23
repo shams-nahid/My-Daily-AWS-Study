@@ -46,3 +46,9 @@
   - Using the retention policy, can be delete the old `Snapshot`
 
 - [Reference For EBS Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
+- When a `EBS` is `encrypted`
+  - All data inside the volume is `encrypted`
+  - All moving data between `instance` and `volume` is `encrypted`
+  - All snapshots created from them is `encrypted`
+  - All volumes created from these `snapshots` are `encrypted`
+- `EBS` volumes can be used while making a `Snapshots`, no problem.

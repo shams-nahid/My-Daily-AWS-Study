@@ -23,3 +23,4 @@
   - prod/app1/config
 - Can track version and roll back
 - Can use TTL to expire values like passwords
+- Can use to login to `EC2 Instance` using `Run Command` without using `RDP` or `SSH`
