@@ -21,3 +21,8 @@
   - Cross Site Scripting
   - Check Headers
 - When `Cloudfront` is used, set `WAF` in front of `Cloudfront`
+
+## AWS Shield
+
+- Use to prevent the `DDoS` attack 
+

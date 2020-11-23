@@ -56,3 +56,13 @@
 - `IAM DB Authentication` has following feature
   - SSL Encryption of Network Traffic
   - Application runs in `EC2 Instance` can connect with database without password
+
+### Monitoring
+
+- Default Monitoring
+  - CPU Utilization
+  - Database Connection
+  - Free able Memory
+- Enhanced Monitoring
+  - RDS Process
+  - OS Process

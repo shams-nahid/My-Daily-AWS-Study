@@ -8,6 +8,7 @@
   - `API Gateway`
   - `On Premise Server`
 - Has feature to implement `Human Approval Feature`, but not native
+- Use to automate the recurring task
 
 ## SWF
 

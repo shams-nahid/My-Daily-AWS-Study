@@ -10,3 +10,8 @@
     - Use CMK to decrypt data key
     - Decrypt data using `Decrypted data key`
 - `KMS Master Key` is region specific
+
+### Envelope Encryption
+
+- `CMK` is used to `generate`, `encrypt` and `decrypt` the `data keys`
+- `Data Keys` are used to `encrypt` and `decrypt` the data, from outside the `AWS`

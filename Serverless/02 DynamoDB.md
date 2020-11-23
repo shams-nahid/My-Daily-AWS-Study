@@ -2,7 +2,7 @@
 
 - Managed database, replicated across 3 AZ
 - NoSQL database
-- Enable event driven programming using `DynamoDBB Streams`
+- Enable event driven programming using `DynamoDB Streams`
 - In `DynamoDB` database is already created, only needs to create `Table`
 - Each `Table` should have a primary key (Must be decided while creating the table)
 - Can have infinite number of rows
@@ -56,3 +56,6 @@
 - `Throughput` can be exceeded using `Burst Credit`
 - If `Burst Credit` is empty, it throws `ProvisionThroughputException`
   - In case of `ProvisionThroughputException`, it is recommended to retry
+- Can be used `DynamoDB Auto Scaling`
+  - No need to provision throughput
+  - Comparatively expensive

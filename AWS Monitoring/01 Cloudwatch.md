@@ -69,7 +69,9 @@
 - Possible to filter by expression
   - Helpful to find logs or specific IP
   - Can use to trigger alarm
-- `Cloudwatch Logs Insights` can be used to query logs
+- `Cloudwatch Logs Insights` 
+  - Can be used to query logs
+  - To use, need to install the `Unified Cloudwatch Logs Event`
 
 ### Cloudwatch Logs Agent Vs Unified Agent
 
