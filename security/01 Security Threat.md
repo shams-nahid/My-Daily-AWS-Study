@@ -21,8 +21,8 @@
   - Cross Site Scripting
   - Check Headers
 - When `Cloudfront` is used, set `WAF` in front of `Cloudfront`
+- `Rate Based ACL Rules` can be used to avoid potential threat
 
 ## AWS Shield
 
-- Use to prevent the `DDoS` attack 
-
+- Use to prevent the `DDoS` attack
