@@ -13,3 +13,4 @@
 - When web distribution falls under `PCI` distribution
   - Enable `Cloudfront Logs`
   - Capture request, sent to the `Cloudfront API`
+- `AWS Public Dataset` like satellite imagery, geospatial, genomic is free, need no charge

@@ -25,3 +25,7 @@
   - Stop the instance, so it wont billed after expiration
   - Sell the instance to the `Reserved Instance Marketplace`
 - `EC2 Classic` instance can be launched outside of the `VPC`
+- `EC2 Enhanced Networking` allows
+  - Higher Packet Per Second (PPS)
+  - Consistently lower inter instance latencies
+- If `Cluster Placement Group` through `insufficient Capacity Error`, restart the instance, there's no such capacity limitation

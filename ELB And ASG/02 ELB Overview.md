@@ -6,3 +6,6 @@
   - HTTPS
 - A security feature is `Perfect forward secrecy`
   - offer SSl/TLS to `Cloudfront` and `ELB`
+- In ALB
+  - using path condition we can forward request to different `Target Groups`
+  - using host condition we can forward request to different `Target Groups` based on host name in the header
