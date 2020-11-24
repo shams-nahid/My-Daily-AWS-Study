@@ -24,3 +24,4 @@
 - When a reserved instance is no longer required
   - Stop the instance, so it wont billed after expiration
   - Sell the instance to the `Reserved Instance Marketplace`
+- `EC2 Classic` instance can be launched outside of the `VPC`

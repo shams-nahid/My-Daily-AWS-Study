@@ -21,5 +21,6 @@
     - If one `Network Zone` is blocked/not-available, it use the healthy one
   - Listener
     - Traffic can be distributed using `Traffic Dial`
-  - Endpoint Group
+  - Endpoint Group 
+    - Act as a fixed entry point of the using multiple `endpoints` of multiple region
   - Endpoint

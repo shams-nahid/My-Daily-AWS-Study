@@ -12,6 +12,18 @@
   - `AWS Code Deploy`
     - Responsible for `Deploy` portion
     - Ues `AWS Beanstalk` or `AWS Cloudformation` to provision the code
+    - Can be use for deploying code to
+      - EC2 Instance
+      - On premise sever
+      - Lambda Function
+    - Use for
+      - Rapid release of new feature
+      - Updating `Lambda Function`
+      - Avoid downtime during Application deployment
 - While deploying a code base
   - `Code commit` can be a source stage
   - `Beanstalk` can be a deploy stage
+- `Blue/Green` Deployment
+  - Isolation between `blue` and `green`
+  - Roll incoming traffic during deployments
+  - Minimum downtime
