@@ -14,4 +14,10 @@
 ### ASG Lifecycle Hook
 
 - Custom actions can be performed during the instance `launch` or `terminate`
-- 
+- Supports
+  - Target Tracking Scaling
+    - Scaling is based on reaching specific metric
+  - Step Scaling
+    - Scaling is based on set of metrics
+  - Simple Scaling
+    - Scaling is based on single metrics
