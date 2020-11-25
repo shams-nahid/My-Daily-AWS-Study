@@ -16,3 +16,4 @@
   - Reporting queries
 - Built in `reader-endpoint` can be used for distribute the traffic between read-replicas
 - If `DB Primary Instance` fails, it create a new `DB Instance` in the same AZ as the `Original Instance` and done by `Best Effort basis`
+- `Read Replicas` can be used to avoid un necessary downtime

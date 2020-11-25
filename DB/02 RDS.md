@@ -56,6 +56,9 @@
 - `IAM DB Authentication` has following feature
   - SSL Encryption of Network Traffic
   - Application runs in `EC2 Instance` can connect with database without password
+- To enable security between `Web Server` and `DB` server
+  - Force ssl by `rds.force_ssl`
+  - Download `RDS Root CA Certificate`
 
 ### Monitoring
 

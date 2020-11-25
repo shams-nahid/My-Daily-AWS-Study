@@ -9,3 +9,5 @@
 - In ALB
   - using path condition we can forward request to different `Target Groups`
   - using host condition we can forward request to different `Target Groups` based on host name in the header
+- `Classic Load Balance` has a feature `Cross Zone Load Balancing`
+  - Allow distribute traffic to multiple AZ
