@@ -7,6 +7,7 @@
   - Select instance with oldest launch config
   - Select instance with closest billing hour
   - The more instance in a AZ got terminated first
+- Default cool-down period is 300 sec
 - To reduce the changing of `EC2 Instance`
   - Use high `cool-down` period
   - Use high threshold value in the `Cloudwatch Alarm Metric`
