@@ -20,6 +20,10 @@
       - Rapid release of new feature
       - Updating `Lambda Function`
       - Avoid downtime during Application deployment
+    - Type of code deploy
+      - Linear (This deployment send traffic incrementally)
+      - All at once (All traffic shifts to new deployment)
+      - Canary (Can be define, how many traffic will flow new and updated deployments)
 - While deploying a code base
   - `Code commit` can be a source stage
   - `Beanstalk` can be a deploy stage

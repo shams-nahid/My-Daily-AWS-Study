@@ -32,6 +32,10 @@
   - Shard data among multiple RDS DB instance
 - For async database copy, use `READ Replica`
 - While using `READ Replica`, in these `READ Replica`, there should be some replication lag
+- When primary instance failed the `CNAME` of the `DB Instance` switch to `Standby Instance`
+- Non supported oracle feature
+  - RMAN
+  - RAC
 
 ### Automated Backup
 

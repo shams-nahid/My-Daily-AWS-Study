@@ -29,3 +29,4 @@
   - Higher Packet Per Second (PPS)
   - Consistently lower inter instance latencies
 - If `Cluster Placement Group` through `insufficient Capacity Error`, restart the instance, there's no such capacity limitation
+- `Warm Attach` means attaching an `ENI` when it is `Stopped`

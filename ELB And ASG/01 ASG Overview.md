@@ -11,6 +11,13 @@
 - To reduce the changing of `EC2 Instance`
   - Use high `cool-down` period
   - Use high threshold value in the `Cloudwatch Alarm Metric`
+- Type of Scaling
+  - Target Tracking Scaling
+    - Scaling is done based on specific metric value
+  - Step Scaling
+    - Scaling is done based on set of scaling adjustments
+  - Simple Scaling
+    - Scaling is done based on 
 
 ### ASG Lifecycle Hook
 
