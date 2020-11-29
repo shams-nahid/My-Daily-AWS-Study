@@ -13,6 +13,7 @@
   - DDoS Protection
   - AWS Firewall
   - Shield Integration
+- If the `Cache Control` header has `max-age` is `0`, all the request will go to the `Origin`
 
 ### Cloudfront Origin
 

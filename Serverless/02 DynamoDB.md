@@ -21,6 +21,9 @@
     - String Set
     - Number Set
     - Binary Set
+- To improve performance we can use
+  - `DAX` (mili seconds to micro seconds)
+  - Use partition keys of high cardinality, so large number of distinct values for each item
 - `DAX`
   - Stands for `DynamoDB Accelerator`
   - Caching mechanism for `DynamoDB`

@@ -39,6 +39,7 @@
 
   - Can take snapshot of the `EBS Volume`
   - Theses snapshot can be made available to other `Regions`
+  - Snapshot can be automate by using `DLM` aka `Data Lifecycle Manager`
 
 - `EBS Backup`
 

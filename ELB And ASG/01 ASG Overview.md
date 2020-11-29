@@ -7,7 +7,8 @@
   - Select instance with oldest launch config
   - Select instance with closest billing hour
   - The more instance in a AZ got terminated first
-- Default cool-down period is 300 sec
+- Default cool-down period is `300 sec`
+- `Cool Down Period` ensures it will not terminate or launch before the last scaling takes place 
 - To reduce the changing of `EC2 Instance`
   - Use high `cool-down` period
   - Use high threshold value in the `Cloudwatch Alarm Metric`
@@ -18,6 +19,8 @@
     - Scaling is done based on set of scaling adjustments
   - Simple Scaling
     - Scaling is done based on 
+    - Involves cool down period
+- When a new `AMI` is required to launch to `ASG`, need to update the `ASG Launch Config`
 
 ### ASG Lifecycle Hook
 
