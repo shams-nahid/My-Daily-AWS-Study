@@ -30,3 +30,23 @@
   - Consistently lower inter instance latencies
 - If `Cluster Placement Group` through `insufficient Capacity Error`, restart the instance, there's no such capacity limitation
 - `Warm Attach` means attaching an `ENI` when it is `Stopped`
+- Placement Group
+  - Cluster
+    - Tightly coupled
+    - used for `HPC` (`High Performance Computing`)
+    - Low latency network performance
+  - Partition
+    - Logical partition group
+    - Does not share underlying hardware
+    - Used for distributed and replicated workloads
+      - Hadoop
+      - Cassandra
+      - kafka
+  - Spread
+    - Distinct underlying hardware
+- Logging
+  - `aws ec3 describe-instances` for get logs including the recently terminated instance
+- Limitation
+  - There are limitation for launching vCPU in each region
+  - Default is 20
+  - Submitting a request to increase the limit can work
