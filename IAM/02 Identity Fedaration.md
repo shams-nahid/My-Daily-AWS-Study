@@ -12,3 +12,4 @@
   - Non SAML, like compatible like `Microsoft AD `
 - Custom Identity Broker
   - Use when the `Identity Broker` is not compatible with `SAML`
+- `Web Identity Federation` allow to connect `Single Sign In` using `OpenID-connect`
