@@ -3,6 +3,8 @@
 - 6 types of storage tiers
   - S3 Standard - General Purpose (Use minimum 3 AZ)
   - S3 Standard - Infrequent Access (IA)
+     - Use when data is accessed infrequently
+     - Use when rapid access is required
   - S3 One Zone - Infrequent Access (Use Single AZ)
   - S3 Intelligent Tiering
   - Glacier
