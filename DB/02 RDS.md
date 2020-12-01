@@ -36,6 +36,7 @@
 - Non supported oracle feature
   - RMAN
   - RAC
+- In `multi-AZ` deployment, `Standby Instance` can not be used for `read` and `write` operations
 
 ### Automated Backup
 

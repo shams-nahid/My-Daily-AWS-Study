@@ -5,6 +5,8 @@
 - Two `VPC` can not be peered, if
   - Have overlapping `CIDR`
   - Any transitive peering with `on-premise` server
+  - Edge to Edge routing via a gateway
+  - Transitive peering
 - A `Peered Connection` is to be created between two `VPC`
 - `Peered Connection` can be established with an `VPC` in another `Region` and another `Account` (`inter-region`, `cross-account`)
 - Can use `Peered VPC SG` reference
