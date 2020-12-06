@@ -1,6 +1,37 @@
 ## ELB Overview
 
-- `ALB` access logs can provide details of `API Calls`
+- Use to forward traffic to multiple servers
+- Expose single point of access `DNS` to the application
+- Do regular health checks
+- Provide `SSL` for the site
+- Can be used stickiness with cookies
+  - User with same cookie will go to the same server/instance
+- Allow cross zone availability
+- 3 types of load balancers
+  - Classic Load Balancer
+    - Handle `HTTP`, `HTTPS` and `TCP` traffic
+  - Application Load Balancer
+    - Handle `HTTP`, `HTTPS` and `Websocket`
+    - Great fit for micro-services and container based applications
+    - Has port mapping feature to redirect a dynamic port in `ECS`
+    - The application can get the IP from header `x-forwarded-for`
+    - The application can get the protocol from header `x-forwarded-proto`
+    - The application can get the port from header `x-forwarded-port`
+  - Network Load Balancer
+    - Handle `TCP`, `TLS` aka `Secure TCP` and `UDP`
+    - Supports one EIP for each AZ, that is helpful for whitelisting the IP
+    - Use for
+      - Extreme performance
+      - TCP or UDP protocol
+- Load balancer can be `Public` and `Private`
+- For huge scale out, need to use `warm-up`. Need to contact AWS for this purpose
+- Troubleshooting
+  - 4xx for client induced error
+  - 5xx for application induced error
+  - 503 for `at capacity` or `no registered target`
+- Monitoring
+  - `ALB` access logs can provide details of `API Calls`
+  - Cloudwatch for aggregate statistics
 - `ELB` does the health check by
   - HTTP
   - HTTPS
@@ -13,7 +44,31 @@
   - using host condition we can forward request to different `Target Groups` based on host name in the header, like
     - abc.site.com
     - def.site.com
-- `Classic Load Balance` has a feature `Cross Zone Load Balancing`
-  - Allow distribute traffic to multiple AZ
-- `ALB` supports `TCP` connection, along with web sockets
-- `NLB` supports `UDP` and `TCP` connection
+
+### Stickiness
+
+- Ensure the user goes to the same instance
+- Supported by
+  - Application Load Balancer
+    - Need to update the target group
+  - Classic Load Balancer
+- Can set the time of stickiness
+
+### Cross Zone Load Balancing
+
+- Load balancer can distribute traffic evenly among all the AZ
+- For `NLB` there is charge for `Inter AZ` load balancing
+- In `CLB` and `NLB` this `Cross Zone Load Balancing` is turned of by default
+
+### SSL and TLS Certificate
+
+- SNI stands for server name identification
+- SNI can be use for multiple endpoint with multiple certificate
+
+### Connection Draining
+
+- It is the time of `In Flight Request` while the instance is `de registering` or `unhealthy`
+- For `CLB` it is called `Connection Draining`
+- For `ALB` and `NLB` it is called `Deregistration Delay`
+  - Happen in `Target Group`
+- Connection draining time can be set from 0 (disabled) to 3600 sec

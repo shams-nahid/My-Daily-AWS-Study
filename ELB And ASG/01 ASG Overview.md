@@ -1,5 +1,11 @@
 ### ASG Overview
 
+- Terms
+  - Desired capacity or actual size means, number of instance while first time running
+  - Minimum size means number of minimum instance while application load is minimum
+  - Maximum size means number of maximum instance while application load is maximum
+  - `Scale Out` mean adding instance
+  - `Scale In` means removing instance
 - When new AMI is required,
   - Keep the existing `Target Group`
   - Create new `Launch Configuration`
@@ -8,7 +14,7 @@
   - Select instance with closest billing hour
   - The more instance in a AZ got terminated first
 - Default cool-down period is `300 sec`
-- `Cool Down Period` ensures it will not terminate or launch before the last scaling takes place 
+- `Cool Down Period` ensures it will not terminate or launch before the last scaling takes place
 - To reduce the changing of `EC2 Instance`
   - Use high `cool-down` period
   - Use high threshold value in the `Cloudwatch Alarm Metric`
@@ -18,7 +24,7 @@
   - Step Scaling
     - Scaling is done based on set of scaling adjustments
   - Simple Scaling
-    - Scaling is done based on 
+    - Scaling is done based on
     - Involves cool down period
 - When a new `AMI` is required to launch to `ASG`, need to update the `ASG Launch Config`
 

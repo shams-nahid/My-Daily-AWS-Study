@@ -57,3 +57,4 @@
 - Access of developer and users can be separated using `IAM Permission`
   - Developer can manage and deploy API
   - User can call API
+- SSL/TLS though `AWS Certificate Manager` is free for `API Gateway`

@@ -14,3 +14,4 @@
   - Enable `Cloudfront Logs`
   - Capture request, sent to the `Cloudfront API`
 - `AWS Public Dataset` like satellite imagery, geospatial, genomic is free, need no charge
+- `RDP` aka `Remote Desktop Protocol` use port `3389`

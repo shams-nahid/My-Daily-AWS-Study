@@ -50,3 +50,4 @@
   - There are limitation for launching vCPU in each region
   - Default is 20
   - Submitting a request to increase the limit can work
+- There is no cost for `EIP`, if there is only one `EIP` and it is associated with running `EC2`
