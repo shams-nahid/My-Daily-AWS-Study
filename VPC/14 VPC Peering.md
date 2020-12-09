@@ -21,3 +21,4 @@
   - Create `VPC Peer Connection` with own `VPC` and another `VPC`
   - Accept the `Peer Connection` request
   - Update `Subnet Route Table` for both `VPC`
+- `NAT Gateway` can not be shared over `VPC Peering`

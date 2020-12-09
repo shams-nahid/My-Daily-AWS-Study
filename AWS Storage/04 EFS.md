@@ -8,12 +8,16 @@
 - KMS can be use to encrypt EFS
 - Pay as go
 - Increase as we use
+- Can be used with only one `VPC`
 - Used when
   - Multiple linux server need to connect to storage simultaneously
   - Linux server can be from multi-az
 - Two types of performance mode
   - General purpose
   - Max I/O
+    - Cons are higher latency
+    - Can be used with higher level of throughput
+    - Can connect thousands of instances
 
 ### Storage Tier
 
