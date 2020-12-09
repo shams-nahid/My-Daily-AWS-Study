@@ -1,5 +1,6 @@
 ## Egress Only Internet Gateway
 
+- Same as `NAT Gateway`, but for IPv6
 - `Egress` means outgoing
 - `Egress Only Internet Gateway`
   - Allow traffic to go outside

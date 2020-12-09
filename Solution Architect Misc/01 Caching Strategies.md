@@ -6,6 +6,6 @@
 - `API Gateway`
   - `Region` level caching
 - DB Caching (`Application` Level)
-  - `Redis`
-  - `Memcached`
+  - `Redis` (`Elastic Cache`)
+  - `Memcached` (`Elastic Cache`)
   - `DAX`
