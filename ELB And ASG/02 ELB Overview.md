@@ -23,6 +23,7 @@
     - Use for
       - Extreme performance
       - TCP or UDP protocol
+- ALB and CLB expose DNS, on the other hand NLB expose static IP
 - Load balancer can be `Public` and `Private`
 - For huge scale out, need to use `warm-up`. Need to contact AWS for this purpose
 - Troubleshooting

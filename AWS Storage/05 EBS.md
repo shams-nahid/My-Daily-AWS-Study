@@ -37,19 +37,62 @@
 
 - `EBS Backup`
 
+  - Backups are incremental, only backup the changed blocks
   - Can take snapshot of the `EBS Volume`
   - Theses snapshot can be made available to other `Regions`
   - Snapshot can be automate by using `DLM` aka `Data Lifecycle Manager`
-
-- `EBS Backup`
-
+  - While taking backups
+    - There's hamper on heavy traffic
+    - Recommended to detach the volume
+  - To use snapshot, require pre-warm
+  - Snapshots are taking place in `S3`
   - Using lifecycle policy, can automate the `Snapshot`
   - Using the retention policy, can be delete the old `Snapshot`
 
 - [Reference For EBS Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
+
+### Encryption
+
+- Encryption is handled by AWS
+- Use KMS (AES-256)
 - When a `EBS` is `encrypted`
   - All data inside the volume is `encrypted`
   - All moving data between `instance` and `volume` is `encrypted`
   - All snapshots created from them is `encrypted`
   - All volumes created from these `snapshots` are `encrypted`
 - `EBS` volumes can be used while making a `Snapshots`, no problem.
+- To encrypt an un encrypted EBS
+  - Take a snapshot
+  - Encrypt the snapshot using copy
+  - Create volume from the encrypted volume
+  - Delete volume and un encrypted snapshot for security leakage
+
+### EBS vs Instance Store
+
+Instance Store
+
+- Physically attached to the instance
+- Good I/O
+- When instance is terminated, the instance store along with the data lost
+- Although it is block storage, size can not be increased over time
+
+EBS
+
+- Network drive
+- Data is persisted even the instance is terminated
+
+### EBS RAID
+
+- Two types of RAID
+  - RAID 0
+    - Improve performance
+    - Example
+      - Lets say we have 2 EBS with 10000 IOps
+      - We logically merge and use 20000 IOps
+  - RAID 1
+    - Use for fault tolerance
+    - Mirror the EBS volume
+    - Example
+      - If we have 2 EBS volume
+      - We write on each of volume
+      - So even if one EBS volume fails, data is still exist in another one
