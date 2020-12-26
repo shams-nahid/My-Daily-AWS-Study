@@ -47,7 +47,7 @@ const structureFormatter = (structure, parentPath = '') => {
   });
 };
 
-app.get('/', (req, res) => {
+app.get('/tree', (req, res) => {
   DirectoryStructureJSON.getStructure(fs, basePath, function (err, structure) {
     if (err) console.log(err);
     return res.json(structureFormatter(structure));

@@ -12,8 +12,12 @@ function PostContainer() {
     setSelectedNode(node);
   };
   useEffect(() => {
+    const url =
+      process.env.NODE_ENV === 'production'
+        ? 'http://100.25.10.130:8081/tree'
+        : 'http://localhost:8081/tree';
     axios
-      .get('http://localhost:8080/')
+      .get(url)
       .then(function (response) {
         setFileTree(response.data);
       })
