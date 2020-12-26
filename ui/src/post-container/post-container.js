@@ -30,10 +30,10 @@ function PostContainer() {
       justify='flex-start'
       alignItems='flex-start'
     >
-      <Grid item>
+      <Grid item md={3} sm={3} xs={3}>
         <TreeViewContainer fileTree={fileTree} onSelectNode={onSelectNode} />
       </Grid>
-      <Grid item>
+      <Grid item md={9} sm={9} xs={9}>
         <PostDetails selectedNode={selectedNode} />
       </Grid>
     </Grid>

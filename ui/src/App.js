@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AppBarContainer from './app-bar-container';
 import PostContainer from './post-container/post-container';
 
 function App() {
   return (
-    <div  >
+    <div>
+      <AppBarContainer />
       <PostContainer />
     </div>
   );

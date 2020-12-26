@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 const ReactMarkdown = require('react-markdown');
 
 function PostDetails({ selectedNode }) {
@@ -6,7 +6,11 @@ function PostDetails({ selectedNode }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return <ReactMarkdown>{content}</ReactMarkdown>;
+  return (
+    <div style={{ paddingLeft: '15px' }}>
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </div>
+  );
 }
 
 export default PostDetails;
