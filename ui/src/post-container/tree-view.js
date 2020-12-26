@@ -32,12 +32,14 @@ export default function TreeViewContainer({ fileTree = [], onSelectNode }) {
     });
 
   return (
-    <TreeView
-      className={classes.root}
-      defaultCollapseIcon={<ExpandMoreIcon />}
-      defaultExpandIcon={<ChevronRightIcon />}
-    >
-      {renderTreeNode(fileTree)}
-    </TreeView>
+    <div style={{ height: '100vh', backgroundColor: '#b9c3ff' }}>
+      <TreeView
+        className={classes.root}
+        defaultCollapseIcon={<ExpandMoreIcon />}
+        defaultExpandIcon={<ChevronRightIcon />}
+      >
+        {renderTreeNode(fileTree)}
+      </TreeView>
+    </div>
   );
 }

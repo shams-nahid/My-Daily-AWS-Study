@@ -7,7 +7,7 @@ function PostDetails({ selectedNode }) {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div style={{ paddingLeft: '15px' }}>
+    <div style={{ paddingLeft: '15px', height: '100vh' }}>
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );

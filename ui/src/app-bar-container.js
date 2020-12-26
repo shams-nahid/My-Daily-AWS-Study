@@ -24,7 +24,7 @@ export default function AppBarContainer() {
       <AppBar position='static'>
         <Toolbar>
           <Typography variant='h6' className={classes.title}>
-            My Daily AWS Study
+            AWS Study
           </Typography>
         </Toolbar>
       </AppBar>

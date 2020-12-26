@@ -33,6 +33,7 @@ function PostContainer() {
       direction='row'
       justify='flex-start'
       alignItems='flex-start'
+      style={{ height: '100vh' }}
     >
       <Grid item md={3} sm={3} xs={3}>
         <TreeViewContainer fileTree={fileTree} onSelectNode={onSelectNode} />
