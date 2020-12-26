@@ -1,0 +1,21 @@
+{
+  "name": "My-Daily-AWS-Study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bmshamsnahid/My-Daily-AWS-Study.git",
+  "author": "shams_nahid <shams.nahid@ixorasolution.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "directory-structure-json": "^1.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
