@@ -19,32 +19,38 @@ const structureFormatter = (structure, parentPath = '') => {
     let formattedFileName = name;
 
     if (type === 'folder') {
-      formattedChildren = structureFormatter(children, [parentPath, name].join('/'));
+      formattedChildren = structureFormatter(
+        children,
+        [parentPath, name].join('/')
+      );
     }
 
-    if (/\d/.test(name)) {
-      formattedFileName = name.replace(/^.{3}/g, '')
-    }
+    // if (/\d/.test(name)) {
+    //   formattedFileName = name.replace(/^.{3}/g, '')
+    // }
 
     if (type === 'file') {
       formattedFileName = formattedFileName.replace('.md', '');
     }
 
     const path = [parentPath, name].join('/');
-
     return {
       type,
       name: formattedFileName,
       children: formattedChildren,
-      path
+      path,
+      content:
+        type === 'file'
+          ? fs.readFileSync([basePath, path].join(''), 'utf8')
+          : ''
     };
   });
-}
+};
 
 app.get('/', (req, res) => {
   DirectoryStructureJSON.getStructure(fs, basePath, function (err, structure) {
-      if (err) console.log(err);
-      return res.json(structureFormatter(structure));
+    if (err) console.log(err);
+    return res.json(structureFormatter(structure));
   });
 });
 
