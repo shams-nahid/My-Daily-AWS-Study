@@ -10,7 +10,7 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "markdown-blog-content-parser": "0.0.1"
+    "markdown-blog-content-parser": "0.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"

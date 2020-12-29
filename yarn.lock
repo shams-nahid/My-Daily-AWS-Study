@@ -680,10 +680,10 @@ make-dir@^3.0.0:
   dependencies:
     semver "^6.0.0"
 
-markdown-blog-content-parser@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/markdown-blog-content-parser/-/markdown-blog-content-parser-0.0.1.tgz#b582a6d1fc507009c464ada9368727cf0477f1f5"
-  integrity sha512-FMXxvwdTEe/+T/UhAuLvJN//7eIAIAHqzmMQGIjfluI8XnP7dA0CtVyKeN6omjQABXOX8nNNrFFIkmCewgzGBQ==
+markdown-blog-content-parser@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/markdown-blog-content-parser/-/markdown-blog-content-parser-0.0.3.tgz#38f01017f5643df441a080bead883d9c5a5d66e3"
+  integrity sha512-v+48odBPvQT6UfkYQY0rblcf8Kxd1b4akIzyHrlxXqToGJiWVsZw/YJNtR9D6tf0cvVTgF6YURw+vhCP4OhJjQ==
   dependencies:
     cors "^2.8.5"
     directory-structure-json "^1.0.0"
