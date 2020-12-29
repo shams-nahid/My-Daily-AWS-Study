@@ -1,1 +1,1 @@
-require('./markdown-parser').runServer();
+require('markdown-blog-content-parser').runServer();
