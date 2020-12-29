@@ -6,6 +6,7 @@ const { parseMarkdownTree } = require('./markdown-parser');
 
 const basePath = './public';
 const publicDirectoryPath = 'public';
+const routePath = '/tree';
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.use(express.static(publicDirectoryPath));
 app.use(cors());
 app.use(morgan('combined'));
 
-app.get('/tree', (req, res) => {
+app.get(routePath, (req, res) => {
   parseMarkdownTree(basePath, (result) => {
     return res.json(result);
   });
