@@ -14,7 +14,7 @@ function PostContainer() {
   useEffect(() => {
     const url =
       process.env.NODE_ENV === 'production'
-        ? 'http://100.25.10.130:8081/tree'
+        ? 'http://bus-spotter.com:8081/tree'
         : 'http://localhost:8081/tree';
     axios
       .get(url)
