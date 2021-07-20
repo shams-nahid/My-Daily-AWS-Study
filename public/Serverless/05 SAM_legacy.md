@@ -15,3 +15,4 @@
   - Can invoke `function` and `events` locally
 - `SAM Templates` can be used to test the app through before deploy
 - Using `SAM Built In Code Deploy`, application can be deployed to the cloud
+-

@@ -76,3 +76,13 @@
 - Cloudfront switch to secondary origin from primary origin if
   - Primary origin fails
   - Primary origin sends `HTTP Fail Status Code`
+
+### Policies
+
+Cloudfront can ensure,
+
+- From client object and request will be encrypted and use https
+- When it comes to send response, if the object is not available in cache, cloudfron will fetch it from origin also in https format
+- To enable both client -> cloudfront -> origin in https, we will need
+  - Viewer Protocol Policy
+  - Origin Protocol Policy

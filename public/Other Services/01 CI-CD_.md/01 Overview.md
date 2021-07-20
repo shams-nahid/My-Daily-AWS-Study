@@ -1,0 +1,33 @@
+## CI/CD
+
+- Flow
+  - Code -> Build -> Test -> Deploy -> Provision
+- `AWS Codepipeline`
+  - `AWS Codecommit`
+    - Like `Github`
+    - Responsible for `Code` portion
+  - `AWS Codebuild`
+    - Like `Jenkins`
+    - Responsible for `Build` and `Test` portion
+  - `AWS Code Deploy`
+    - Responsible for `Deploy` portion
+    - Ues `AWS Beanstalk` or `AWS Cloudformation` to provision the code
+    - Can be use for deploying code to
+      - EC2 Instance
+      - On premise sever
+      - Lambda Function
+    - Use for
+      - Rapid release of new feature
+      - Updating `Lambda Function`
+      - Avoid downtime during Application deployment
+    - Type of code deploy
+      - Linear (This deployment send traffic incrementally)
+      - All at once (All traffic shifts to new deployment)
+      - Canary (Can be define, how many traffic will flow new and updated deployments)
+- While deploying a code base
+  - `Code commit` can be a source stage
+  - `Beanstalk` can be a deploy stage
+- `Blue/Green` Deployment
+  - Isolation between `blue` and `green`
+  - Roll incoming traffic during deployments
+  - Minimum downtime

@@ -15,6 +15,7 @@
   - API key
   - Host Name
   - Access Keys
+  - lambda functions env variable (when encrypted variables is shared tomultiple lambda function)
 - Values can be stored
   - Encrypted by `KMS`
   - Plaintext
