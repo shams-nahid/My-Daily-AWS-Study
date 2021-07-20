@@ -74,3 +74,8 @@
 - Enhanced Monitoring
   - RDS Process
   - OS Process
+- Get logs of
+  - Audit Log
+  - Error Log
+  - General Log
+  - Slow query log

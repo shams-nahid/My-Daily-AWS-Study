@@ -12,7 +12,7 @@
   - Enable dynamic port mapping
 - `ECS` setup
   - For regular `EC2 Instance` install the `ECS Agent` and edit `config` file
-  - For `ECS ready Linux AMI` edit the `config` file
+  - For `ECS ready Linux AMI`, no need to install `ECS Agent`, only edit the `config` file
   - Editing the `config` file
     - Location `/etc/ecs/ecs.config`
     - There are `35 Configuration` to edit
@@ -20,3 +20,18 @@
       - `ECS_ENGINE_AUTH_DATA`
       - `ECS_AVAILABLE_LOGGING_DRIVER`
       - `ECS_ENABLE_TASK_IAM_ROLE`
+
+### ECS Components
+
+- `Task Definition`: Allow port mapping. `Port Mapping` allows the container to send and receive traffic through the hsot machine
+- `Service Schedular`: Allow to run tasks manually
+- `Container Instance`: On which the container runs on, typically the `ec2 instance` or `ecs ready ec2 instance`
+- `Container Agent`: Allows the containers to connect with the cluster
+
+### Task Placement Strategy
+
+Determine how the tasks will be placed between instances. ECS supports 3 types of `Task Placement Strategies`
+
+1. `binpack`: Placed task by using least amount of CPU or memory. This minimize the number of instances are being used
+2. `random`: Place tasks randomly
+3. `spread`: Placed tasks based on specied value like instance id, host etc

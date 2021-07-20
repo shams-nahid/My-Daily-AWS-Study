@@ -14,3 +14,8 @@
   - Set up `ELB`
 - Store the `Application Files` to `S3`
 - Store the `Server Logs Files` to `S3` or `Cloudwatch`, optionally
+- Can use the worker process environment for the logn running tasks and also fo decoupling the application
+- Environment files
+  - `Dockerrun.aws.json` used to to configure multicontainer docker environments
+  - `env.yaml` used to configure environment name, solution stack and environment links
+  - `cron.yaml` used to define scheduled worker tasks

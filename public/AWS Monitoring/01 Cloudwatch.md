@@ -69,7 +69,7 @@
 - Possible to filter by expression
   - Helpful to find logs or specific IP
   - Can use to trigger alarm
-- `Cloudwatch Logs Insights` 
+- `Cloudwatch Logs Insights`
   - Can be used to query logs
   - To use, need to install the `Unified Cloudwatch Logs Event`
 
@@ -103,6 +103,14 @@
 - Period
   - Time length to evaluate the metric
   - In case of `High Resolution Metric`, period can be `10 sec`
+
+### Creating Cloudwatch Event
+
+While creating a cloudwatch event, we can set
+
+1. `Period`: Define evaluation time in seconds.
+2. `Evaluation Period`: Known as `Data Point`. Number of recent `Period` to consider to generate a alarm state
+3. `Datapoints To Alarm`: Determine to go to `ALARM` state. We can define how many period can be reached within a evaluation period to go to `ALARM`
 
 ### Cloudwatch Event
 

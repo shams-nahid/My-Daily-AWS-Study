@@ -8,7 +8,7 @@ Everytime we make a update to the code/configuration of a lambda function, a new
 
 ---
 
-When we want to point a specic version of a lambda fuction, we can make use of the Alias. Alias can be dev, test, prod, rc etc. By these alias, we can also implement the blue green deployment. Like an alias can send traffic to both the test and prod with specific percentage or weight.
+When we want to point a specific version of a lambda fuction, we can make use of the Alias. Alias can be dev, test, prod, rc etc. By these alias, we can also implement the blue green deployment. Like an alias can send traffic to both the test and prod with specific percentage or weight.
 
 ### Gotcha
 

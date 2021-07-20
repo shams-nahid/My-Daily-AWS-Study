@@ -26,3 +26,21 @@
 ## AWS Shield
 
 - Use to prevent the `DDoS` attack
+
+## Encryption On Flight (SSL)
+
+- When a data is sending to server over internet, it is encrypted and only the server knows how to decrypt
+- Use to prevent MITH (Man In The Middle) attack
+
+## Encryption At Rest
+
+- Before data is persist in the server, the data is encrypted and before retrival the data will be decrypted
+- Key for encryption and decryption is being managed by another service like KMS
+- The server should have permission to access KMS for the encryption and decryption operation
+- With `Encryption at Rest`, even the server become vulnarable, the will still be safe
+
+## Client Side Encryption
+
+- Clients are responsible for encryption and decryption
+- Server can not / should not decrypt the data
+- This method is utilized by the `Envelope Encryption`

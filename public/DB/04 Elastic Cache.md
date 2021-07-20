@@ -26,3 +26,11 @@ In most cases, it's better to use Redis. But should choice `Memcached` when,
 - Multithread or multi core supports
 
 > Redis is not primarily designed for using the multi-cpu.
+
+### Caching Strategies
+
+---
+
+- `Lazy Loading`: Loads data only when it is required
+- `Russian doll`: Have nested records. Top level keys are the cahce keys for child resources.
+- `Write Througth`: Adds item to cache when a item is added or updated. may cause cachec churn ie. lots of cache is not being used or read.
