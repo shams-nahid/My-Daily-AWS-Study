@@ -84,5 +84,5 @@ Cloudfront can ensure,
 - From client object and request will be encrypted and use https
 - When it comes to send response, if the object is not available in cache, cloudfron will fetch it from origin also in https format
 - To enable both client -> cloudfront -> origin in https, we will need
-  - Viewer Protocol Policy
+  - Viewer Protocol Policy (When HTTPS, ther is ssl certificate installed in cloudfront)
   - Origin Protocol Policy

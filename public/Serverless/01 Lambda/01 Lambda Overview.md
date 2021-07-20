@@ -48,3 +48,35 @@
   - User `Authentication` and `Authorization`
   - User `Prioritization`
   - User tracking and analytics
+
+### Error Types During Deployment
+
+---
+
+- `InvalidParameterValueException`: Invalid request parameters. can be permission error.
+- `CodeStorageExceededException`: Exceed the total code size (compressed 50MB, un-compressed 250MB)
+- `ResourceConflictException`: Already a function exists
+- `ServiceException`: Internal server error
+
+### Invokation Types
+
+---
+
+Lambda support 3 types of invokcation:
+
+1. `RequestResponse (Default Type)`: Invoke the function synchronously. Keeps the connection open untill the function return response or times out. The API response contains response, data and status
+2. `Event`: Invoke the function synchroronously. Retuns a response code not the response data.
+3. `DryRun`: Validate parameter and verify roles and permissions
+
+### Limits
+
+---
+
+**Concurrency**: Calculated by, concurrency = (`number of invokation per second` \* number of seconds per invokation took). BY default lambda has `500` to `3000` concurrency vary from region. With burst capacity, we can exceed it another 500 concurrency. For more concurrency, need to make a request to increase the concurrency to aws.
+
+### Gotcha
+
+**Environment Variables**: Regular application environment variables
+**Stage Variables**: Related to API Gateway, can be `dev`, `prod`, `v1`, `v2` etc. Also these stage variables acn be mapped with the alias of lambda function
+**Layers**: A zip archive, contains runtime or libray.
+**Alises**: Pointer to specific lambda version
