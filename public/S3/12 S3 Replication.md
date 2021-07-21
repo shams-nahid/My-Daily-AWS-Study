@@ -10,6 +10,7 @@
     - Use for
       - Log aggregation (centralized multiple log buckets data)
       - Replication between production, test and staging accounts
+- When `cross-region-replication` is enabled, it does not replicate the existing objects, only the newly objects
 - Can be replicated to a `Bucket` of another account
 - Replication is asynchronous
 - To enable `replication`

@@ -76,6 +76,6 @@
   - Must be created every time
 - Launch Template
   - Can have multiple version
-  - Use both on-demand and sport instances
+  - Use both on-demand and spot instances
   - Can use t2 burst feature
   - Recommended by AWS

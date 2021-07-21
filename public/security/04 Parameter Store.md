@@ -15,7 +15,7 @@
   - API key
   - Host Name
   - Access Keys
-  - lambda functions env variable (when encrypted variables is shared tomultiple lambda function)
+  - lambda functions env variable (when encrypted variables is shared to multiple lambda function)
 - Values can be stored
   - Encrypted by `KMS`
   - Plaintext
@@ -25,3 +25,5 @@
 - Can track version and roll back
 - Can use TTL to expire values like passwords
 - Can use to login to `EC2 Instance` using `Run Command` without using `RDP` or `SSH`
+
+**Patch Manager**: Used to pactch the managed instances to overcome security vulnarebilities

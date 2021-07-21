@@ -70,6 +70,6 @@
 
 - It is the time of `In Flight Request` while the instance is `de registering` or `unhealthy`
 - For `CLB` it is called `Connection Draining`
-- For `ALB` and `NLB` it is called `Deregistration Delay`
+- For `ALB` and `NLB` it is called `De registration Delay`
   - Happen in `Target Group`
 - Connection draining time can be set from 0 (disabled) to 3600 sec

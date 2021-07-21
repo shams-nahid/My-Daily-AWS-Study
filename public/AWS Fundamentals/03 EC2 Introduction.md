@@ -27,6 +27,7 @@
     - Can be convert the types like `more cpu optimized`, `more memory optimized`
   - Scheduled Reserved Instance
     - Will be up and running for certain times in regular basis
+    - Recommended when the time frame is at least 1 year usage
 - Spot Instance
   - can loose instance
   - very low price

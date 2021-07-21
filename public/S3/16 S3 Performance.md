@@ -44,3 +44,7 @@
 - Parallelize Get by requesting specific byte ranges
 - Can be used for retrieve only partial data
   - Like header
+
+### Response Code
+
+- `503` when a new object is trying to update, while the same object has million of versions
