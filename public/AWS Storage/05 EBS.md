@@ -96,3 +96,10 @@ EBS
       - If we have 2 EBS volume
       - We write on each of volume
       - So even if one EBS volume fails, data is still exist in another one
+
+### Attaching a New EBS Volume
+
+When we attach a new EBS to EC2 instance, it is considered as block device. To make it usable, need to
+
+- Format to a file system (AWS does not pre configure any file system to EBS)
+- Mount it to the instance

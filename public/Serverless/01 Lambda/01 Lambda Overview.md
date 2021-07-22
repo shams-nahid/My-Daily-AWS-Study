@@ -4,7 +4,7 @@
 - No needs to manage servers
 - Run on-demand
 - Automatic scaling
-- Ram uses can be up to 3MB
+- Ram uses can be up to 3GB
 - Increasing ram, improves the performance of `CPU` and `Network`
 - Almost all programming language are supported by lambda
 - Using `Custom Runtime API` it can support other languages
@@ -58,25 +58,18 @@
 - `ResourceConflictException`: Already a function exists
 - `ServiceException`: Internal server error
 
-### Invokation Types
-
----
-
-Lambda support 3 types of invokcation:
-
-1. `RequestResponse (Default Type)`: Invoke the function synchronously. Keeps the connection open untill the function return response or times out. The API response contains response, data and status
-2. `Event`: Invoke the function synchroronously. Retuns a response code not the response data.
-3. `DryRun`: Validate parameter and verify roles and permissions
-
 ### Limits
 
 ---
 
-**Concurrency**: Calculated by, concurrency = (`number of invokation per second` \* number of seconds per invokation took). BY default lambda has `500` to `3000` concurrency vary from region. With burst capacity, we can exceed it another 500 concurrency. For more concurrency, need to make a request to increase the concurrency to aws.
+**Concurrency**:
+
+- Calculated by, concurrency = (`number of invocation per second` \* `number of seconds per invocation took`). BY default lambda has `500` to `3000` concurrency vary from region. With burst capacity, we can exceed it another 500 concurrency. For more concurrency, need to make a request to increase the concurrency to aws.
+- Concurrency limit is calculated by whole account. If the account has limit of 1000, aws will reserve 100 and other 900 can be used. We can distribute all these 900
 
 ### Gotcha
 
 **Environment Variables**: Regular application environment variables
 **Stage Variables**: Related to API Gateway, can be `dev`, `prod`, `v1`, `v2` etc. Also these stage variables acn be mapped with the alias of lambda function
 **Layers**: A zip archive, contains runtime or libray.
-**Alises**: Pointer to specific lambda version
+**Aliases**: Pointer to specific lambda version

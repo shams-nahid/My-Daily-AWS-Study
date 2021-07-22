@@ -9,11 +9,12 @@ CodeDeploy can be used to deploy code to EC2 instance of on-premise server.
 
 **Process**
 
-- On comment, codeDeploy will pull the code
+- On commit, codeDeploy will pull the code
 - Deploy according to the config files
 - CodeDeploy agent will report the success/failure
 
 > CodeDeploy only do the deployment, do not provision resource
+
 > Blue/green deployments are only available for the EC2 Instances not the on-premise servers
 
 **AppSpec**
@@ -29,13 +30,13 @@ Then, have a sequence of following hooks and we can define our actions in these 
 3. `BeforeInstall`: Task to do before installing the new app
 4. `AfterInstall`: Task to do after installing the app
 5. `ApplicationStart`: Task to start the new app
-6. `ValidateService`: A helth check to determine if the app is running properly
+6. `ValidateService`: A health check to determine if the app is running properly
 
-All hoosk are,
+All hooks are,
 
 `ApplicationStop -> DownloadBundle -> BeforeInstall -> Install -> AfterInstall -> ApplicationStart -> ValidateService -> BeforeAllowTraffic -> AllowTraffic -> AfterAllowTraffic`
 
 **Types Of Deployment**
 
 - `In Place Deployment`: Also known as `Half at a time`. First half of the instance get deployed and then the other half of the application deployed.
-- `Blue Green Deployment`: Initally it keeps the previous insnces and application. A new set of instance will be created and load balancer send traffic on both of these. If eveything goes fine, all the traffic will go to the new instances.
+- `Blue Green Deployment`: Initally it keeps the previous instances and application. A new set of instance will be created and load balancer send traffic on both of these. If everything goes fine, all the traffic will go to the new instances.

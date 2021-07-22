@@ -5,7 +5,7 @@
   - `API` versioning
   - Multiple Environment
   - Security (Authentication, Authorization)
-- Using `API` keys, handle request throattling
+- Using `API` keys, handle request throttling
 - `Swagger`/`Open API` to import `Definition`
 - Transform and validate the `Request` and `Response`
 - Generate `SDK` and `API Specification`
@@ -58,3 +58,5 @@
   - Developer can manage and deploy API
   - User can call API
 - SSL/TLS though `AWS Certificate Manager` is free for `API Gateway`
+
+> `Invoke_Async` is deprecated invocation type. Only the `invoke` is being used.

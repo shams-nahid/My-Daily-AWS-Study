@@ -22,7 +22,7 @@
     - Number Set
     - Binary Set
 - To improve performance we can use
-  - `DAX` (mili seconds to micro seconds)
+  - `DAX` (milliseconds to micro seconds)
   - Use partition keys of high cardinality, so large number of distinct values for each item
 - `DAX`
   - Stands for `DynamoDB Accelerator`
@@ -62,3 +62,12 @@
 - Can be used `DynamoDB Auto Scaling`
   - No need to provision throughput
   - Comparatively expensive
+
+### Authorizer
+
+---
+
+Lambda support two types of authorizer
+
+1. `Token Based`: A bearer token is passed as the caller identity
+2. `Request Parameter Based`: Caller identity is passed to context as combinations of headers, query string parameters etc

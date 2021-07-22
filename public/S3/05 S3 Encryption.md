@@ -18,8 +18,11 @@
     - Server side encryption
     - Key is provided by us
     - `S3` does not store the key
-    - Must be use `HTTPS`
-      - Since every time we pass the `Encryption Key` using `HTTP Header`
+    - To use
+      - Must be use `HTTPS`
+      - Every time we pass the `Encryption Key` using `HTTP Header` as `z-amz-server-side-encryption-customer-key`
+      - Every time we pass the `Algorithm Name` using `HTTP Header` as `z-amz-server-side-encryption-customer-algorithm`
+      - Every time we pass the `MD5 Key` using `HTTP Header` as `z-amz-server-side-encryption-customer-key-md5`
   - Client Side Encryption
     - We encrypt the object before uploading
     - We decrypt object after retrieving from the `S3`

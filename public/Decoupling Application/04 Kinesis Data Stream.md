@@ -1,5 +1,7 @@
 ## Kinesis Data Stream
 
+---
+
 - Managed `Apache Kafka`
 - Used for `Real Time Big Data`
 - Cover streaming processing framework like
@@ -13,6 +15,8 @@
 
 ### Security
 
+---
+
 - Control Access by `IAM Policy`
 - Encryption
   - In flight by `HTTPS`
@@ -21,6 +25,8 @@
 - `VPC Endpoints` are available to access `Kinesis` through `AWS Private Network`
 
 ### Stream Shards
+
+---
 
 - One stream is combination of multiple shard
 - Each shard throughput
@@ -31,6 +37,8 @@
 - Records are ordered per shard
 
 ### Kinesis API (Put Records)
+
+---
 
 - Same key always go to same partition
 - Partition keys should be highly distributed, otherwise it cause `Hot Partition Problem`
@@ -50,6 +58,8 @@
 
 ### 01 Kinesis Stream
 
+---
+
 - Streams are divided into shards
 - Data retention period
   - Default `1 Day`
@@ -59,6 +69,8 @@
 - Once data is inserted in the shards it can not be deleted
 
 ### 02 Kinesis Firehose
+
+---
 
 - Managed Service
 - No Administration
@@ -78,6 +90,8 @@
 
 ### 03 Kinesis Data Analytics
 
+---
+
 - Perform real time analytics using `SQL`
 - Features
   - Auto Scaling
@@ -85,6 +99,8 @@
   - Real time
 
 ### Firehose Vs Streams
+
+---
 
 Streams
 
@@ -101,3 +117,17 @@ Firehose
 - Near real time
 - Automated scaling
 - No data storage
+
+### Re-Sharding
+
+---
+
+Enables increase or decrease of the number of shards in the stream.
+
+We can increase instance size and shards number to handle more data.
+
+### Kinesis Client Library (KCL)
+
+---
+
+In instances, used to process data from data stream. There should be same number of kcl as well as the ec2 instances as the number of open shards.

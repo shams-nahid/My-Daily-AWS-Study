@@ -80,5 +80,5 @@
 ### Migration, Queue to Fifo Queue
 
 - Need
-  - Message deduplication Id (As token while sending the message, ensure no message duplication happen)
+  - Message de-duplication Id (As token while sending the message, ensure no message duplication happen)
   - Message group ID (As tag, to make message group, ensure order of message been proceed)

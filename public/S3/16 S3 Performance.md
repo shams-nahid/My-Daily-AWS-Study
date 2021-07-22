@@ -48,3 +48,15 @@
 ### Response Code
 
 - `503` when a new object is trying to update, while the same object has million of versions
+
+### List Items Parameters
+
+---
+
+1. `--size-only`: Used to determine if the local and cloud items are synced
+2. `--exclude`: Pass a pattern to exclude items
+3. `--summary`: Display number of retrieved items, total items etc
+4. `--page-size`: Default is 1000 page. If there are too many items, we can specify number of pages
+5. `--max-items`: Numbers of items to be displayed. If there are too many items, we can specify number items to be printed
+
+When there are too many items, we can make use of `--page-size` and `--max-items`
