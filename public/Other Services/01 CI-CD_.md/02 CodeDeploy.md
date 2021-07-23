@@ -2,6 +2,20 @@
 
 CodeDeploy can be used to deploy code to EC2 instance of on-premise server.
 
+### Usage
+
+- EC2 Instances
+- On premise servers
+- Serverless Lambda functions
+- ECS Services
+
+### Code Origins
+
+- S3 Buckets
+- Github Repositories
+- Bitbucket Repositories
+- CodeCommit
+
 **Setup**
 
 - Need the code-deploy agent in the server
@@ -39,4 +53,6 @@ All hooks are,
 **Types Of Deployment**
 
 - `In Place Deployment`: Also known as `Half at a time`. First half of the instance get deployed and then the other half of the application deployed.
-- `Blue Green Deployment`: Initally it keeps the previous instances and application. A new set of instance will be created and load balancer send traffic on both of these. If everything goes fine, all the traffic will go to the new instances.
+- `Blue Green Deployment`: Initially it keeps the previous instances and application. A new set of instance will be created and load balancer send traffic on both of these. If everything goes fine, all the traffic will go to the new instances.
+
+> Blue green deployment is not supported by on premise servers

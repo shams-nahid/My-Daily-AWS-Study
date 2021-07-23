@@ -2,7 +2,7 @@
 
 ---
 
-There are 4 types of integration type, can be used t integrate other services with API Gateway.
+There are 4 types of integration type, can be used to integrate other services with API Gateway.
 
 1. `HTTP` or `HTTP Custom Integration` A custom http endpoint, need to set up mapping
 2. `HTTP_PROXY` Use for http endpoint, no needs for any mapping

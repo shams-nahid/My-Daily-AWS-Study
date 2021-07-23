@@ -1,6 +1,8 @@
 - KMS
 - Envelope Encryption
 - `Optimistic Locking`, `Pessimistic Locking`, `Overly Optimistic Locking` for the dynamoDB
+- Cloudformation Masterclass
+- X-Ray
 
 locking:
 

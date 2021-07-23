@@ -23,6 +23,10 @@
       - Every time we pass the `Encryption Key` using `HTTP Header` as `z-amz-server-side-encryption-customer-key`
       - Every time we pass the `Algorithm Name` using `HTTP Header` as `z-amz-server-side-encryption-customer-algorithm`
       - Every time we pass the `MD5 Key` using `HTTP Header` as `z-amz-server-side-encryption-customer-key-md5`
+    - `HMAC` (Hash based Message Authentication Code) is a salted version of encryption keys
+      - AWS generate and store the `HMAC` to validate the encryption and decryption key
+      - `HMAC` is only for validate the original key, can not be used to encrypt or decrypt the object
+    - Since in `SSE-C`, the key is managed by the client, if the key is lost, all the data will also be lost
   - Client Side Encryption
     - We encrypt the object before uploading
     - We decrypt object after retrieving from the `S3`

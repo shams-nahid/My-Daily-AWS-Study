@@ -30,6 +30,7 @@
 - `DynamoDB Stream`
   - Raise event on `Create`, `Update`, `Delete`
   - Can be used to trigger events on `DB Changes`
+  - Data persisted in the stream of `24 hours`
 - `Transaction`
   - All or nothing of operations
 - `Global Table`

@@ -103,3 +103,12 @@ When we attach a new EBS to EC2 instance, it is considered as block device. To m
 
 - Format to a file system (AWS does not pre configure any file system to EBS)
 - Mount it to the instance
+
+### Detaching Existing EBS Volume
+
+- For root volume
+  - Stop the instance
+  - Detach the volume
+- For non-root volume
+  - For running instance, un-mount and detach
+  - For stopped instance, detach, no need to un-mount

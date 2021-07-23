@@ -13,17 +13,17 @@
 - By default KMS can encrypt mx 4kb of data. If we need to encrypt more data, we need to make use of `Envelope Encryption`
 - KMS keys are region bounded
 
-### Moving KMS encrypted reources between regions
+### Moving KMS encrypted resources between regions
 
-1. Create a snapshot of the reources
+1. Create a snapshot of the resources
 2. While move it between region define new region KMS key
 
 ### Types of CMK
 
 ---
 
-1. `Symmentric (AES-256)`: Use single key for encryption and decryption
-2. `Assymmentric (RSA)`: Use key pairs, public key and private key. Public key for encryption and private key for decryption operation. Encryption is being happened from outside of the AWS.
+1. `Symmetric (AES-256)`: Use single key for encryption and decryption
+2. `Asymmetric (RSA)`: Use key pairs, public key and private key. Public key for encryption and private key for decryption operation. Encryption is being happened from outside of the AWS.
 
 ### Envelope Encryption
 

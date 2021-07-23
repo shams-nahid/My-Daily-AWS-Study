@@ -14,6 +14,24 @@
 - `Cloudwatch Event EventBridge` can be used to run `CRON job` function that is in the `Lambda`
 - `Cloudwatch` can be used to debug the code
 
+### Runtime
+
+---
+
+Lambda has native support of the following runtimes,
+
+- Node.js
+- Python
+- Ruby
+- Java
+- Go
+- .NET
+
+We can provide our own custom runtime by
+
+- Include runtime in function deployment package named `bootstrap`
+- These runtime should be resided in new lambda layer
+
 ### Lambda Limits
 
 - Execution
@@ -71,5 +89,5 @@
 
 **Environment Variables**: Regular application environment variables
 **Stage Variables**: Related to API Gateway, can be `dev`, `prod`, `v1`, `v2` etc. Also these stage variables acn be mapped with the alias of lambda function
-**Layers**: A zip archive, contains runtime or libray.
+**Layers**: A zip archive, contains runtime or library.
 **Aliases**: Pointer to specific lambda version

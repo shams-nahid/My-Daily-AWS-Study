@@ -129,3 +129,10 @@ While creating a cloudwatch event, we can set
   - `Cloudwatch Event` trigger the `Code Pipeline`
   - `Code` will be deployed to the `Elastic Beanstalk`
 - Can be used to change the number of `Fargate Cluster` should run according to the events
+
+### Cloudwatch Agent
+
+---
+
+- Collect system info and log files
+- Can track memory, swap and disk space

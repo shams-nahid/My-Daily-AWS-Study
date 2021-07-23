@@ -19,4 +19,4 @@ For `5xx`, server errors
   - Incompatible output from the lambda
 - `504`
   - Integration Failure
-  - Integration Timeout (Requet time after 29 seconds)
+  - Integration Timeout (Request time after 29 seconds)

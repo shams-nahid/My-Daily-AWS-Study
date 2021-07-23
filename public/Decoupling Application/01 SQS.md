@@ -69,6 +69,8 @@
   - When message has unique message bodies, use content-based de duplication ID
 - Message group Id ensure the order of message is being proceed
 
+> De duplication id prevent duplication, group id ensure message is being proceed
+
 ### SQS With ASG
 
 - - `ASG` can be implemented to scale the `Consumers`
