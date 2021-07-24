@@ -81,13 +81,21 @@ To implement the X-ray tracing, we need to implement the followings,
   - `AWS_XRAY_CONTEXT_MISSING`: default: LOG_ERROR
   - `AWS_XRAY_DAEMON_ADDRESS`: IP_ADDRESS:PORT
 
+### EC2 Integration
+
+---
+
+To use x-ray we need the x-ray daemon in the ec2 instance. We can install this manually or update the user script to install the daemon.
+
+Also we have to make sure the sg allow UDP of port 2000 for the x-ray daemon
+
 ### API
 
 ---
 
 After X-Ray collects the data, it use to combine abd summarize the trace data.
 
-- `GetTraceSummaries`: Can get the trace summaries
+- `GetTraceSummaries`: Can get the trace summaries, ids and annotations
 - `BatchGetTraces`: Get the full traces
 - `GetGroup`: A group resources
 - `GetServiceGraph`: Return info of which service handle the incoming request

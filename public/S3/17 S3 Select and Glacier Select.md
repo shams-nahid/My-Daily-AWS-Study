@@ -1,6 +1,7 @@
 ## S3 Select
 
 - Server side filtering
+- Can run simple SQL statements to filter
 - Can filter by rows and columns
 - Do not need to load all data to filter
 - Example

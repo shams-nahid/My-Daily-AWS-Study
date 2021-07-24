@@ -27,6 +27,15 @@
 
 - Use to prevent the `DDoS` attack
 
+## AWS GuardDuty
+
+- Thread detection service
+- Used to monitor malicious activity and protect from unauthorized activities
+
+## AWS Firewall Manager
+
+- Used to manage the `AWS WAF` and `AWS Shield`
+
 ## Encryption On Flight (SSL)
 
 - When a data is sending to server over internet, it is encrypted and only the server knows how to decrypt

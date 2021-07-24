@@ -15,7 +15,6 @@
   - `Optimistic Locking`: Before update/delete, make sure the item is same as the client
 
     **Example**:
-
     Let's say, someone is updating the price of a product. First get the product `{ id: 1, price: 10 }`. Now the updated price should be `15`. While do the update, the dynamoDB client find out, in the db, the price is already updated `20` by someone. In this case the price will not be updated. This is optimistic locking.
 
   - `Pessimistic Locking`: `Pessimistic Locking` lock the document in the DB so no one can modify while it's being operated by an user. Useful for prevent overwriting but interrupt the other users operations.

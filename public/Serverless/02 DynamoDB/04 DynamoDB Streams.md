@@ -12,3 +12,5 @@ When we use global dynamodb table and data is being replicated between multiple 
 2. `NEW_IMAGE`: Pass the new value
 3. `OLD_IMAGE`: Pass the existing value
 4. `NEW_AND_OLD_IMAGES`: Pass both the new and old values
+
+As stream source, if we make use of lambda, the lambda needs permission to read these stream. In this case, we can make use of a managed policy, `AWSLambdaDynamoDBExecutionRole`.

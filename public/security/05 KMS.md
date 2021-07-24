@@ -29,3 +29,13 @@
 
 - `CMK` is used to `generate`, `encrypt` and `decrypt` the `data keys`
 - `Data Keys` are used to `encrypt` and `decrypt` the data, from outside the `AWS`
+
+**Envelope Encryption Local Encryption Usage**
+
+In local environment, when a data is encrypted using a key, the data is protected. But we also need to encrypt the `encryption key`. We can encrypt the `encryption key` using another master key, called `Master Key` or `CMK (Customer Master Key)`. This `CMK` is stored in the `KMS` and never leave the KMS. To use this `CMK` we must call the KMS api.
+
+To encrypt the local data,
+
+- First get the `data encryption key` using `GenerateDataKey` api
+- This `data encryption key` can be used to encrypt the data
+- Delete the `data encryption key`

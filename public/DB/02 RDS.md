@@ -54,6 +54,9 @@
   - Copy the snapshot
   - Encrypt the copied snapshot
   - Restore database from the `Encrypted Snapshot`
+- To encrypt data while write and decrypt during read, there is `Transparent Data Encryption` or `TDE`
+
+> `TDE` is for data encryption whereas the regular `RDS Encryption` is for encrypt the ec2 instance and ebs volume
 
 ### Security
 

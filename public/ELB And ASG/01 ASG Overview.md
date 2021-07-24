@@ -13,6 +13,7 @@
   - Select instance with oldest launch config
   - Select instance with closest billing hour
   - The more instance in a AZ got terminated first
+- When we need to manually add or remove instances, update the launch configuration with desired capacity
 
 ### Cool Down Period
 

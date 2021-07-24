@@ -22,6 +22,11 @@
   - External Signal is is required to intervene
   - When child process return value to parent process
 - Can be used to de couple an application
+- Properties
+  - `Tags`: Allow filtering the list of executions
+  - `Makers`: Records history of executions
+  - `Timers`: Allow notify the decider after a certain amount of defined time
+  - `Signals`: Enable to inject information to the execution
 
 ## Step Function vs SWF
 

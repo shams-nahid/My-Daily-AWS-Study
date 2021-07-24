@@ -2,6 +2,13 @@
 
 ---
 
+SAM usage Cloudformation as the underlying deployment mechanism.
+
+After develop and test locally, we can deploy code using
+
+1. `sam package`
+2. `sam deploy`
+
 SAM has the built in codeDeploy for helping the safe lambda deployments.
 
 1. `Canary`: A certain amount of defined traffic will go to new function for a defined time. If everything goes fine, all traffic will shift to the new function
