@@ -26,7 +26,7 @@
 - `annotations`: Key-value for index search
 - `metadata`: Additional data for debugging
 
-`annotations` can be used to filter the traced data from console.
+`annotations` can be used to filter the traced data from console. Also can trace by groups.
 
 `metadata` can include some additional key value data, that can be helpful during the debugging and tracing.
 

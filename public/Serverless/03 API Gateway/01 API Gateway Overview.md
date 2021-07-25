@@ -10,6 +10,7 @@
 - Transform and validate the `Request` and `Response`
 - Generate `SDK` and `API Specification`
 - Cache `API` response
+- Can be orchestrate multiple web app and micro services
 
 ### Integration
 

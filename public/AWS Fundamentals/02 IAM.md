@@ -21,6 +21,16 @@ By creating the account alias, url become, `account-alias.signin.aws.amazon.com/
 
 ### IAM Certificate Store
 
+---
+
 Can be used to import 3rd party SSL/TLS certificate.
 
 > Both ACM and IAM Certificate Store can be used to import 3rd party SSL/TLS Certificate.
+
+### Best Practices
+
+---
+
+- Delete the root user access keys
+- Create roles and IAM policies with least permissions
+- Use groups for users and assign roles
