@@ -73,3 +73,13 @@
 - For `ALB` and `NLB` it is called `De registration Delay`
   - Happen in `Target Group`
 - Connection draining time can be set from 0 (disabled) to 3600 sec
+
+### Lambda Function Integration
+
+With ALB and target groups,
+
+- We can send multi value headers
+- Enable health check
+
+> multi value query enables us sending query as `name=['foo', 'bar']` instead of `?name='foo'&name='bar'`
+

@@ -86,3 +86,12 @@ Cloudfront can ensure,
 - To enable both client -> cloudfront -> origin in https, we will need
   - Viewer Protocol Policy (When HTTPS, there is ssl certificate installed in cloudfront)
   - Origin Protocol Policy
+
+### Cache Invalidation
+
+---
+
+- When new object is uploaded, to invalidate previous cache
+  - We can invalidate instantly
+  - We can wait for the existing cache to be invalidated
+  - Use versioned name

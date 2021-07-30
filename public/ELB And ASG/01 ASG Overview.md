@@ -15,6 +15,8 @@
   - The more instance in a AZ got terminated first
 - When we need to manually add or remove instances, update the launch configuration with desired capacity
 
+> A launch configuration can not be updated after being created
+
 ### Cool Down Period
 
 - Ensure the `ASG` does not add or terminate instance without previous activity being completed

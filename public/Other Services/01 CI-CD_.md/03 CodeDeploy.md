@@ -31,6 +31,8 @@ CodeDeploy can be used to deploy code to EC2 instance of on-premise server.
 
 > Blue/green deployments are only available for the EC2 Instances not the on-premise servers
 
+> When need to deploy in multiple environments, need to create multiple codeDeploy group
+
 **AppSpec**
 
 With `appspec.yml`, we define how we get the codebase and deploy it.

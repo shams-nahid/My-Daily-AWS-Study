@@ -72,3 +72,8 @@ Lambda support two types of authorizer
 
 1. `Token Based`: A bearer token is passed as the caller identity
 2. `Request Parameter Based`: Caller identity is passed to context as combinations of headers, query string parameters etc
+
+### Access
+---
+
+

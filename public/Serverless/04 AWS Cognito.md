@@ -61,3 +61,11 @@
 - Create CUP
 - In API Gateway, create authorized for cognito user pool id
 - Send token in the header to authorize the request
+
+### UI
+
+---
+
+- Cognito provide a built in login and sign up page
+- We can customize the built in pages
+- We can change the logo by going through the cognito app settings

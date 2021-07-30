@@ -21,6 +21,8 @@
 - After process the message, the consumer has to delete the message, otherwise the message will be appeared in the queue again
 - Can be use to handle extended number of db writ operations
 
+> We can ignore default message size from `256 KB` to up to `2GB` by making use of `S3` and `SQS Extended library for Java`
+
 ### Security
 
 - `IAM Policies` can be used to regulate the `SQS API`

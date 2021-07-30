@@ -1,15 +1,3 @@
-## Step Function
-
-- `JSON state machine`
-- Orchestrate virtual workflow by `lambda functions`
-- Also work with
-  - `ECS`
-  - `EC2`
-  - `API Gateway`
-  - `On Premise Server`
-- Has feature to implement `Human Approval Feature`, but not native
-- Use to automate the recurring task
-
 ## SWF
 
 - `Simple Work Flow`
