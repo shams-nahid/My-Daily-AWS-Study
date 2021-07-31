@@ -78,8 +78,11 @@ To implement the X-ray tracing, we need to implement the followings,
 - The attached policy should have write access to the x-ray daemon
 - Following environment policies will require to communicate with x-ray
   - `_X_AMZN_TRACE_ID`: tracing header
-  - `AWS_XRAY_CONTEXT_MISSING`: default: LOG_ERROR
   - `AWS_XRAY_DAEMON_ADDRESS`: IP_ADDRESS:PORT
+- Others are,
+  - `AWS_XRAY_CONTEXT_MISSING`: default: LOG_ERROR
+  - `AWS_XRAY_TRACING_NAME`: set service name
+  - `AUTO_INSTRUMENT`: applicable for django framework
 
 ### EC2 Integration
 

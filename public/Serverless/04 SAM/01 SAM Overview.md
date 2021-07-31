@@ -2,7 +2,7 @@
 
 - Serverless Application Model
 - Framework for developing and deploying serverless applications
-- All config is in the `YAML` formal
+- All config is in the `YAML` format
   - Lambda function
   - DynamoDB table
   - API Gateway

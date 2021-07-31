@@ -2,7 +2,7 @@
 
 ---
 
-For `4xx`, client erros
+For `4xx`, client errors
 
 - `400` Bad Request
 - `403` Access Denied and WAF filtered
