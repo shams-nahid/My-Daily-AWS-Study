@@ -37,13 +37,13 @@ Both the `Task State` and `Parallel` state has `Catch` and `Retry` field. To han
 
 For retry, we can define different policy for the error. With different error, we can go through different error policy.
 
-- `ErrorEquals`: Array of error names. When error occours, it goes to the corresponding retry policy.
+- `ErrorEquals`: Array of error names. When error occur, it goes to the corresponding retry policy.
 - `IntervalSeconds`: Interval time before retry. Default is 1 second.
 - `MaxAttempts`: Maximum number of retry, default is 3.
 - `BackoffRate`: Additional delay with each new retry, default is 2 seconds
 
 **Catcher**
 
-- `ErrorEquals`: Array of error names. When error occours, it goes to the exactly same named retry policy.
+- `ErrorEquals`: Array of error names. When error occurs, it goes to the exactly same named retry policy.
 - `Next`: Next state machine name
 - `ReturnPath`: Determine next state machine input path

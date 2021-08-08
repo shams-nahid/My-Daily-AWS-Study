@@ -6,8 +6,14 @@ SAM usage Cloudformation as the underlying deployment mechanism.
 
 After develop and test locally, we can deploy code using
 
-1. `sam package`
+1. `sam package` (Includes in the `sam package`)
 2. `sam deploy`
+
+Deployment commands,
+
+1. `sam init`: Initialize app using sam template
+2. `sam build`: Created a deployment ready build directory
+3. `sam deploy`: Invoke the `sam package` to package the app and deploy
 
 SAM has the built in codeDeploy for helping the safe lambda deployments.
 

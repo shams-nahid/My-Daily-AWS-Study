@@ -23,7 +23,7 @@
 
 ### ECS Components
 
-- `Task Definition`: Allow port mapping. `Port Mapping` allows the container to send and receive traffic through the hsot machine
+- `Task Definition`: Allow port mapping. `Port Mapping` allows the container to send and receive traffic through the host machine
 - `Service Schedular`: Allow to run tasks manually
 - `Container Instance`: On which the container runs on, typically the `ec2 instance` or `ecs ready ec2 instance`
 - `Container Agent`: Allows the containers to connect with the cluster

@@ -40,6 +40,7 @@ We can provide our own custom runtime by
   - Env variable size: 4 KB
   - Disk Capacity (/temp): 512MB
   - Concurrent execution: 1000 (can be increased)
+    - When we reserve we have to consider 100 for there functions, so usable is 900
 - Deployment
   - Compressed deployment size: 50MB
   - Uncompressed deployment size: 250MB

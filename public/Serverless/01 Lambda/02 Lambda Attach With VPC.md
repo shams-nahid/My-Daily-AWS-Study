@@ -4,9 +4,13 @@
 
 By default, the lambda function can not access the VPC resources. It is deployed outside of the VPC. Even we attach it along with the VPC, it will get the access to the VPC resources, but by default can not access the internet.
 
+- Attach ENI with VPC
+- Attach NAT with VPC
+- Enable all outbound SG
+
 **Access Resources**
 
-To gey access to our VPC resources it uses `ENI` and access the VPC resources through it.
+To get access to our VPC resources it uses `ENI` and access the VPC resources through it.
 
 - Lambda function should attach to
   - An `ENI` in the VPC subnets, with with our function will be attached

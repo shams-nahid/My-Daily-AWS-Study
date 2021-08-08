@@ -10,11 +10,13 @@
 - Policy
   - Written in `JSON` format
   - Determine what `Users`, `Groups` and `Role` has access
-- `dry-run` policy can be used to verify if there is available permission
+- Verify `IAM Policy` by
+  - `dry-run` policy can be used to verify if there is available permission
+  - `IAM Policy Simulator`
 
 > Permission specified in cli with access key and secret overrides the IAM role permissions
 
-> For any unauthorized encrypt message of the unauthorized access, can be decrypt by `decode-authorization-message`
+> For any unauthorized encrypt message of the unauthorized access, can be decrypt by `decode-authorization-message` of STS API
 
 ### Account Alisa
 
