@@ -9,7 +9,7 @@
     - `AssumeRoleWithSAMl`, this return the credentials to the users who is logged 
     - in with `SAML Federation`
     - `AssumeRoleWithWebIdentity`, this return the credentials to the users who is logged in with `LDB`, like google, facebook etc. Recommended to use `Cognito` instead
-    - `GetSessionToken`, for `MFA
+    - `GetSessionToken`, for `MFA`
 
 ### Using AssumeRole
 

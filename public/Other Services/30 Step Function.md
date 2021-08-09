@@ -21,7 +21,7 @@
 - `Pass State`: Do not run any process, simply take input and pass it to output. If needs any fix, do the fixing and send to the output
 - `Wait State`: Make a delay before next time. The delayed time can be specified
 - `Parallel State`: Start parallel branch execution
-- `Map State`: Iterate the states
+- `Map State`: Iterate the states. `ItemPath` used here
 
 > To run process, `Task State` or `Parallel State` can be used.
 
@@ -46,4 +46,4 @@ For retry, we can define different policy for the error. With different error, w
 
 - `ErrorEquals`: Array of error names. When error occurs, it goes to the exactly same named retry policy.
 - `Next`: Next state machine name
-- `ReturnPath`: Determine next state machine input path
+- `ResultPath`: Determine next state machine input path
