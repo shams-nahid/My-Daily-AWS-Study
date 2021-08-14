@@ -12,8 +12,8 @@ Permissions of codecommit,
 - `codecommit:CreateRepository`: Allow to create repository
 - `codecommit:DeleteRepository`: Allow to delete repository
 
-To give access of codecommit to other developers, we should
+To give access of codecommit to other developers, we can dod any of the followings
 
-- Create git credentials
-- Generate a new SSH keys
-- Associate SSH kys to the IAM user
+- Create git credentials with the AWS Credential profile (to take the access key credentials)
+- Generate a new SSH keys and associate SSH kys to the IAM user
+- Generate HTTPS git credentials and specify them in git credential manager

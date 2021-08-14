@@ -20,6 +20,7 @@
       - `ECS_ENGINE_AUTH_DATA`
       - `ECS_AVAILABLE_LOGGING_DRIVER`
       - `ECS_ENABLE_TASK_IAM_ROLE`
+- If the associated ec2 instances are in stopped state and we terminate ecs, it will not be de-registered automatically
 
 ### ECS Components
 
