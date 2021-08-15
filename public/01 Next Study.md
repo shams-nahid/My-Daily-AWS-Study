@@ -3,3 +3,5 @@
 - Cloudformation Masterclass
 - X-Ray
 - trust policy and iam role
+- envelope encryption
+- code commit

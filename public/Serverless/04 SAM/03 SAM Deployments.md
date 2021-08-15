@@ -13,7 +13,9 @@ Deployment commands,
 
 1. `sam init`: Initialize app using sam template
 2. `sam build`: Created a deployment ready build directory
-3. `sam deploy`: Invoke the `sam package` to package the app and deploy
+3. `sam package`: create zip, upload s3, create packaged template
+4. `sam deploy`: deploy
+5. `sam publish`: take packaged template and publish
 
 SAM has the built in codeDeploy for helping the safe lambda deployments.
 

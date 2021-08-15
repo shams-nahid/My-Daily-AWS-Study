@@ -39,3 +39,9 @@ To encrypt the local data,
 - First get the `data encryption key` using `GenerateDataKey` api
 - This `data encryption key` can be used to encrypt the data
 - Delete the `data encryption key`
+
+To decrypt local data
+
+- First decrypt the encrypted data key and get plaintext data key
+- Decrypt local data using the plaintext data key
+- Delete the plaintext data key

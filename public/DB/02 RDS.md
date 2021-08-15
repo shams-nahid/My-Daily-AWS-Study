@@ -57,6 +57,7 @@
 - To encrypt data while write and decrypt during read, there is `Transparent Data Encryption` or `TDE`
 
 > `TDE` is for data encryption whereas the regular `RDS Encryption` is for encrypt the ec2 instance and ebs volume
+> `TDE` is only applicable for the microsoft sql server
 
 ### Security
 
