@@ -19,6 +19,7 @@
   - `Dockerrun.aws.json` used to to configure multi-container docker environments
   - `env.yaml` used to configure environment name, solution stack and environment links
   - `cron.yaml` used to define scheduled worker tasks
+- If beanstalk does not support the environment by default, can be make use of custom environment named packer
 
 **Platform Update**
 

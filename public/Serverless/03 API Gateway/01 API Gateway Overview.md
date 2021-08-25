@@ -13,6 +13,7 @@
 - Can be orchestrate multiple web app and micro services
 - Can set different usage plan for different users for different level of access
 - Can set different quota and throttling to different level of access
+- To pass a stage variable, use `$stagevariables.<variableName>` concept
 
 ### Integration
 

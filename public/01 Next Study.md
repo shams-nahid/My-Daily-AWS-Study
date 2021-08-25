@@ -5,3 +5,5 @@
 - trust policy and iam role
 - envelope encryption
 - code commit
+- Cloudwatch period, data point and evaluation period
+- Dynamodb rcu wcu

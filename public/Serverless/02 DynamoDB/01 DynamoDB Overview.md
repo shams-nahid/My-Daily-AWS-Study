@@ -42,7 +42,10 @@
   - Available in `VPC Endpoints`
   - Fully controlled by `IAM`
   - `Encryption`
+    - Server side encryption is enabled by default in all DynamoDB table
     - At rest by `KMS`
+      - AWS Managed Key for DynamoDB
+      - Customer Managed Key
     - In flight by `SSL`/`TLS`
 
 ### Provisioned Throughput
@@ -74,6 +77,5 @@ Lambda support two types of authorizer
 2. `Request Parameter Based`: Caller identity is passed to context as combinations of headers, query string parameters etc
 
 ### Access
+
 ---
-
-

@@ -22,6 +22,7 @@
   - OIDC (Open ID Connect)
   - SAML based identity providers
   - Social identity providers
+- To get data insight of the cognito, used the `Cognito Streams`
 
 ### CUP
 

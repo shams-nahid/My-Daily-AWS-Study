@@ -23,7 +23,7 @@
 In most cases, it's better to use Redis. But should choice `Memcached` when,
 
 - Required the simplest model possible
-- Multithread or multi core supports
+- Multi-thread or multi core supports
 
 > Redis is not primarily designed for using the multi-cpu.
 
