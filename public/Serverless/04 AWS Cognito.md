@@ -23,6 +23,7 @@
   - SAML based identity providers
   - Social identity providers
 - To get data insight of the cognito, used the `Cognito Streams`
+  - To put data in redshift, we can make use of both the `new kinesis stream` or the `cognito stream`
 
 ### CUP
 

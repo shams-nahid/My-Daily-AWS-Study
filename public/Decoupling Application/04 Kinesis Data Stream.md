@@ -35,6 +35,9 @@
 - Batching is available to reduce the cost and increase throughput
 - Number of shards can be merged or re-shards over time
 - Records are ordered per shard
+- Multiple shard can not ensure the ordering
+- Merging shards to process less data
+- Splitting shards to process more data
 
 ### Kinesis API (Put Records)
 

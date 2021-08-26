@@ -2,6 +2,11 @@
 
 ---
 
+**Timeout**
+
+- Default time out for a lambda function is 5 minutes
+- Can be extend the time to 15 minutes
+
 **Memory**
 
 Lambda memory start from 128MB and then 64MB of increments.

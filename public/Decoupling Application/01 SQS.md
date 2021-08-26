@@ -73,6 +73,8 @@
 
 > De duplication id prevent duplication, group id ensure message is being proceed
 
+> A regular queue can not be converted to a FIFO queue. I should be created from scratch
+
 ### SQS With ASG
 
 - - `ASG` can be implemented to scale the `Consumers`

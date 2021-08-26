@@ -7,3 +7,5 @@
 - code commit
 - Cloudwatch period, data point and evaluation period
 - Dynamodb rcu wcu
+- API and Lambda method/integration request/response
+- Cognito properties like cognito streams

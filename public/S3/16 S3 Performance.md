@@ -2,7 +2,7 @@
 
 ### Prefix
 
--
+- Randomized prefix of s3 buckets improve the performance
 
 ### Baseline
 

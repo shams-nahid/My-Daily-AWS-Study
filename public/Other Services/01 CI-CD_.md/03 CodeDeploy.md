@@ -58,3 +58,8 @@ All hooks are,
 - `Blue Green Deployment`: Initially it keeps the previous instances and application. A new set of instance will be created and load balancer send traffic on both of these. If everything goes fine, all the traffic will go to the new instances.
 
 > Blue green deployment is not supported by on premise servers
+
+**Get Secure Parameters In CodeDeploy from Parameter Store**
+
+- Create IAM role to access the Parameter Store
+- Use `ssm get-parameters` option
