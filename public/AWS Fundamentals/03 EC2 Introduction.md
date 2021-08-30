@@ -80,6 +80,9 @@
 - `M`
   - Middle between `RAM` and `Computation`
   - Used for `Application Server` / `General Application`
+  - Has 10-25 GB/s networking
+  - Has ENA enabled
+  - Low latency network with NVME ebs
 - `I`
   - For heave `I/O Application`
   - Used for `DB`

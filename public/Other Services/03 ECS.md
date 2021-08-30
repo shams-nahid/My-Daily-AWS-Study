@@ -8,8 +8,9 @@
   - `EKS` is `Elastic Kubernetes Service` by `AWS`
   - `ECR` is `Elastic Container Registry` by `AWS`
 - **`IAM Security` and `Roles` are in `ECS Task` level**
-- `ECS` and `ALB`
-  - Enable dynamic port mapping
+- `ECS` can enable dynamic port mapping with
+  - `ALB`
+  - `NLB`
 - `ECS` setup
   - For regular `EC2 Instance` install the `ECS Agent` and edit `config` file
   - For `ECS ready Linux AMI`, no need to install `ECS Agent`, only edit the `config` file
@@ -21,6 +22,7 @@
       - `ECS_AVAILABLE_LOGGING_DRIVER`
       - `ECS_ENABLE_TASK_IAM_ROLE`
 - If the associated ec2 instances are in stopped state and we terminate ecs, it will not be de-registered automatically
+- When ecs client is stopped, the instance remain active with agent connection status false
 
 ### ECS Components
 

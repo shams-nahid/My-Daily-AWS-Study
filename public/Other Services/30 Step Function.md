@@ -47,3 +47,8 @@ For retry, we can define different policy for the error. With different error, w
 - `ErrorEquals`: Array of error names. When error occurs, it goes to the exactly same named retry policy.
 - `Next`: Next state machine name
 - `ResultPath`: Determine next state machine input path
+
+**Best Practices**
+
+- Specify the timeout for the state machine
+- For larger payload between functions, use `S3`

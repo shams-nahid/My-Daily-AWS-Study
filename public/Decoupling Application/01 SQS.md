@@ -88,3 +88,8 @@
 - Need
   - Message de-duplication Id (As token while sending the message, ensure no message duplication happen)
   - Message group ID (As tag, to make message group, ensure order of message been proceed)
+
+### Performance
+
+- Use long poling
+- Use batch processing

@@ -20,7 +20,11 @@
 - Control Access by `IAM Policy`
 - Encryption
   - In flight by `HTTPS`
+    - Install SSL certificate kinesis
+    - Send data through SSL
   - At rest by `KMS`
+    - Encryption is enabled at rest
+    - Ensure streams are transferring data from producers
   - Client side encryption
 - `VPC Endpoints` are available to access `Kinesis` through `AWS Private Network`
 
@@ -136,3 +140,7 @@ We can increase instance size and shards number to handle more data.
 In instances, used to process data from data stream. There should be same number of kcl as well as the ec2 instances as the number of open shards.
 
 To process data, if we make use of the lambda functions, to get optimal performance, need to have same number of concurrent lambda function same as the shard number.
+
+### Enhanced Fan Out
+
+Enabled shards get data 2MB/s per shard with 70s propagation delay to all consumers.

@@ -19,6 +19,8 @@
   - `Dockerrun.aws.json` used to to configure multi-container docker environments
   - `env.yaml` used to configure environment name, solution stack and environment links
   - `cron.yaml` used to define scheduled worker tasks
+  - `Instance Profile` Used to ensure the interaction with other aws services
+  - `Environment Manifest` Used to define environment, stack name, point to launch config etc.
 - If beanstalk does not support the environment by default, can be make use of custom environment named packer
 
 **Platform Update**
@@ -27,3 +29,9 @@ Elastic beanstalk regularly update their platform time to time with new versions
 
 1. `Update Environments Platform Versions`: Recommended approach to go to latest version.
 2. `Perform a Blue/Green Deployment`: Recommended approach to go to a specif version.
+
+**Best Practices**
+
+- To preserve database on environment deletion
+  - In production, create database separately
+  - In dev/test, use database retention as `Create Snapshot`

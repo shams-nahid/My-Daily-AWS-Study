@@ -63,3 +63,10 @@ All hooks are,
 
 - Create IAM role to access the Parameter Store
 - Use `ssm get-parameters` option
+
+**Rollback When Missing Files**
+
+During rollback, if the existing files are removed or no permissions,
+
+- Put these files in the instances
+- Create a new application instance
