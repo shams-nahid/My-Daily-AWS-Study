@@ -40,3 +40,7 @@
 - Direct query to `S3` without loading
 - Must have a `Cluster` available to start the query
 - `Query` is submitted to thousands of `Redshift Spectrum Nodes`
+
+### Best Practices
+
+- To load data from `S3` use the `COPY` command

@@ -3,6 +3,9 @@
 ### Prefix
 
 - Randomized prefix of s3 buckets improve the performance
+- Each prefix has
+  - 3500 put request per sec
+  - 5500 get request per sec
 
 ### Baseline
 

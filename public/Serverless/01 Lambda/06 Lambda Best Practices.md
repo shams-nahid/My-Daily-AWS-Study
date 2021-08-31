@@ -9,3 +9,4 @@
 - Control the dependencies in functions deployment packages (Can be put them in the lambda layer)
 - Minimize deployment packages
   - Example is, selectively include the libraries that are required
+- For error like `ServiceException` use retry with `ErrorEquals` string to match the error
