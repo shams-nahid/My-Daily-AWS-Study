@@ -53,3 +53,4 @@ This way, we do not need to store any credentials in the ec2 service
 - Delete the root user access keys
 - Create roles and IAM policies with least permissions
 - Use groups for users and assign roles
+- If the new policy does not work, we can revert back to the old policy by selecting the previous version

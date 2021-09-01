@@ -71,3 +71,9 @@
 - Cognito provide a built in login and sign up page
 - We can customize the built in pages
 - We can change the logo by going through the cognito app settings
+
+### Compromised Credentials
+
+---
+
+Amazon Cognito can determine whether the password has been compromised. We can set the settings `block use` from the advanced section. Also we can determine the actions like `sign in`, `sign up` and `password change`.

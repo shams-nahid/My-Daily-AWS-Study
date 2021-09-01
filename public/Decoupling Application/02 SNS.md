@@ -11,6 +11,7 @@
   - Email
   - SMS
   - Mobile Notification
+- Filtering: Using filter in policy to filter message before publish
 - Use Case
   - Cloudwatch alarm
   - ASG Notification

@@ -58,3 +58,8 @@ With `TransactWriteItems`, we can do a batch of 25 items within same account, re
 2. `Update`
 3. `Delete`
 4. `ConditionCheck`
+
+### Best Practices
+
+- Keep number of indexes minimum
+- Avoid indexing for heavy write activity

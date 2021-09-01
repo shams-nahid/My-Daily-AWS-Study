@@ -95,3 +95,13 @@ Cloudfront can ensure,
   - We can invalidate instantly
   - We can wait for the existing cache to be invalidated
   - Use versioned name
+
+### TTL
+
+---
+
+To make a object for a certain time,
+
+- Configure origin to add a `Cache-Control` or `Expires-Header`
+- Specify minimum TTL to the `Cloudfront Cache Behevior`
+- Default value of TTL is 24 hours
