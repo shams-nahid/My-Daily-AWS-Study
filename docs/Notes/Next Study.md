@@ -1,3 +1,5 @@
+### More Study Needed
+
 - KMS
 - Envelope Encryption
 - Cloudformation Masterclass

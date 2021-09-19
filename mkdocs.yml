@@ -1,0 +1,12 @@
+site_name: AWS Study Notes
+site_url: http://aws-study.shams-nahid.com/
+site_description: AWS Study notes during CSAA certifications
+site_author: Shams Nahid
+
+repo_url: https://github.com/bmshamsnahid/My-Daily-AWS-Study
+edit_uri: ""
+
+extra_css:
+  - css/extra.css
+
+copyright: Copyright &copy; 2021 <a href="https://shams-nahid.com/">Shams Nahid</a>.
