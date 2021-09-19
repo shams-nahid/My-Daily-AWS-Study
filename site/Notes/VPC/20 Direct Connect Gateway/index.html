@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Shams Nahid">
+        <link rel="canonical" href="http://aws-study.shams-nahid.com/Notes/VPC/20 Direct Connect Gateway/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>20 Direct Connect Gateway - AWS Study Notes</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">AWS Study Notes</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Next Study/">Next Study</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">AWS Fundamentals</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../AWS Fundamentals/01 Region and AZ/">01 Region and AZ</a>
+</li>
+            
+<li >
+    <a href="../../AWS Fundamentals/02 IAM/">02 IAM</a>
+</li>
+            
+<li >
+    <a href="../../AWS Fundamentals/03 EC2 Introduction/">03 EC2 Introduction</a>
+</li>
+            
+<li >
+    <a href="../../AWS Fundamentals/04 Security Group/">04 Security Group</a>
+</li>
+            
+<li >
+    <a href="../../AWS Fundamentals/06 Public Vs Private vs Elastic IP/">06 Public Vs Private vs Elastic IP</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">AWS Monitoring</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../AWS Monitoring/01 Cloudwatch/">01 Cloudwatch</a>
+</li>
+            
+<li >
+    <a href="../../AWS Monitoring/02 Cloudtrail/">02 Cloudtrail</a>
+</li>
+            
+<li >
+    <a href="../../AWS Monitoring/03 AWS Config/">03 AWS Config</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">AWS Storage</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../AWS Storage/01 Snowball/">01 Snowball</a>
+</li>
+            
+<li >
+    <a href="../../AWS Storage/02 Storage Gateway/">02 Storage Gateway</a>
+</li>
+            
+<li >
+    <a href="../../AWS Storage/03 FSx/">03 FSx</a>
+</li>
+            
+<li >
+    <a href="../../AWS Storage/04 EFS/">04 EFS</a>
+</li>
+            
+<li >
+    <a href="../../AWS Storage/05 EBS/">05 EBS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Cloudfront And Global Accerator</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Cloudfront And Global Accerator/01 Cloudfront/">01 Cloudfront</a>
+</li>
+            
+<li >
+    <a href="../../Cloudfront And Global Accerator/02 Cloudfront Signed URL or Cloudfront Signed Cookies/">02 Cloudfront Signed URL or Cloudfront Signed Cookies</a>
+</li>
+            
+<li >
+    <a href="../../Cloudfront And Global Accerator/03 Global Accelerator/">03 Global Accelerator</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../DB/01 Redshift/">01 Redshift</a>
+</li>
+            
+<li >
+    <a href="../../DB/02 RDS/">02 RDS</a>
+</li>
+            
+<li >
+    <a href="../../DB/03 Aurora/">03 Aurora</a>
+</li>
+            
+<li >
+    <a href="../../DB/04 Elastic Cache/">04 Elastic Cache</a>
+</li>
+            
+<li >
+    <a href="../../DB/05 DynamoDB/">05 DynamoDB</a>
+</li>
+            
+<li >
+    <a href="../../DB/06 S3/">06 S3</a>
+</li>
+            
+<li >
+    <a href="../../DB/07 Athena/">07 Athena</a>
+</li>
+            
+<li >
+    <a href="../../DB/08 Neptune/">08 Neptune</a>
+</li>
+            
+<li >
+    <a href="../../DB/09 Elastic Search/">09 Elastic Search</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Decoupling Application</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Decoupling Application/01 SQS/">01 SQS</a>
+</li>
+            
+<li >
+    <a href="../../Decoupling Application/02 SNS/">02 SNS</a>
+</li>
+            
+<li >
+    <a href="../../Decoupling Application/03 Fan Out/">03 Fan Out</a>
+</li>
+            
+<li >
+    <a href="../../Decoupling Application/04 Kinesis Data Stream/">04 Kinesis Data Stream</a>
+</li>
+            
+<li >
+    <a href="../../Decoupling Application/05 Amazon MQ/">05 Amazon MQ</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Disaster Recovery & Migrations</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/01 Disaster Recovery/">01 Disaster Recovery</a>
+</li>
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/02 RPO & RTO/">02 RPO & RTO</a>
+</li>
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/03 Disaster Recovery Strategies/">03 Disaster Recovery Strategies</a>
+</li>
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/04 DMS/">04 DMS</a>
+</li>
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/05 On Premise Strategy/">05 On Premise Strategy</a>
+</li>
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/06 Data Sync/">06 Data Sync</a>
+</li>
+            
+<li >
+    <a href="../../Disaster Recovery & Migrations/07 Transferring Large Data Sets/">07 Transferring Large Data Sets</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">EC2</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../EC2/01 EC2 Instance Recovery/">01 EC2 Instance Recovery</a>
+</li>
+            
+<li >
+    <a href="../../EC2/02 EC2 Fundamentals/">02 EC2 Fundamentals</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">ELB And ASG</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ELB And ASG/01 ASG Overview/">01 ASG Overview</a>
+</li>
+            
+<li >
+    <a href="../../ELB And ASG/02 ELB Overview/">02 ELB Overview</a>
+</li>
+            
+<li >
+    <a href="../../ELB And ASG/03 Scalability & High Availability/">03 Scalability & High Availability</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">IAM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../IAM/01 STS/">01 STS</a>
+</li>
+            
+<li >
+    <a href="../../IAM/02 Identity Fedaration/">02 Identity Fedaration</a>
+</li>
+            
+<li >
+    <a href="../../IAM/03 Directory Service/">03 Directory Service</a>
+</li>
+            
+<li >
+    <a href="../../IAM/04 Organizations/">04 Organizations</a>
+</li>
+            
+<li >
+    <a href="../../IAM/05 IAM Conditions/">05 IAM Conditions</a>
+</li>
+            
+<li >
+    <a href="../../IAM/06 IAM for S3/">06 IAM for S3</a>
+</li>
+            
+<li >
+    <a href="../../IAM/07 IAM vs Resource Policies/">07 IAM vs Resource Policies</a>
+</li>
+            
+<li >
+    <a href="../../IAM/08 IAM Policy Evaluation/">08 IAM Policy Evaluation</a>
+</li>
+            
+<li >
+    <a href="../../IAM/09 Resource Access Manager/">09 Resource Access Manager</a>
+</li>
+            
+<li >
+    <a href="../../IAM/10 Single Sign On/">10 Single Sign On</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">11 SSL</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../IAM/11 SSL/TLS Certificate/">TLS Certificate</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Other Services</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Other Services/01 CI-CD_deprecated/">01 CI CD deprecated</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/02 Cloudformation/">02 Cloudformation</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/03 ECS/">03 ECS</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/04 EKS/">04 EKS</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/05 Step Function vs SWF/">05 Step Function vs SWF</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/06 EMR/">06 EMR</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/07 Glue/">07 Glue</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/08 Opsworks/">08 Opsworks</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/09 Elastic Transcoder/">09 Elastic Transcoder</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/10 Workspace/">10 Workspace</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/11 AppSync/">11 AppSync</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/12 AWS Polly/">12 AWS Polly</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/13 Managed Blockchain/">13 Managed Blockchain</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/14 AWS Quicksight/">14 AWS Quicksight</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/15 AWS Cloud Search/">15 AWS Cloud Search</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/16 Multiple Account/">16 Multiple Account</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/17 Amazon X-Ray/">17 Amazon X Ray</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/18 AWS Workdocs/">18 AWS Workdocs</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/19 AWS Batch/">19 AWS Batch</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/20 AWS Trusted Advisor/">20 AWS Trusted Advisor</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/21 AWS GreenGrass/">21 AWS GreenGrass</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/22 AWS Migration Hub/">22 AWS Migration Hub</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/23 AWS IoT Core/">23 AWS IoT Core</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/24 AWS Secret Manager/">24 AWS Secret Manager</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/25 AWS Cost Explorer/">25 AWS Cost Explorer</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/26 AWS Budget/">26 AWS Budget</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/27 AWS Inspector/">27 AWS Inspector</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/28 AWS Policy Simulator/">28 AWS Policy Simulator</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/29 AWS CodeStar/">29 AWS CodeStar</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/30 Step Function/">30 Step Function</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/31 AWS CDK/">31 AWS CDK</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/32 AWS Security Center/">32 AWS Security Center</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/33 AWS Data Pipeline/">33 AWS Data Pipeline</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">01 CI CD .md</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Other Services/01 CI-CD_.md/01 Overview/">01 Overview</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/01 CI-CD_.md/02 CodeCommit/">02 CodeCommit</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/01 CI-CD_.md/03 CodeDeploy/">03 CodeDeploy</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/01 CI-CD_.md/04 CodeBuild/">04 CodeBuild</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">02 Elastic Beanstalk</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Other Services/02 Elastic Beanstalk/01 Elastic beanstalk Overview/">01 Elastic beanstalk Overview</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/02 Elastic Beanstalk/02 Elastic beanstalk Deployment/">02 Elastic beanstalk Deployment</a>
+</li>
+            
+<li >
+    <a href="../../Other Services/02 Elastic Beanstalk/03 Elastic Beanstalk Lifecycle/">03 Elastic Beanstalk Lifecycle</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Route 53</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Route 53/01 Fundamentals/">01 Fundamentals</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">S3</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../S3/01 S3 Overview /">01 S3 Overview </a>
+</li>
+            
+<li >
+    <a href="../../S3/02 Data Retrival/">02 Data Retrival</a>
+</li>
+            
+<li >
+    <a href="../../S3/03 S3 Buckets And Objects/">03 S3 Buckets And Objects</a>
+</li>
+            
+<li >
+    <a href="../../S3/04 S3 Versioning/">04 S3 Versioning</a>
+</li>
+            
+<li >
+    <a href="../../S3/05 S3 Encryption/">05 S3 Encryption</a>
+</li>
+            
+<li >
+    <a href="../../S3/06 S3 Security And Bucket Policy/">06 S3 Security And Bucket Policy</a>
+</li>
+            
+<li >
+    <a href="../../S3/07 S3 Website/">07 S3 Website</a>
+</li>
+            
+<li >
+    <a href="../../S3/08 S3 CORS/">08 S3 CORS</a>
+</li>
+            
+<li >
+    <a href="../../S3/09 S3 Consistency Model/">09 S3 Consistency Model</a>
+</li>
+            
+<li >
+    <a href="../../S3/10 S3 MFA Delete/">10 S3 MFA Delete</a>
+</li>
+            
+<li >
+    <a href="../../S3/11 S3 Access Logs/">11 S3 Access Logs</a>
+</li>
+            
+<li >
+    <a href="../../S3/12 S3 Replication/">12 S3 Replication</a>
+</li>
+            
+<li >
+    <a href="../../S3/13 S3 Pre Signed Url/">13 S3 Pre Signed Url</a>
+</li>
+            
+<li >
+    <a href="../../S3/14 S3 Storage Tiers/">14 S3 Storage Tiers</a>
+</li>
+            
+<li >
+    <a href="../../S3/15 S3 Lifecycle Policy/">15 S3 Lifecycle Policy</a>
+</li>
+            
+<li >
+    <a href="../../S3/16 S3 Performance/">16 S3 Performance</a>
+</li>
+            
+<li >
+    <a href="../../S3/17 S3 Select and Glacier Select/">17 S3 Select and Glacier Select</a>
+</li>
+            
+<li >
+    <a href="../../S3/18 S3 Athena/">18 S3 Athena</a>
+</li>
+            
+<li >
+    <a href="../../S3/19 S3 Athena Vs Select/">19 S3 Athena Vs Select</a>
+</li>
+            
+<li >
+    <a href="../../S3/20 S3 Event Notification/">20 S3 Event Notification</a>
+</li>
+            
+<li >
+    <a href="../../S3/21 S3 Object Lock And Glacier Lock/">21 S3 Object Lock And Glacier Lock</a>
+</li>
+            
+<li >
+    <a href="../../S3/22 S3 Protect Object Deletion/">22 S3 Protect Object Deletion</a>
+</li>
+            
+<li >
+    <a href="../../S3/23 S3 Object ACL/">23 S3 Object ACL</a>
+</li>
+            
+<li >
+    <a href="../../S3/24 S3 VPC Gateway/">24 S3 VPC Gateway</a>
+</li>
+            
+<li >
+    <a href="../../S3/25 S3 Event Processing/">25 S3 Event Processing</a>
+</li>
+            
+<li >
+    <a href="../../S3/26 S3 Permissions/">26 S3 Permissions</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serverless</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serverless/01 Lambda_deprecated/">01 Lambda deprecated</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB_deprecated/">02 DynamoDB deprecated</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/03 API Gateway_deprecated/">03 API Gateway deprecated</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/04 AWS Cognito/">04 AWS Cognito</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/05 SAM_legacy/">05 SAM legacy</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">01 Lambda</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serverless/01 Lambda/01 Lambda Overview/">01 Lambda Overview</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/01 Lambda/02 Lambda Attach With VPC/">02 Lambda Attach With VPC</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/01 Lambda/03 Lambda Versioning and Alias/">03 Lambda Versioning and Alias</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/01 Lambda/04 Lambda Performance/">04 Lambda Performance</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/01 Lambda/05 Lambda Integrations/">05 Lambda Integrations</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/01 Lambda/06 Lambda Best Practices/">06 Lambda Best Practices</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/01 Lambda/07 Lambda Deployments/">07 Lambda Deployments</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">02 DynamoDB</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/01 DynamoDB Overview/">01 DynamoDB Overview</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/02 DynamoDB Caching/">02 DynamoDB Caching</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/03 DynamoDB TTL/">03 DynamoDB TTL</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/04 DynamoDB Streams/">04 DynamoDB Streams</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/05 DynamoDB Performance/">05 DynamoDB Performance</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/06 DynamoDB Indexing/">06 DynamoDB Indexing</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/07 DynamoDB Permissions/">07 DynamoDB Permissions</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/02 DynamoDB/10. DynamoDB Misc/">10. DynamoDB Misc</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">03 API Gateway</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serverless/03 API Gateway/01 API Gateway Overview/">01 API Gateway Overview</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/03 API Gateway/02 API Gateway Response Code/">02 API Gateway Response Code</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/03 API Gateway/03 API Gateway Deployment/">03 API Gateway Deployment</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/03 API Gateway/04 API Gateway Caching/">04 API Gateway Caching</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/03 API Gateway/05 API Gateway Monitoring/">05 API Gateway Monitoring</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/03 API Gateway/07 API Gateway Integration Types/">07 API Gateway Integration Types</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">04 SAM</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serverless/04 SAM/01 SAM Overview/">01 SAM Overview</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/04 SAM/02 SAM Properties/">02 SAM Properties</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/04 SAM/03 SAM Deployments/">03 SAM Deployments</a>
+</li>
+            
+<li >
+    <a href="../../Serverless/04 SAM/04 SAM vs Serverless Application Framework/">04 SAM vs Serverless Application Framework</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Solution Architect Misc</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Solution Architect Misc/01 Caching Strategies/">01 Caching Strategies</a>
+</li>
+            
+<li >
+    <a href="../../Solution Architect Misc/02 Blocking IP Address/">02 Blocking IP Address</a>
+</li>
+            
+<li >
+    <a href="../../Solution Architect Misc/03 HPC/">03 HPC</a>
+</li>
+            
+<li >
+    <a href="../../Solution Architect Misc/04 ENA & EFA/">04 ENA & EFA</a>
+</li>
+            
+<li >
+    <a href="../../Solution Architect Misc/05 Automation & Orchestration/">05 Automation & Orchestration</a>
+</li>
+            
+<li >
+    <a href="../../Solution Architect Misc/06 Highly Available EC2 Instance/">06 Highly Available EC2 Instance</a>
+</li>
+            
+<li >
+    <a href="../../Solution Architect Misc/07 Bastion Host HA/">07 Bastion Host HA</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Study Point</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Study Point/01 README/">01 README</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">VPC</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../01 CIDR/">01 CIDR</a>
+</li>
+            
+<li >
+    <a href="../02 Default VPC/">02 Default VPC</a>
+</li>
+            
+<li >
+    <a href="../04 VPC Overview/">04 VPC Overview</a>
+</li>
+            
+<li >
+    <a href="../05 Subnet Overview/">05 Subnet Overview</a>
+</li>
+            
+<li >
+    <a href="../06 Internet Gateway/">06 Internet Gateway</a>
+</li>
+            
+<li >
+    <a href="../07 Route Table/">07 Route Table</a>
+</li>
+            
+<li >
+    <a href="../08 Internet Connection To Public Subnet/">08 Internet Connection To Public Subnet</a>
+</li>
+            
+<li >
+    <a href="../09 NAT Instance/">09 NAT Instance</a>
+</li>
+            
+<li >
+    <a href="../10 NAT Gateway/">10 NAT Gateway</a>
+</li>
+            
+<li >
+    <a href="../11 DNS Resolution/">11 DNS Resolution</a>
+</li>
+            
+<li >
+    <a href="../12 Route 53 Private Zone/">12 Route 53 Private Zone</a>
+</li>
+            
+<li >
+    <a href="../13 NACL & SG/">13 NACL & SG</a>
+</li>
+            
+<li >
+    <a href="../14 VPC Peering/">14 VPC Peering</a>
+</li>
+            
+<li >
+    <a href="../15 VPC Endpoints/">15 VPC Endpoints</a>
+</li>
+            
+<li >
+    <a href="../16 Flow Logs/">16 Flow Logs</a>
+</li>
+            
+<li >
+    <a href="../17 Bastion Host/">17 Bastion Host</a>
+</li>
+            
+<li >
+    <a href="../18 Site To Site VPN/">18 Site To Site VPN</a>
+</li>
+            
+<li >
+    <a href="../19 Direct Connect/">19 Direct Connect</a>
+</li>
+            
+<li class="active">
+    <a href="./">20 Direct Connect Gateway</a>
+</li>
+            
+<li >
+    <a href="../21 Site to Site VPN vs DC vs DCG/">21 Site to Site VPN vs DC vs DCG</a>
+</li>
+            
+<li >
+    <a href="../22 Egress Only Internet Gateway/">22 Egress Only Internet Gateway</a>
+</li>
+            
+<li >
+    <a href="../23 AWS Private Link/">23 AWS Private Link</a>
+</li>
+            
+<li >
+    <a href="../24 Classic Link/">24 Classic Link</a>
+</li>
+            
+<li >
+    <a href="../25 AWS Cloud Hub/">25 AWS Cloud Hub</a>
+</li>
+            
+<li >
+    <a href="../26 Transit Gateway/">26 Transit Gateway</a>
+</li>
+            
+<li >
+    <a href="../27 Cloud Hub vs Transit Gateway/">27 Cloud Hub vs Transit Gateway</a>
+</li>
+            
+<li >
+    <a href="../28 Networking Cost/">28 Networking Cost</a>
+</li>
+            
+<li >
+    <a href="../29 Global Accelerator/">29 Global Accelerator</a>
+</li>
+            
+<li >
+    <a href="../30 VPN Connection/">30 VPN Connection</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Security</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../security/01 Security Threat/">01 Security Threat</a>
+</li>
+            
+<li >
+    <a href="../../security/02 Cloud HSM/">02 Cloud HSM</a>
+</li>
+            
+<li >
+    <a href="../../security/04 Parameter Store/">04 Parameter Store</a>
+</li>
+            
+<li >
+    <a href="../../security/05 KMS/">05 KMS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../19 Direct Connect/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../21 Site to Site VPN vs DC vs DCG/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/bmshamsnahid/My-Daily-AWS-Study"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#direct-connect-gateway">Direct Connect Gateway</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="direct-connect-gateway">Direct Connect Gateway</h2>
+<ul>
+<li>To establish <code>DC</code> with multiple <code>VPC</code> use <code>DCG</code></li>
+<li><code>DCW</code> does not establish <code>VPC Peering</code></li>
+<li><code>VPC</code> can be in <code>Different Region</code> but <code>Same Account</code></li>
+<li>Connected <code>VPC CIDR</code> can not be <code>Overlapped</code></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 <a href="https://shams-nahid.com/">Shams Nahid</a>.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
