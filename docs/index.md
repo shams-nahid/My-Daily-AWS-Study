@@ -5,8 +5,7 @@ My Daily AWS Study Notes
 ---
 
 <div class="text-center">
-<a href="getting-started/" class="btn btn-primary" role="button">Getting Started</a>
-<a href="user-guide/" class="btn btn-primary" role="button">User Guide</a>
+  <h2>Select the notes from the top Navigation</h2> 
 </div>
 
 <div class="jumbotron">

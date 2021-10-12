@@ -13,3 +13,17 @@
 - Tutorial Dojo (CSAA, CDA)
 - Stephane Maarek (CSAA)
 - ACloud Guru (CSAA)
+
+### To Run Locally
+
+Install `mkdocs`
+
+```bash
+sudo apt install mkdocs
+```
+
+Run local machine,
+
+```bash
+mkdocs serve
+```
