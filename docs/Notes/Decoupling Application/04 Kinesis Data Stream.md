@@ -12,6 +12,7 @@
   - Kinesis Stream (Low latency streaming at scale)
   - Kinesis Analytics (Real time analytics using SQL)
   - Kinesis Firehose (Load data to `S3`, `RedShift`, `Elastic Search`)
+- Using a `Kinesis Data Stream Consumer` ensure a dedicated connection for each shard. Helps to reduce the latency.
 
 ### Security
 

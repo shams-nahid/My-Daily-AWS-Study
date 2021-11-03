@@ -11,9 +11,10 @@
     - Server side encryption
     - Key is managed by `KMS`
     - Header should be `x-amz-server-side-encryption: aws:kms`
-    - Useful because
-      - Using `KMS`, we can determine who has access keys
-      - Audit Trail
+  - Useful because
+    - Using `KMS`, we can determine who has access keys
+    - Audit Trail
+    - Using the bucket key can reduce 99% of KMS call
   - `SSE-C`
     - Server side encryption
     - Key is provided by us

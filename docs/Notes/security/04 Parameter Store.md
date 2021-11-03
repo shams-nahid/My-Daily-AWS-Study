@@ -26,4 +26,4 @@
 - Can use TTL to expire values like passwords
 - Can use to login to `EC2 Instance` using `Run Command` without using `RDP` or `SSH`
 
-**Patch Manager**: Used to pactch the managed instances to overcome security vulnarebilities
+**Patch Manager**: Used to patch the managed instances to overcome security vulnarebilities

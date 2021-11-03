@@ -6,7 +6,7 @@ We can track the changes of dynamodb using the dynamoDB streams. On create, dele
 
 When we use global dynamodb table and data is being replicated between multiple region, the dynamodb streams must be enabled.
 
-`StreamViewType` determines what information are writtne to the stream to this table. `StreamViewTypes` are
+`StreamViewType` determines what information are written to the stream to this table. `StreamViewTypes` are
 
 1. `KEYS_ONLY`: Only pass the modified key items
 2. `NEW_IMAGE`: Pass the new value

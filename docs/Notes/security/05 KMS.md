@@ -2,7 +2,7 @@
 
 - When key is managed by in house security team'
   - For Encryption
-    - Generate data key using Customer managed Cmk
+    - Generate data key using Customer managed CMK
     - Encrypt data with data key
     - Delete data key
     - Store encrypted data key and data in S3
@@ -23,7 +23,20 @@
 ---
 
 1. `Symmetric (AES-256)`: Use single key for encryption and decryption
-2. `Asymmetric (RSA)`: Use key pairs, public key and private key. Public key for encryption and private key for decryption operation. Encryption is being happened from outside of the AWS.
+2. `Asymmetric (RSA & ECC)`: Use key pairs, public key and private key. Public key for encryption and private key for decryption operation. Encryption is being happened from outside of the AWS.
+
+### We can use CMK of
+
+- AWS managed Default CMK (free)
+- User managed CMK (1$/month)
+- User imported CMK (1$/month)
+
+### Cross account snapshot of KMS Keys
+
+- Crate a snapshot with our own key
+- Attach a policy so target account can read our key
+- Share the encrypted snapshot
+- Copy the snapshot
 
 ### Envelope Encryption
 
@@ -45,3 +58,11 @@ To decrypt local data
 - First decrypt the encrypted data key and get plaintext data key
 - Decrypt local data using the plaintext data key
 - Delete the plaintext data key
+
+### API for KMS Envelope Encryption
+
+**Encrypt/Decrypt**: Encrypt or decrypt the data up to 4KB. When data is more than 4KB, use `Generate Data Key` and `Generate Data Key without Plaintext`
+
+**Generate Data Key**: Returns DEK (Data Encryption Key) and a copy that is encrypted
+
+**Generate Data Key Without Plaintext**: Purpose is not to use immediately. Returns DEK (Data Encryption Key).
