@@ -47,8 +47,7 @@ Mandatory:
 - Start_time
 - End_time
 - In_progress
-
-Optional:
+  Optional:
 
 - Service
 - User
