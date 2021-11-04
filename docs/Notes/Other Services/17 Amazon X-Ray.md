@@ -37,6 +37,30 @@
 - `Sampling Rule` to create a representative sampling of tracing
   - Wit default sampling `one request per sec and 5% additional requests per host`
 
+**Segment Properties**
+
+Mandatory:
+
+- Name
+- id
+- Trace_id
+- Start_time
+- End_time
+- In_progress
+
+Optional:
+
+- Service
+- User
+- Origin
+- Parent_id
+- http
+- aws
+- error, throttle, cause
+- annotations
+- metadata
+- subsegments
+
 ### X Ray Daemon
 
 ---
@@ -44,6 +68,13 @@
 X-Ray sdk does not send data directly to X-Ray. Instead it sends data for multiple request in the daemon and then sends these to the X-Ray service.
 
 X-Ray Daemon listens to traffic to UDP 2000 port,
+
+### Service Map
+
+---
+
+- Create dependency trees between services
+- Detect latency between services
 
 ### Elastic Beanstalk Integration
 
@@ -99,7 +130,7 @@ Also we have to make sure the sg allow UDP of port 2000 for the x-ray daemon
 
 After X-Ray collects the data, it use to combine abd summarize the trace data.
 
-- `GetTraceSummaries`: Can get the trace summaries, ids and annotations
+- `GetTraceSummaries`: Can get the trace summaries, ids and annotations. Use traceId or event time to get the summaries
 - `BatchGetTraces`: Get the full traces
 - `GetGroup`: A group resources
 - `GetServiceGraph`: Return info of which service handle the incoming request
