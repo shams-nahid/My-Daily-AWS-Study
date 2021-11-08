@@ -7,6 +7,7 @@
     - Users are stored as username and password in cognito
     - Sign In functionality
     - Integrate with api gateway
+    - Allow tracking user device, ip, locations etc.
   - Cognito Identity Pools
     - Users included 3rd party provides, like SAML, facebook, google, etc
     - Provide `AWS Credentials` to access `AWS Resource` directly
