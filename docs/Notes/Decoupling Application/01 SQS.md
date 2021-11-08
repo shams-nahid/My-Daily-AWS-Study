@@ -52,6 +52,9 @@
 - If consumer fails to process a message couple of times it can be passed to the `DLQ`
 - We can set the threshold, how many fails attempts to allow
 - Best practice to set retention period of `14 days` for `dead letter queue`
+- While creating a `Dead Letter Queue`,
+  - For standard queue create `Standard Dead Letter Queue` in the same AWS account
+  - For fifo queue create `Fifo Dead Letter Queue` in the same AWS account
 
 ### Delay Queue
 
@@ -71,17 +74,17 @@
   - When message has unique message bodies, use content-based de duplication ID
 - Message group Id ensure the order of message is being proceed
 
-> De duplication id prevent duplication, group id ensure message is being proceed
+> De duplication id prevent duplication, group id ensure message is being ordered
 
 > A regular queue can not be converted to a FIFO queue. I should be created from scratch
 
 ### SQS With ASG
 
-- - `ASG` can be implemented to scale the `Consumers`
-  - Using `Cloudwatch ApproximateNumberOfMessages` can be determined number of messages in the queue
-  - Using `Cloudwatch ApproximateNumberOfMessages` can be scaled up/down the `EC2 Instances`
-  - Need two alarm to scale up/down the instance
-  - `Step Scaling` is being used here
+- `ASG` can be implemented to scale the `Consumers`
+- Using `Cloudwatch ApproximateNumberOfMessages` can be determined number of messages in the queue
+- Using `Cloudwatch ApproximateNumberOfMessages` can be scaled up/down the `EC2 Instances`
+- Need two alarm to scale up/down the instance
+- `Step Scaling` is being used here
 
 ### Migration, Queue to Fifo Queue
 
@@ -93,3 +96,6 @@
 
 - Use long poling
 - Use batch processing
+- With AWS Lambda
+  - For standard queue use the long poling
+  - For FIFO queue use the group id and en-sure, all the message of the group is being proceed
