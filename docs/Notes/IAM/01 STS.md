@@ -6,8 +6,7 @@
   - Use to create temporary role within the account and share resource
   - 4 types of `AssumeRole`
     - Plain `AssumeRole`
-    - `AssumeRoleWithSAMl`, this return the credentials to the users who is logged 
-    - in with `SAML Federation`
+    - `AssumeRoleWithSAMl`, this return the credentials to the users who is logged in with `SAML Federation`
     - `AssumeRoleWithWebIdentity`, this return the credentials to the users who is logged in with `LDB`, like google, facebook etc. Recommended to use `Cognito` instead
     - `GetSessionToken`, for `MFA`
 

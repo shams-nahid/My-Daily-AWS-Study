@@ -5,6 +5,8 @@
 - Network file system
 - Only compatible with `linux`
 - `EFS Mount Helper` can be used to encrypt data in transit
+- `File System Policy` can be used to set default policy
+- `Service Linked Role` used by AWS to invoke on our behalf
 - KMS can be use to encrypt EFS
 - Pay as go
 - Increase as we use
