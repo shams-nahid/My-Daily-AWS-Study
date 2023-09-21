@@ -4,7 +4,7 @@
 - No needs to manage servers
 - Run on-demand
 - Automatic scaling
-- Ram uses can be up to 3GB
+- Ram uses can be up to 10GB
 - Increasing ram, improves the performance of `CPU` and `Network`
 - Almost all programming language are supported by lambda
 - Using `Custom Runtime API` it can support other languages
@@ -31,11 +31,14 @@ We can provide our own custom runtime by
 
 - Include runtime in function deployment package named `bootstrap`
 - These runtime should be resided in new lambda layer
+- For Lambda Container Image, we must include the Lambda Runtime API in the container image
+- Unless `Lambda Runtime API` is implemented, the docker container should run in ECS or Fargate
 
 ### Lambda Limits
 
 - Execution
-  - Memory allocation: 128MB to 3008MB (64MB increments)
+  - Memory allocation: 128MB to 10GB (64MB increments)
+  - Increasing RAM also increase the CPU and Network
   - Max execution time: 15 minutes
   - Env variable size: 4 KB
   - Disk Capacity (/temp): 512MB
