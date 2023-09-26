@@ -13,6 +13,10 @@
   - Fargate
 - `Cloudwatch Event EventBridge` can be used to run `CRON job` function that is in the `Lambda`
 - `Cloudwatch` can be used to debug the code
+- Process events using
+  - Asynchronus
+  - Synchronus
+  - Event source mapping (Synchronusly)
 
 ### Runtime
 
@@ -71,7 +75,42 @@ We can provide our own custom runtime by
 
 ### Asynchronus invocation
 
-- 
+- Happnes through event queue [Origin can be S3, SNS, Cloudwatch Event]
+- Retry lambda on errors (3 times)
+  - 1st time invoked and encounter errors
+  - 2nd one just after 1 minute
+  - 3rd one after 2 minutes wait
+- DLQ (Dead letter queue can be used to put the error events)
+- Services uses the asynchronus invocation
+  - S3 event notification
+  - SNS
+  - Cloudwatch events / event brdige
+  - CodeCommit/CodePipeline
+  - Simple Email Service
+
+### Event Source Mapping
+
+**Important**
+
+- Event source mapping poll data and return results
+- As source, it can use
+  - Streams
+  - Queue
+- Streams
+  - For low traffic, use batch before processing
+  - For high traffic, multiple batches can be processed in parallel
+  - If there's an error, entire process will be reprocessed or expired eventually
+  - To ensure in-order processing, processing of the affected shard is paused untill the error is resolved
+  - Can be configured as,
+    - Discard old events
+    - Restrict number of retries
+    - Split batch on error (Resolve lambda timeout issue)
+  - Discarded events can go to destination
+- Queue
+  - Use long polling
+  - Batch size can be specified (1 - 10)
+  - Recommandation timeout for the queue is 6x compare to the lambda function timeout
+  - DLQ should be set up in the SQS, not in the lambda (DLQ for lambda is only for async invocation and this is a synchronus operation ???)
 
 ### Lambda@Edge
 
