@@ -94,8 +94,8 @@ We can provide our own custom runtime by
 
 - Event source mapping poll data and return results
 - As source, it can use
-  - Streams
-  - Queue
+  - Streams [Kinesis and DynamoDB]
+  - Queue [SQS]
 - Streams
   - For low traffic, use batch before processing
   - For high traffic, multiple batches can be processed in parallel
@@ -111,6 +111,11 @@ We can provide our own custom runtime by
   - Batch size can be specified (1 - 10)
   - Recommandation timeout for the queue is 6x compare to the lambda function timeout
   - DLQ should be set up in the SQS, not in the lambda (DLQ for lambda is only for async invocation and this is a synchronus operation ???)
+  - For FIFO queue, the processing will be in-order
+  - Occasionally, the event-mapping might recieve same item from queue twice
+  - If a batch returned due to error, the messages will return as individual message and also will be proceed in different group
+  - Lambda delete the items after being proceed
+  - DLQ can be configured if the event is not processed
 
 ### Lambda@Edge
 
@@ -152,6 +157,49 @@ We can provide our own custom runtime by
 
 - Calculated by, concurrency = (`number of invocation per second` \* `number of seconds per invocation took`). BY default lambda has `500` to `3000` concurrency vary from region. With burst capacity, we can exceed it another 500 concurrency. For more concurrency, need to make a request to increase the concurrency to aws.
 - Concurrency limit is calculated by whole account. If the account has limit of 1000, aws will reserve 100 and other 900 can be used. We can distribute all these 900
+
+### Event vs Context Object
+
+**Event**
+
+- Contains data, will be proceed by the event
+- Contains information of the invoking service
+- Convert event data to object (for python dict, for JS json)
+
+**Context**
+
+- Properties of the method, like runtimes, memory limit, function name etc
+- Passed by lambda during runtime
+
+### Destinations
+
+**Synchronous Invocation**
+
+- Destination is client
+
+**Asynchronous Invocation**
+
+- DLQ for only error or failed processing
+- New Destination [Recommanded] for both success or failed processing
+  - SQS
+  - SNS
+  - Lambda
+  - EventBridge Bus
+
+**Event Source Mapping**
+
+- DLQ for failed process
+- New Destination [Recommanded] for both success or failed processing
+  - SQS
+  - SNS
+
+### Tracing with X-Ray
+
+- Enabling by "Active Tracing"
+- Environment variables
+  - `X_AMZN_TRACE_ID` contains tracing header
+  - `AWS_XRAY_CONTEXT_MISSING` log error by default (?)
+  - `AWS_XRAY_DAEMON_ADDRESS` contains x-ray daemon ip address and port
 
 ### Gotcha
 
