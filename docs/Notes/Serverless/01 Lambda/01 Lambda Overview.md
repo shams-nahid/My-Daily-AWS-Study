@@ -48,6 +48,31 @@ We can provide our own custom runtime by
   - Compressed deployment size: 50MB
   - Uncompressed deployment size: 250MB
 
+### Synchronus Invocation
+
+- When the lambda function directly invoked and return the results right away
+- These do the synchronus invocation
+  - SDK
+  - CLI
+  - API Gateway
+  - ALB
+  - S3 Batch (?)
+  - Cognito
+  - Step Function
+- In these cases, if a error is occoured, should be handled in the client side
+
+## ALB to Lambda
+
+- ALB turns the HTTP request to JSON and pass to the lambda and also convert the JSON results of the lambda to HTTP response.
+- **Enabling Multi Header Value** will turn multiple query paramers or query string into array
+- In this case (Using lambda with ALB), there should be a target group to point the lambda function 
+- The ALB security group should have the permission to execute (invoke) the lambda function
+- In this case, the ALB act as a trigger of the lambda function
+
+### Asynchronus invocation
+
+- 
+
 ### Lambda@Edge
 
 - Required when
@@ -65,7 +90,7 @@ We can provide our own custom runtime by
   - Dynamic app at the `Edge`
   - `SEO`
   - Intelligent routing across `Origin` and `Data Center`
-  - Bot Mitigation at `EDGE`
+  - Bot Mitigation at `EDGE` [Detect bot approach]
   - A/B Testing
   - User `Authentication` and `Authorization`
   - User `Prioritization`
