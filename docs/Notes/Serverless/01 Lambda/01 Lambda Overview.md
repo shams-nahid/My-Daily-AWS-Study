@@ -233,11 +233,16 @@ We can provide our own custom runtime by
   - `AWS_XRAY_CONTEXT_MISSING` log error by default (?)
   - `AWS_XRAY_DAEMON_ADDRESS` contains x-ray daemon ip address and port
 
+### Lambda Layers
+
+- A zip archive, contains runtime or library
+- Using layer we can define a custom runtime for a programming language that is not available in AWS Lambda by default
+- Big dependencies can be placed in the layer, so everytime we chage the function and upload the zip file, we do not have to upload all these dependencies
+
 ### Gotcha
 
 **Environment Variables**: Regular application environment variables
 **Stage Variables**: Related to API Gateway, can be `dev`, `prod`, `v1`, `v2` etc. Also these stage variables acn be mapped with the alias of lambda function
-**Layers**: A zip archive, contains runtime or library.
 **Aliases**: Pointer to specific lambda version
 
 **Misc**
