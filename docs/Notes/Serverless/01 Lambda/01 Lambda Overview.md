@@ -239,6 +239,29 @@ We can provide our own custom runtime by
 - Using layer we can define a custom runtime for a programming language that is not available in AWS Lambda by default
 - Big dependencies can be placed in the layer, so everytime we chage the function and upload the zip file, we do not have to upload all these dependencies
 
+### Lambda File System Mounting
+
+To access the EFS file system,
+
+- The function should be running in the private subnet
+- A EFS access point should be used to access the file system
+- One function instance is one connection for the lambda, for a lot of functions, there could be a burst limit
+
+### Cocurrency
+
+- Can be set in the function level
+- In AWS the concurrency can be changed through the support ticket
+- Once a function is throttled, it will show the throtlle error for all the concurrent functions
+- When throttling
+  - Fon synchronus invocation, it will throw 429 (ThrottleError)
+  - For asynchronus invocation, it will retry and eventually end up in the DLQ
+
+**Cold Start**
+
+- When first time a lambda function is invoked, it will take some times to execute the codes outside the handler function like db connection, http connection setup etc.
+**Provisioned Concurrency** 
+- can be implemented so a certain function will always run and can server the initial requests
+
 ### Gotcha
 
 **Environment Variables**: Regular application environment variables
