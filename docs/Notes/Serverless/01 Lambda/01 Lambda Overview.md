@@ -41,11 +41,11 @@ We can provide our own custom runtime by
 ### Lambda Limits
 
 - Execution
-  - Memory allocation: 128MB to 10GB (64MB increments)
+  - Memory allocation: 128MB to 10GB (1MB increments)
   - Increasing RAM also increase the CPU and Network
-  - Max execution time: 15 minutes
+  - Max execution time: 15 minutes (default is 3 seconds)
   - Env variable size: 4 KB
-  - Disk Capacity (/temp): 512MB
+  - Disk Capacity (/tmp): 10GB
   - Concurrent execution: 1000 (can be increased)
     - When we reserve we have to consider 100 for there functions, so usable is 900
 - Deployment
@@ -119,6 +119,7 @@ We can provide our own custom runtime by
 
 ### Lambda@Edge
 
+- Deployed globally
 - Required when
   - Deployed a `CDN` using `Cloudfront`
   - Want to run `Lambda Function` alongside
@@ -139,6 +140,37 @@ We can provide our own custom runtime by
   - User `Authentication` and `Authorization`
   - User `Prioritization`
   - User tracking and analytics
+
+**CloudFront Functions vs Labmda@Edge**
+
+- Provided by CloudFront
+- CloudFront Functions are in JS while the Lambda@Edge can be Node.js or Python
+- CloudFront only manipulate viewer request and response while the Lambda@Edge can manipulate both viewer and origin request/response
+- CloudFront can scale for millions of request while Lambda@Edge scale for thousands of request
+- Lambda@Edge has longer execution time than CloudFront function
+
+### Lambda At VPC
+
+- By default Lambda functions are deployed in a AWS owned VPC
+- It can access external services but restricted to access the resources inside a VPC created by the user in private subnet
+- In order to access the resource in the VPC, Deploy the lambda function in the subnet
+  - Define VPC ID, subnet and Security group in the Lambda
+  - Lambda will create an ENI
+  - Lambda will need `AWSLambdaVPCAccessExecutionRole`
+  - In the VPC, the resources (Like RDS, ElasticCache, ELB etc) security group should allow Lambda security group
+- By default, the Lambda deployed in a subnet (even though the subnet is public), does not have the internet access
+- To manage access the internet from a Lambda, that is deployed in the subnet, need to use the NAT Gateway or NAT Instance (this will talk with the Internet Gatewayh)
+- However a Lambda, that is deployed in the subnet, can access other AWS services using the VPC endpoint.
+- One exception is CloudWatch logs, that will work without any NAT instace / NAT Gateway / VPC Endpoint.
+
+### Execution Context
+
+- A temporary runtime, can be used to
+  - Establish database connection
+  - Set up HTTP Clients / SDK clients
+- Exist after a function is done execution so can be used by concurrent other lambda function
+- The `/tmp` is created to read/write some files temporary
+- Code thoese are outside the handler function are available in the execution context
 
 ### Error Types During Deployment
 
@@ -207,3 +239,7 @@ We can provide our own custom runtime by
 **Stage Variables**: Related to API Gateway, can be `dev`, `prod`, `v1`, `v2` etc. Also these stage variables acn be mapped with the alias of lambda function
 **Layers**: A zip archive, contains runtime or library.
 **Aliases**: Pointer to specific lambda version
+
+**Misc**
+
+- To do encryption in `/tmp` need to use KMS, lambda does not handle by default
