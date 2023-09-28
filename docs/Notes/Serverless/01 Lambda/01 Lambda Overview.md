@@ -262,6 +262,53 @@ To access the EFS file system,
 **Provisioned Concurrency** 
 - can be implemented so a certain function will always run and can server the initial requests
 
+### Function Dependencies
+
+- Before deployin, external libraries (Like AWS X-Ray SDK, DB Clients, projectspecific modules etc.) need to be packaged in zip file
+- If the zip file size is more than 50 MB, then it first need to be uploaded in the S3 and then use the reference
+- For native libraries, first need to compiled in Amazon linux
+- AWS SDK is already integrated with Lambda by default   
+
+### Deploy Using Cloudformation
+
+- We can add codes directly to the cloudformation template, but with this inline including, we can not add any dependency
+- Code can be stored as zip file in S3 and referenced from the cloudforation template. This require include the 
+  - S3 bucket name
+  - S3 buckets object full path
+  - Version code [if enabled]
+- If the code is updeted in the S3 but the S3 version is not updated in the cloudformation, then the new lambda function will not be included
+- When the S3 bucket (where the zipped code is located) and cloudformation is in different account,
+  - Add an execution role in the cloudformtaion allowing fetch and list the S3 bucket
+  - Update bucket policy to allow the cloudformation owner account
+
+### Lambda Containerization
+
+- Lambda function container should be deployed through ECR and size can be up to  GB
+- The base image must include the Lambda Runtime API (Recommanded to use AWS provided image)
+- Containers can be tested locally using the Lambda Runtime Interface Emulator
+
+**Optimization**
+
+- Use AWS provided base image, since it is cached
+- Keep the less changing commands on the top of the docker file
+- Using single repository helps ECR to compare layers
+
+### Versioning and Alias
+
+**Versioning**
+
+Everytime we make a update to the code/configuration of a lambda function, a new version of the lambda function created. When we invoke the function, it usually invoke the latest version of the function, Although we can invoke any previous/specific version of the lambda function. Each version of the lambda function will have their own AWS ARN.
+
+**Alias**
+
+When we want to point a specific version of a lambda fuction, we can make use of the Alias. Alias can be dev, test, prod, rc etc. By these alias, we can also implement the blue green deployment. Like an alias can send traffic to different versions with specific percentage or weight.
+
+**Others**
+
+- Alias can only point to different version/versions of lambda function. It can not point to another alias.
+- `$latest` version is mutable, it always point to the updated version of the lambda function. Other versions are immutable.
+- If we update any code/configuration, the lambda function versions will be updated.
+
 ### Gotcha
 
 **Environment Variables**: Regular application environment variables
