@@ -309,6 +309,42 @@ When we want to point a specific version of a lambda fuction, we can make use of
 - `$latest` version is mutable, it always point to the updated version of the lambda function. Other versions are immutable.
 - If we update any code/configuration, the lambda function versions will be updated.
 
+### Lambda And CodeDeploy
+
+- Allow automating traffic shifting
+- Very much integrated with SAM
+- 3 types of traffic shifting
+  - **Linear**: Traffic gradually move with times untill completely migrate all traffic
+    - Linear10PercentEvery3Minutes
+    - Linear10PercentEvery10Minutes
+  - **Canary**: First mirgrate a certain proportion of traffic and later migrate all traffic
+    - Canary10Percent5Minutes: Move 10 percent for 5 minutes and later 100% goes to target function
+    - Canary10Percent30Minutes: Move 10 percent for 30 minutes and later 100% goes to new function
+  - **All At Once**: Immediately move all the traffic to target function
+- To setup code deploy, required
+  - Function Name
+  - Function Alias
+  - Current Function Version
+  - Target Function Version
+
+### Lambda Function URL
+
+TBD: 310 & 311
+
+### Lambda And CodeGuru
+
+- Provide runtime performance of the lambda function
+- Support Java and Python runtimes
+
+### Best Practices
+
+- Connect db outside the handler
+- Initialize AWS SDK outside the handler
+- Pull dependencies outside of the function handler
+- Use env variables for db strings, s3 url etc
+- For sensetive values like password, use the KMS for encryption
+- Never ever call a Lambda function recursively
+
 ### Gotcha
 
 **Environment Variables**: Regular application environment variables
