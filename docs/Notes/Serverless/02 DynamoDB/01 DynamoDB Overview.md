@@ -21,6 +21,16 @@
     - String Set
     - Number Set
     - Binary Set
+- Filter expressions are for read operations while conditional expression for write operation
+- For write operation, as conditional expressions we can use
+  - attribute_exists
+  - attribute_not_exists
+  - attribute_type
+  - contains
+  - begins_with
+  - IN (includes)
+  - between (between low and high)
+  - size (length of string)
 - To improve performance we can use
   - `DAX` (milliseconds to micro seconds)
   - Use partition keys of high cardinality, so large number of distinct values for each item
@@ -123,6 +133,23 @@ __To switch between provisioned and on-demand mode, requires 24 hours__
   - Expotential backoff (Included in SDK)
   - Distribute partition keys
   - For RCU, utilize DAX
+
+
+### PartiQl
+
+- SQL compatible language for DynamoDB
+- Allows CRUD and Batch operation in DynamoDB using SQL
+  - INSERT
+  - UPDATE
+  - SELECT
+  - DELETE
+- Aloows running queries on multiple dynamoDB tables
+- Can be used from 
+  - AWS management console
+  - NoSQL workbench for DynamoDB
+  - DynamoDB APIs
+  - AWS CLI
+  - AWS SDK
 
 ### Authorizer
 
