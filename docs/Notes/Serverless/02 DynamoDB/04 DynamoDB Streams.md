@@ -15,4 +15,13 @@ When we use global dynamodb table and data is being replicated between multiple 
 
 As stream source, if we make use of lambda, the lambda needs permission to read these stream. In this case, we can make use of a managed policy, `AWSLambdaDynamoDBExecutionRole`.
 
-> `dynamoDB Streams` can only be integrated with lambda functions, can not integrated with sns or sqs etc.
+DynamoDB Streams can be integrated with
+
+- Lambda
+- Kinesis data streams
+- Kinsis client library applications
+
+Others:
+
+- Data retention period for the DynamoDB streams are 24 hours.
+- DynamoDB streams are not effective for previous changes (before enabling streams)
