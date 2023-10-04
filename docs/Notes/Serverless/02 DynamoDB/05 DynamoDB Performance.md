@@ -50,7 +50,18 @@ In this case, the easiest and quickest solution is `Increase Read and Write Capa
 
 ### Transactions
 
-DynamoDB provide all-or-nothing types operation with `TransactWriteItems` and `TransactGetItems`.
+DynamoDB provide all-or-nothing types operation with `TransactWriteItems` and `TransactGetItems`. The consumstion of read and write operation is 2x RCU and 2x WCU. This is because, the transactional operation requires prepare and commit.
+
+**Read Mode (TransactGetItems)**
+
+- Eventual consistency
+- Strong consistency
+- Transactional
+
+**Write Mode (TransactWriteItems)**
+
+- Standard writing
+- Transactional writing
 
 With `TransactWriteItems`, we can do a batch of 25 items within same account, region and multiple tables. We can perform the followings,
 
@@ -58,6 +69,12 @@ With `TransactWriteItems`, we can do a batch of 25 items within same account, re
 2. `Update`
 3. `Delete`
 4. `ConditionCheck`
+
+### Sharding
+
+- Use distributed partition key
+- If partition key is not enough, use composite key by including a sort key
+- If composite key is not enough for potential hot partitioning, add random prefix or suffix with the partition key
 
 ### Best Practices
 

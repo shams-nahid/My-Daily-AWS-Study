@@ -160,6 +160,17 @@ Lambda support two types of authorizer
 1. `Token Based`: A bearer token is passed as the caller identity
 2. `Request Parameter Based`: Caller identity is passed to context as combinations of headers, query string parameters etc
 
+### Table Cleanup
+
+- Deleting each item requires a lot of RCU and WCU, not efficient
+- Drop the entire table and then recreate is the efficient way
+
+### Table Cloning
+
+- Use data pipeline (launch EMR and do the copy operation), not efficient
+- Backup the current table and restore the backup in another table, time consuming but efficient
+- Manually scan and put item in another table, requires writing code
+
 ### Access
 
 ---
