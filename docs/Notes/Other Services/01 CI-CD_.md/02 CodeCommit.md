@@ -15,9 +15,10 @@ Permissions of codecommit,
 To give access of codecommit to other developers, we can dod any of the followings
 
 - Create git credentials with the AWS Credential profile (to take the access key credentials)
-- Generate a new SSH keys and associate SSH kys to the IAM user
-- Generate HTTPS git credentials and specify them in git credential manager
-- For developer with another account,
-  - Create cross account role
-  - Give repository permission to that role
-  - Provide the role arn to the developer
+- AWS CodeCommit supports both SSH and Https git credentials
+  - Generate a new SSH keys and associate SSH keys to the IAM user
+  - Generate HTTPS git credentials and specify them in git credential manager
+    - For developer with another account,
+      - Create cross account role (AWS STS, AssumeRole API)
+      - Give repository permission to that role
+      - Provide the role arn to the developer

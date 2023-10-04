@@ -1,7 +1,23 @@
 ## CI/CD
 
+### Code Pipeline
+
 - Flow
   - Code -> Build -> Test -> Deploy -> Provision
+  - Every stage, the codes are called `Artifact` and stored in the S3. The next stage take the `artifact` from the previous stage and after processing, create a new `artifact` to pass it to the next stage.
+- In codePipeline, a single stage can have multiple action groups
+- We can trigger code pipeline using,
+  - Events
+    - Using event-bridge from code-commit
+    - Using code-star github app
+  - Webhook
+    - Script to hit the webhook of the code pipeline when code is updated
+  - Polling [Not Recommanded]
+    - Codepipeline always check the repository in a time interval and check if code is updated
+- Troubleshooting of code pipeline
+  - Check the console
+  - Check the IAM permission
+  - Audit the failed API call using CloudTrail
 - `AWS Codepipeline`
   - `AWS Codecommit`
     - Like `Github`
