@@ -2,6 +2,20 @@
 
 ---
 
+- **TBD:** Need to add the code build detail property explaination
+- Build can be defined in code-pipeline/code-build
+- Source/destinations
+  - Source can be CodeCommit, S3, Bitbucket or Github
+  - Build instruction is written in the `buildspec.yml`
+  - Log can be stored in S3 or Cloudwatch Logs
+  - Logs are available in Cloudwatch logs
+  - Metrics are available in Cloudwatch metrics
+  - Thresholds are available in Cloudwatch Alarm
+  - EventBridge can be used for trigger notifications
+- CodeBuild agent can be used to test the code build locally
+- By default CodeBuild launched outside the VPC, so can not access the reources
+- Providing vpc id, subnet id and security group ids, it can run inside the VPC and acess resour es
+
 **Run On Proxy Server**
 
 To run the codeBuild in the proxy server,

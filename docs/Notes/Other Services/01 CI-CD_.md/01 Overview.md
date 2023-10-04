@@ -6,6 +6,9 @@
   - Code -> Build -> Test -> Deploy -> Provision
   - Every stage, the codes are called `Artifact` and stored in the S3. The next stage take the `artifact` from the previous stage and after processing, create a new `artifact` to pass it to the next stage.
 - In codePipeline, a single stage can have multiple action groups
+- In code pipeline, for manual approval (SNS + Email), the user need two permission
+  - GetPipeline
+  - PutApproveResult
 - We can trigger code pipeline using,
   - Events
     - Using event-bridge from code-commit
