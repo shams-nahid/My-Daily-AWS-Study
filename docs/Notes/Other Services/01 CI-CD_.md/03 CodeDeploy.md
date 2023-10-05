@@ -37,7 +37,7 @@ CodeDeploy can be used to deploy code to EC2 instance of on-premise server.
 
 With `appspec.yml`, we define how we get the codebase and deploy it.
 
-In the `File Section` we define the source like s3 or github.
+In the `File Section` we define the source like S3 or github.
 
 Then, have a sequence of following hooks and we can define our actions in these hook,
 
@@ -55,6 +55,7 @@ All hooks are,
 **Types Of Deployment**
 
 - `In Place Deployment`: Also known as `Half at a time`. First half of the instance get deployed and then the other half of the application deployed.
+- `One At a Time`: Slowest but lowest availability impact.
 - `Blue Green Deployment`: Initially it keeps the previous instances and application. A new set of instance will be created and load balancer send traffic on both of these. If everything goes fine, all the traffic will go to the new instances.
 
 > Blue green deployment is not supported by on premise servers

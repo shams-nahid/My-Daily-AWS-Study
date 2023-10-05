@@ -50,3 +50,4 @@
   - Isolation between `blue` and `green`
   - Roll incoming traffic during deployments
   - Minimum downtime
+- `Cloudformation` can be used in stages, to deploy a test environment and delete after testing
