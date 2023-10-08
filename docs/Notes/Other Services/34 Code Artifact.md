@@ -12,9 +12,14 @@
   - Allow all code artifacts or none. It does not allow specific or some artifacts
   - Use resource based policy to allow other accounts
 
+**Upstream Repositories** [TBD]
 
+- Can have up to upstream repositories
+- Can have maximum 1 external connection
 
+**Retention**
 
+**Domains**
 
 
 
