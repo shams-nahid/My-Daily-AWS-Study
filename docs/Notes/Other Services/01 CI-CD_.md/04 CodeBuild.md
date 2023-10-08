@@ -10,11 +10,11 @@
   - Log can be stored in S3 or Cloudwatch Logs
   - Logs are available in Cloudwatch logs
   - Metrics are available in Cloudwatch metrics
-  - Thresholds are available in Cloudwatch Alarm
+  - Thresholds are available in Cloudwatch Alarm (How long the codebuild should run)
   - EventBridge can be used for trigger notifications
 - CodeBuild agent can be used to test the code build locally
 - By default CodeBuild launched outside the VPC, so can not access the reources
-- Providing vpc id, subnet id and security group ids, it can run inside the VPC and acess resour es
+- Providing vpc id, subnet id and security group ids, it can run inside the VPC and acess resoures
 
 **Run On Proxy Server**
 

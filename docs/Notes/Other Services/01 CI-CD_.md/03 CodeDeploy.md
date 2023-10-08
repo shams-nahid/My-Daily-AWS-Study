@@ -1,6 +1,6 @@
 ### Codedeploy
 
-CodeDeploy can be used to deploy code to EC2 instance of on-premise server.
+CodeDeploy can be used to deploy code to EC2 instance/on-premise server/AWS Lambda.
 
 ### Usage
 
@@ -57,6 +57,9 @@ All hooks are,
 - `In Place Deployment`: Also known as `Half at a time`. First half of the instance get deployed and then the other half of the application deployed.
 - `One At a Time`: Slowest but lowest availability impact.
 - `Blue Green Deployment`: Initially it keeps the previous instances and application. A new set of instance will be created and load balancer send traffic on both of these. If everything goes fine, all the traffic will go to the new instances.
+  - There must be a `ELB` and `ASG`
+  - CodeDeploy create a new ASG
+  - When new ASG is healthy and serving without error, the old ASG is deleted and trafics go to the new ASG
 
 > Blue green deployment is not supported by on premise servers
 
@@ -65,9 +68,14 @@ All hooks are,
 - Create IAM role to access the Parameter Store
 - Use `ssm get-parameters` option
 
-**Rollback When Missing Files**
+**Rollback**
 
-During rollback, if the existing files are removed or no permissions,
+- When rollback happen, it does not go back to the previous version, instead redeploy the last successfully delployed version
+- Missing Files: During rollback, if the existing files are removed or no permissions,
+  - Put these files in the instances
+  - Create a new application instance
 
-- Put these files in the instances
-- Create a new application instance
+**Troubleshooting**
+
+- `InvalidSignatureException` when the time of AWS and the time of the EC2 instance is not synced
+- For deployment issues, logs are available in the server of path `/opt/codedeploy-agent`
