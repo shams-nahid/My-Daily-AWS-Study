@@ -21,7 +21,7 @@
 - Has `Guest User` facility, so users can access limited resource without authentication
 - Cognito Supports
   - OIDC (Open ID Connect)
-  - SAML based identity providers
+  - SAML based identity providers (SAML, LDAP, Microsoft AD)
   - Social identity providers
 - To get data insight of the cognito, used the `Cognito Streams`
   - To put data in redshift, we can make use of both the `new kinesis stream` or the `cognito stream`
@@ -37,10 +37,15 @@
 - Can be integrated with `API Gateway` or `Application Load Balancer` for authentication natively
 - Can trigger lambda function in different life cycle
 
-### Federated Identity Pools
+### Federated Identity Pools (aka Cognito Identity Pools)
 
 ---
 
+- Supports
+  - Pulic providers
+  - CUP
+  - Open ID or SAML compatible providers
+  - Developer Authenticated Identities (Custom Login Server)
 - Provide direct access to `AWS Resource` from client side
 - Steps
   - `Identity Provider` generate token for valid user(could be `CUP`)
@@ -48,6 +53,7 @@
     - Verify the token
     - Using `STS` generate temporary credentials for the `APP`
     - App can use these credentials and access `AWS Resource`
+- To allow access of not authenticated user, allows, guest access
 
 ### Developer Authenticated Identities
 
@@ -88,6 +94,18 @@
 
 ### ALB Integration
 
+- Listener should be HTTPs
+- For not authenticated users,
+  - Move to authenticate route (Default Behavior)
+  - Deny
+  - Allow
+- For OIDC, the verification process is different [TODO: 410]
+  - ALB redirect user to `authentication endpoint`, it provides grant code
+  - Then `token endpoint` provides id token and access token using grant code
+  - Later,`user info endpoint` gives user claims using the access token
+  - Overall flow,
+    - Authentication Endpoint: Generate grant code
+    - Token Endpoint: Generate id + access toke
+    - User Info Endpoint: Generate user claims
 
-
-
+### User Pools vs Identity Pools [TODO: 413]
