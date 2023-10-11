@@ -34,7 +34,8 @@
 - Verification through email/phone/MFA
 - Can enable `Federated Identity` (Google, Facebook, SAML) -> Becomes `Identity Pools` from `User Pools`
 - Verify user credentials and pass `JWT`
-- Can be integrated with `API Gateway` for authentication
+- Can be integrated with `API Gateway` or `Application Load Balancer` for authentication natively
+- Can trigger lambda function in different life cycle
 
 ### Federated Identity Pools
 
@@ -69,12 +70,24 @@
 
 ---
 
-- Cognito provide a built in login and sign up page
+- Cognito provide a built in login and sign up page for both CUP and Identity pool
 - We can customize the built in pages
 - We can change the logo by going through the cognito app settings
+- For using custom domain
+  - Should be https connection
+  - Need ACM certificates from us-east-1 [No other options]
+  - Custom domain should be included in the app-integration section
 
 ### Compromised Credentials
 
 ---
 
-Amazon Cognito can determine whether the password has been compromised. We can set the settings `block use` from the advanced section. Also we can determine the actions like `sign in`, `sign up` and `password change`.
+- Amazon Cognito can determine whether the password has been compromised.
+- We can set the settings `block use` from the advanced section. Also, we can determine the actions like `sign in`, `sign up` and `password change`.
+- Using risk factor, low, high or medium, it can invoke using the MFA for the user
+
+### ALB Integration
+
+
+
+
