@@ -33,6 +33,13 @@ Both the `Task State` and `Parallel` state has `Catch` and `Retry` field. To han
 
 ---
 
+**Capture Error By Types**
+
+- States.ALL: Matches any error
+- States.Timeout: Task running longer or no heartbeat received
+- States.TaskFailed: Execution failure
+- States.Permissions: No previllage to execute code
+
 **Retrier**
 
 For retry, we can define different policy for the error. With different error, we can go through different error policy.
@@ -46,9 +53,17 @@ For retry, we can define different policy for the error. With different error, w
 
 - `ErrorEquals`: Array of error names. When error occurs, it goes to the exactly same named retry policy.
 - `Next`: Next state machine name
-- `ResultPath`: Determine next state machine input path
+- `ResultPath`: Determine next state machine input path and in case of error, pass it to the next step
+
+**Wait for task token**
+
+- When a step function is relied on the services that might take time, so the function needs to hold on, then use the `wait for task token` service
+- Appennd `.waitForTaskToken` in the end of resource ARN
+- In the message body add the `TaskToken`` as key so the reciving application knows how to callback the step function 
+- After the task is completed, the `SendTaskApi` will be called with the `taskToken`
 
 **Best Practices**
 
 - Specify the timeout for the state machine
 - For larger payload between functions, use `S3`
+- Let the error be handled by the step functions, not in the task methods
