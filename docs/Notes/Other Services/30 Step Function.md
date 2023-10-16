@@ -62,6 +62,22 @@ For retry, we can define different policy for the error. With different error, w
 - In the message body add the `TaskToken`` as key so the reciving application knows how to callback the step function 
 - After the task is completed, the `SendTaskApi` will be called with the `taskToken`
 
+**Activity Task**
+
+- Activity worker poll task from the step functions
+- After task is completed, it sends the output with TaskToken
+- To keep the task active, use
+  - TimeoutSeconds
+  - HeartbeatSeconds
+
+**Wait for task token vs Activity Task**
+
+- `Wait for task token` is pushing mechanism (to SQS) while `Activity Task` is poll mechanism
+
+**Standard vs Express Workflow**
+
+- TBD
+
 **Best Practices**
 
 - Specify the timeout for the state machine
