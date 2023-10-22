@@ -10,6 +10,7 @@
     - Directory Gateway (Proxy)
     - Users managed by only `On premise AD`
     - Redirect to the `On premise AD`
+    - Allows MFA
   - Simple AD
     - `AD` compatible service by AWS
     - Can not join with `On premise AD`

@@ -8,7 +8,13 @@
     - Plain `AssumeRole`
     - `AssumeRoleWithSAMl`, this return the credentials to the users who is logged in with `SAML Federation`
     - `AssumeRoleWithWebIdentity`, this return the credentials to the users who is logged in with `LDB`, like google, facebook etc. Recommended to use `Cognito` instead
-    - `GetSessionToken`, for `MFA`
+    - `GetSessionToken`, for `MFA`. This returns
+      - `AccessKeyId`: used for programmatic access
+      - `SecretAccessKey`: used for programmatic access
+      - SessionToken
+      - Expiration
+    - `GetCallerIdentity`, for get details of `IAM` user or role used in API call
+    - `DecodeAuthorizationMessage`, decode error message when AWS API is denied
 
 ### Using AssumeRole
 
