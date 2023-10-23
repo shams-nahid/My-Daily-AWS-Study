@@ -39,7 +39,7 @@
 ## Encryption On Flight (SSL)
 
 - When a data is sending to server over internet, it is encrypted and only the server knows how to decrypt
-- Use to prevent MITH (Man In The Middle) attack
+- Use to prevent MITM (Man In The Middle) attack
 
 ## Encryption At Rest
 

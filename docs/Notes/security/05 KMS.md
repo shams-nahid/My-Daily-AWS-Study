@@ -1,6 +1,6 @@
 ## KMS
 
-- When key is managed by in house security team'
+- When key is managed by in house security team
   - For Encryption
     - Generate data key using Customer managed CMK
     - Encrypt data with data key
@@ -10,8 +10,9 @@
     - Use CMK to decrypt data key
     - Decrypt data using `Decrypted data key`
 - `KMS Master Key` is region specific
-- By default KMS can encrypt mx 4kb of data. If we need to encrypt more data, we need to make use of `Envelope Encryption`
 - KMS keys are region bounded
+- By default KMS can encrypt mx 4kb of data. If we need to encrypt more data, we need to make use of `Envelope Encryption`
+- With `CloudTrail`, audit can be done to determine, which keys were used to make API call
 
 ### Moving KMS encrypted resources between regions
 
@@ -24,6 +25,17 @@
 
 1. `Symmetric (AES-256)`: Use single key for encryption and decryption
 2. `Asymmetric (RSA & ECC)`: Use key pairs, public key and private key. Public key for encryption and private key for decryption operation. Encryption is being happened from outside of the AWS.
+
+### Key Policies
+
+1. `Default KMS Key Policy`: Everyone in the account can access the key
+2. `Custom KMS Key Policy`: Defined user, roles or cross account can access the key
+
+### Data Key Caching
+
+- Instead of invoking KMS key every time, we can use key caching
+- This reduce the number of API calls to KMS
+- The drawback is security, using same data key multiple times
 
 ### We can use CMK of
 
@@ -66,3 +78,13 @@ To decrypt local data
 **Generate Data Key**: Returns DEK (Data Encryption Key) and a copy that is encrypted
 
 **Generate Data Key Without Plaintext**: Purpose is not to use immediately. Returns DEK (Data Encryption Key).
+
+Use **Generate Data Key** if the encelope encryption should be done right now. For later encryption, use **Generate Data Key Without Plaintext**.
+
+### KMS Limits
+
+- If the request quota is exceeded, the response shows `ThrottlingException`
+- Minimize the issue by,
+  - Expotential backoff (backoff and retry) can be used to for exceeding the quota
+  - Data key caching
+  - Increasing the request quota
