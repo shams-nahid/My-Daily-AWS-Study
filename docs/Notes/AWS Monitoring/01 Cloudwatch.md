@@ -63,7 +63,11 @@
   - Groups: Log is grouped under name
   - Each group has streams of logs
 - Can define expiration period (After the expiration period, the logs will be deleted)
-- `KMS` can be used to encrypt the logs
+- Encryption
+  - `KMS` can be used to encrypt the logs
+  - Encryption is done in log group level
+  - Using encryption key, both new (create-log-group) and existing (associate) log group can be encrypted
+  - Encryption operation can be done only by CLI or SDK
 - To send logs, make sure the `Permission to write logs are set`
 - To follow/tail logs, we can use `AWS CLI`
 - Possible to filter by expression

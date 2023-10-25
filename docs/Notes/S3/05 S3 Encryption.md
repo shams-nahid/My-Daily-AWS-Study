@@ -11,6 +11,8 @@
     - Server side encryption
     - Key is managed by `KMS`
     - Header should be `x-amz-server-side-encryption: aws:kms`
+    - KMS create a `S3 Bucket Key`, later it is used to create a lot of data keys
+    - These data keys are used to encrypt files in S3
   - Useful because
     - Using `KMS`, we can determine who has access keys
     - Audit Trail

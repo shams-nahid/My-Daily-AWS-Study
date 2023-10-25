@@ -15,6 +15,10 @@
 - CodeBuild agent can be used to test the code build locally
 - By default CodeBuild launched outside the VPC, so can not access the reources
 - Providing vpc id, subnet id and security group ids, it can run inside the VPC and acess resoures
+- As environment varibale we can use
+  - Plaintext
+  - Parameter store
+  - Secret manager
 
 **Run On Proxy Server**
 
