@@ -13,10 +13,10 @@
     - Header should be `x-amz-server-side-encryption: aws:kms`
     - KMS create a `S3 Bucket Key`, later it is used to create a lot of data keys
     - These data keys are used to encrypt files in S3
-  - Useful because
-    - Using `KMS`, we can determine who has access keys
-    - Audit Trail
-    - Using the bucket key can reduce 99% of KMS call
+    - Useful because
+      - Using `KMS`, we can determine who has access keys
+      - Audit Trail
+      - Using the bucket key can reduce 99% of KMS call
   - `SSE-C`
     - Server side encryption
     - Key is provided by us

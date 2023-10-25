@@ -5,3 +5,4 @@
 - Use `S3 lock` or `Glacier Lock`
 - Use retention period
 - When versioning is enabled and can be enabled different `retention period` for different version
+- IAM and Bucket Policy
