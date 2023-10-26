@@ -32,12 +32,17 @@ Types of deployment modes:
   - A new environment will be deployed
   - A partial percentage of the traffic will route first
   - If the new environment goes right, all traffic will go to new env and previous instances will be removed
-- `Traffic Splitting (Canary)`
+<!-- - `Traffic Splitting (Canary)`
   - New instances will be instantiated in temp ASG
   - A small percentage of traffic goes there
-  - If health is good in new instances, route all traffic there and remove the existing one
+  - If health is good in new instances, route all traffic there and remove the existing one -->
 
-Traffic Splitting (Canary) vs Blue/Green
+**Traffic Splitting (Canary) vs Blue/Green**
 
 - Canary use ASG to split traffic, Blue/Green use Route53 to split traffic
 - Canary is automated wherase the Blue/Green is lot of manual processing
+
+**Blue/Green vs Rolling with additional batches**
+
+- `Rolling with additional batches` require new set of instances while `blue/green` on create new environment on existing instance
+- `Rolling with additional batches` is time consuming for spinning up new instances

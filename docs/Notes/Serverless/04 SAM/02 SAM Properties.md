@@ -4,7 +4,7 @@
 
 1. `Transform`: Use to specify the `SAM` version. Also, this key indicate, this is a SAM template and need to be transformed to the CloudFormation.
 2. `Mappings`: A literal for mapping keys and associated values, can be later used in parameters, tables lookup or condition
-3. `Parameters`: Used to reger values, can be passed during the runtime of the template
+3. `Parameters`: Used to refer values, can be passed during the runtime of the template
 4. `Format Version`: The cloudformation template version, to which the SAM template will be transformed
 
 ### SAM Resources Types
