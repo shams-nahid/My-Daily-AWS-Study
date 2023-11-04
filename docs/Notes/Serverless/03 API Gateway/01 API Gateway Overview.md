@@ -27,21 +27,27 @@
 ### Endpoint Types
 
 - 3 types of `API Gateway Endpoints`
-  - Edge Optimized
+  - Edge Optimized (By default use global network using cloudfront)
     - This is `default` behavior
     - `API` is only one region
     - But to improve latency, request is routed through `Cloudfront Edge Locations`
   - Regional
     - `API` is in the one region
-    - With combination of `Cloudfront`
-      - We can get `Edge Optimized` behavior
-      - In this case, we have more control over
-        - Caching
-        - Strategies
-        - Distribution
   - Private
     - Use inside the `VPC` as `VPC Endpoint`
     - Resource policy is used to define access
+
+**Advantage of Edge Optimized is**
+- We can get `Edge Optimized` behavior
+- In this case, we have more control over
+  - Caching
+  - Strategies
+  - Distribution
+
+### Premium Users
+
+- Api keys can be used to allow special previllages to the resources using API keys
+- In this case, the API keys should be associated with the usage plan by invoking `CreateUsagePlan`
 
 ### Security
 

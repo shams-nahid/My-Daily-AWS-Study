@@ -80,7 +80,7 @@ X-Ray Daemon listens to traffic to UDP 2000 port,
 ---
 
 X-Ray is already installed in the elastic beanstalk. To enable the x-ray, update/create a config under the beanstalk extensions, `.ebextensions/x-ray-daemon.config`. This can also be done using by management console.
-
+max-age
 To get trace data, code must instrumented withe x-ray sdk
 
 ### ECS Integration

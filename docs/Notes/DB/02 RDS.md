@@ -23,9 +23,14 @@
   - PostgreSQL
   - MySQL
 - To increase the number of db connection
-  - Create a parameter group
-  - Attach parameter group to DB Instance
-  - Change the parameter group settings
+  - increase `max_connection` (resource heavy and not optimize)
+    - Create a parameter group
+    - Attach parameter group to DB Instance
+    - Change the parameter group settings
+  - `RDS_Proxy`
+    - Manage a connection pool
+    - Reuse the connections from the connction pools
+    - Instead of directly connected with the database, use the proxy
 - When the db instance CPU is 100% and stopped working, we can
   - Use read replica
   - Use elastic cache in the application layer

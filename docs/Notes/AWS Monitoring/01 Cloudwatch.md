@@ -113,7 +113,7 @@
 While creating a cloudwatch event, we can set
 
 1. `Period`: Define evaluation time in seconds.
-2. `Evaluation Period`: Known as `Data Point`. Number of recent `Period` to consider to generate a alarm state
+2. `Evaluation Period` / `Number of Data Point`: Known as `Data Point`. Number of recent `Period` to consider to generate a alarm state
 3. `DataPoints To Alarm`: Determine to go to `ALARM` state. We can define how many period can be reached within a evaluation period to go to `ALARM`
 
 ### Cloudwatch Event
