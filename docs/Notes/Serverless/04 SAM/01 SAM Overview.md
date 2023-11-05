@@ -18,6 +18,13 @@
 - SAM can run locally using SAM CLI + AWS ToolKit for local testing and debugging
 - `SAM Policy Templates`: To access resource, we need to add IAM roles to the Lambda, `SAM Policy Templates` can be used instead
 
+### Running SAM locally
+
+- In AWS, a lambda has associated role and aws context to invoke other services
+- In local, to allow access other services from lambda
+  - First create a profile
+  - When invoke, use the profile as parameter
+
 ### SAM & CodeDeploy
 
 - CodeDeploy is integrated closely with the SAM

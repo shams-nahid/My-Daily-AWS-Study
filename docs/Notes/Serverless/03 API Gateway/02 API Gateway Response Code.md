@@ -14,9 +14,9 @@ For `5xx`, server errors
   - Gateway exception
   - Heavy load
   - Out of order invocations
+  - Incompatible output from the lambda
 - `503`
   - Service unavailable
-  - Incompatible output from the lambda
 - `504`
   - Integration Failure
   - Integration Timeout (Request time after 29 seconds)
