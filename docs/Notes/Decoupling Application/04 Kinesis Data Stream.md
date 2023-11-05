@@ -13,6 +13,10 @@
   - Kinesis Analytics (Real time analytics using SQL)
   - Kinesis Firehose (Load data to `S3`, `RedShift`, `Elastic Search`)
 - Using a `Kinesis Data Stream Consumer` ensure a dedicated connection for each shard. Helps to reduce the latency.
+- To ensure preventing duplication, sequence and only once process
+  - Use timestamp as `sequenceNumberForOrdering` parameter
+  - Use `putRecord` instead of `putRecords` to prevent duplication
+  - Use Unique id in external service (like DynamoDB), that will be checked before process a data
 
 ### Security
 
