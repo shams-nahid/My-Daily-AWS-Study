@@ -110,7 +110,7 @@
 
 ---
 
-Streams
+**Streams**
 
 - Custom code for producer and consumer
 - Real time
@@ -119,7 +119,7 @@ Streams
   - Multi consumers
   - Replay capability
 
-Firehose
+**Firehose**
 
 - Fully managed, serverless
 - Near real time
@@ -130,9 +130,9 @@ Firehose
 
 ---
 
-Enables increase or decrease of the number of shards in the stream.
-
-We can increase instance size and shards number to handle more data.
+- Enables increase or decrease of the number of shards in the stream.
+- We can increase instance size and shards number to handle more data.
+- To get optimize performance, do not use more instances than the shards.
 
 ### Kinesis Client Library (KCL)
 

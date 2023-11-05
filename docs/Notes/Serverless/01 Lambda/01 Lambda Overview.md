@@ -354,3 +354,4 @@ TBD: 310 & 311
 **Misc**
 
 - To do encryption in `/tmp` need to use KMS, lambda does not handle by default
+- Stage variables are for API gateway while aliases are for lambda function

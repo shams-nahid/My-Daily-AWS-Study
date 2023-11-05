@@ -14,6 +14,7 @@
   - AWS Firewall
   - Shield Integration
 - If the `Cache Control` header has `max-age` is `0`, all the request will go to the `Origin`
+- With `cloudfront-viewer-country`, we can determine, from which country the request is being made and redirect the traffic to specific url. To do so, have to make sure, `viewer-request-events` trigger the function
 
 ### Cloudfront Origin
 
@@ -46,7 +47,7 @@
 
 ### `Cloudfront` vs `S3 Cross Replication`
 
-#### Cloudfront
+**Cloudfront**
 
 - Use for static content
 - When content must be available on almost all region
@@ -55,7 +56,7 @@
   - READ (Caching)
   - WRITE (ingress)
 
-#### S3 Cross Replication
+**S3 Cross Replication**
 
 - Use for dynamic content
 - When content must be available in certain region in very low latency
