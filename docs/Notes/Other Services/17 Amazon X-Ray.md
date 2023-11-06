@@ -35,7 +35,7 @@
   - Add custom attributes as `metadata` to store custom data during trace
   - Add custom attributes as `segment field` to use ::::TODO
 - `Sampling Rule` to create a representative sampling of tracing
-  - Wit default sampling `one request per sec and 5% additional requests per host`
+  - With default sampling `one request per sec and 5% additional requests per host`
 
 **Segment Properties**
 
