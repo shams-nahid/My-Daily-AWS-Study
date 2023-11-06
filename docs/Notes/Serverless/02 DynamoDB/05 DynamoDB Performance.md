@@ -11,14 +11,14 @@
   - No matter what `UpdateItem` operation does, like update any properties, the `atomic counter` update the value
   - If `UpdateItem` operation fails and try again, the atomic counter increase twice
 - DB Locking
-
   - `Optimistic Locking`: Before update/delete, make sure the item is same as the client
     **Example**:
     Let's say, someone is updating the price of a product. First get the product `{ id: 1, price: 10 }`. Now the updated price should be `15`. While do the update, the dynamoDB client find out, in the db, the price is already updated `20` by someone. In this case the price will not be updated. This is optimistic locking.
-  - `Pessimistic Locking`: `Pessimistic Locking` lock the document in the DB so no one can modify while it's being operated by an user. Useful for prevent overwriting but interrupt the other users operations.
-  - `Overly Optimistic Locking`: Used in a system where there i only one user/one operation at a time.
-
-- `Conditional Writing`: DynamoDB allows conditional writing, where write operation is being happened if certain defined condition matched.
+  - `Pessimistic Locking`: There's an attribute in the object act as version number and in `Pessimistic Locking`, ensure the version number is same as client before update or delete.
+    **Details**:
+    `Pessimistic Locking` lock the document in the DB so no one can modify while it's being operated by an user. Useful for prevent overwriting but interrupt the other users operations.
+  - `Overly Optimistic Locking`: Used in a system where there is only one user/one operation at a time.
+  - `Conditional Writing`: DynamoDB allows conditional writing, where write operation is being happened if certain defined condition matched.
 - Rate limit parallel scan can reduce the cost
 
 ### Getting Write Consumed Capacity

@@ -56,9 +56,9 @@
   - Handle `Authentication` and `Authorization`
   - Leverage Sig v4
     - It's the `IAM` credentials in the `HTTP Header`
-- `Custom Authorizer` or `Lambda Authorizer`
-  - When users are from 3rd party
-  - `Lambda Authorized` can be cached
+- Authorizer: two types of lambda authorizer
+  - Token based: get token as bearer token and later verify (OAuth or SAML)
+  - Request parameter based: get caller identity in form of the context, payload or query string
 - `CUP` or `Cognito User Pool`
   - When user pools are manages by Facebook, Google login
   - No need to write custom code
