@@ -55,6 +55,7 @@
 - While creating a `Dead Letter Queue`,
   - For standard queue create `Standard Dead Letter Queue` in the same AWS account
   - For fifo queue create `Fifo Dead Letter Queue` in the same AWS account
+- To define the `Dead Letter Queue` in the lambda, use `Amazon Resource Name` in the `DeadLetterConfig` parameter
 
 ### Delay Queue
 

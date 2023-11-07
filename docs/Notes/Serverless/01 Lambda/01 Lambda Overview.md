@@ -189,6 +189,7 @@ We can provide our own custom runtime by
 
 - Calculated by, concurrency = (`number of invocation per second` \* `number of seconds per invocation took`). BY default lambda has `500` to `3000` concurrency vary from region. With burst capacity, we can exceed it another 500 concurrency. For more concurrency, need to make a request to increase the concurrency to aws.
 - Concurrency limit is calculated by whole account. If the account has limit of 1000, aws will reserve 100 and other 900 can be used. We can distribute all these 900
+- For kinesis stream shard, if the lambda function process the message, then concurrency means number of shards
 
 ### Event vs Context Object
 

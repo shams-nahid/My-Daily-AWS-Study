@@ -10,6 +10,9 @@
 - `Change Sets`: Allow to show the changes preview.
 - `Stack Instances`: Reference to a original stack in another account
 - `Artifacts`: Used to conjunction with the code pipeline
+- To share informations between stacks
+  - From one template, in the `output` section, put data under `export`
+  - In another template, in the input, use `Fn::ImportValue` to get that data
 
 ### Properties
 
