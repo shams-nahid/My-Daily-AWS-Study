@@ -12,7 +12,7 @@ After develop and test locally, we can deploy code using
 Deployment commands,
 
 1. `sam init`: Initialize app using sam template
-2. `sam build`: Created a deployment ready build directory (Convert to CloudFormation)
+2. `sam build`: Created a deployment ready build directory and **resolve dependencies**, specially local codeURI (Convert to CloudFormation)
 3. `sam package`: create zip, upload s3, create packaged template
 4. `sam deploy`: deploy
 5. `sam publish`: take packaged template and publish

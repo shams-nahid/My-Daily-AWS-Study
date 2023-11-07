@@ -91,6 +91,7 @@
 - Amazon Cognito can determine whether the password has been compromised.
 - We can set the settings `block use` from the advanced section. Also, we can determine the actions like `sign in`, `sign up` and `password change`.
 - Using risk factor, low, high or medium, it can invoke using the MFA for the user
+- To enforce additional security **only for the suspicious authentication**, can be used `Adaptive Authentication`
 
 ### ALB Integration
 
