@@ -2,6 +2,17 @@
 
 CodeDeploy can be used to deploy code to EC2 instance/on-premise server/AWS Lambda.
 
+### Supports
+
+- In Place
+  - EC2 Instance
+  - On Premise Servers
+- Blue/Green
+  - Lambda
+  - ECS
+- Rolling Deployments
+  - 
+
 ### Usage
 
 - EC2 Instances
@@ -51,6 +62,12 @@ Then, have a sequence of following hooks and we can define our actions in these 
 All hooks are,
 
 `ApplicationStop -> DownloadBundle -> BeforeInstall -> Install -> AfterInstall -> ApplicationStart -> ValidateService -> BeforeAllowTraffic -> AllowTraffic -> AfterAllowTraffic`
+
+Mandatory properties for the `AppSpec.yml` file are,
+
+- Task Definition
+- Container Name
+- Container Port
 
 **Types Of Deployment**
 

@@ -106,3 +106,11 @@ To make a object for a certain time,
 - Configure origin to add a `Cache-Control` or `Expires-Header`
 - Specify minimum TTL to the `Cloudfront Cache Behevior`
 - Default value of TTL is 24 hours
+
+### Cloudfront Function
+
+- Cloudfront functions can be used
+  - Cache key normalization
+  - Header manipulation
+  - Status code modification and body generation
+  - Request Authorization

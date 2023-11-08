@@ -80,3 +80,11 @@ With `TransactWriteItems`, we can do a batch of 25 items within same account, re
 
 - Keep number of indexes minimum
 - Avoid indexing for heavy write activity
+
+### Consumed Capacity
+
+After perform a DB operation, to get, how much read/write capacity is being used, we can use `ReturnConsumedCapacity` using the following properties,
+
+- TOTAL: Return total number of capacity consumed 
+- INDEXES: Return total and indexing based capacity consumed
+- NONE: Default, noting return

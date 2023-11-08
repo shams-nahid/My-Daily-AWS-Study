@@ -73,6 +73,7 @@
 - De duplication ensure multiple message with same ID does not appear
   - When message has identical bodies, use unique de duplication id
   - When message has unique message bodies, use content-based de duplication ID
+  - Only FIFO queue has this feature
 - Message group Id ensure the order of message is being proceed
 
 > De duplication id prevent duplication, group id ensure message is being ordered
