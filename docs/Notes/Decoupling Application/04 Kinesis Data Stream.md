@@ -142,7 +142,7 @@
 
 ---
 
-In instances, used to process data from data stream. There should be same number of kcl as well as the ec2 instances as the number of open shards.
+In instances, used to process data from data stream. There should be same number of kcl as well as the ec2 instances as the number of open shards (**kcl shards = no of ec2 instances**).
 
 To process data, if we make use of the lambda functions, to get optimal performance, need to have same number of concurrent lambda function same as the shard number.
 

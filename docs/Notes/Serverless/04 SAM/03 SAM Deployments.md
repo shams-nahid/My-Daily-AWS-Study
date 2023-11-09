@@ -17,6 +17,14 @@ Deployment commands,
 4. `sam deploy`: deploy
 5. `sam publish`: take packaged template and publish
 
+### Developer perspective
+
+After creating a SAM template as a developer, deploy it by the following process,
+
+- Build in local environment
+- Package the application
+- Deploy it to the S3
+
 SAM has the built in codeDeploy for helping the safe lambda deployments.
 
 1. `Canary`: A certain amount of defined traffic will go to new function for a defined time. If everything goes fine, all traffic will shift to the new function

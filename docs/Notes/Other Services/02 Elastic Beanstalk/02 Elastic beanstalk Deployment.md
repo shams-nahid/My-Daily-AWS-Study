@@ -25,6 +25,7 @@ Types of deployment modes:
 - `Rolling with additional batches`
   - Similar to rolling, but spins up a new set of instance
   - So the previous instances are there until new instances are healthy
+  - For roll back, this is **slower** than `Blue/Green`
 - `Immutable`
   - Spins up new instances in new ASG
   - When new instances are healthy, move all previous instances

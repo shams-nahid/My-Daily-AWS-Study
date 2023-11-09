@@ -14,9 +14,14 @@
   - From one template, in the `output` section, put data under `export`
   - In another template, in the input, use `Fn::ImportValue` to get that data
 
-### Properties
+### Commands
 
 - `cfn-init`: Used to retrieve metadata, install packages (like nginx in ec2), run services
 - `cfn-signal`: Send signal for create or wait, use to synchronize the resources
 - `cfn-get-metadata`: Use to retrieve metadata for a service or resources
 - `cfn-hup`: Upon checking the metadata, execute custom hooks when changes are detected
+
+### Properties
+
+- `SecureString`, in `AWS Parameter Store`: for license keys or external secret values. Cost effective while compare with `AWS Secret Manager`
+- `NoEcho`: prevent displaying the value in plain text

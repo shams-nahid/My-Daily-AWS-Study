@@ -60,6 +60,13 @@ Mandatory:
 - metadata
 - subsegments
 
+### Sending data to x-ray
+
+Two ways,
+
+- Use putSegmentTrace to uploda data directly to x-ray
+- Put multiple request to x-ray-daemon and later using buffer, the x-ray-daemon will buffer these to the x-ray
+
 ### X Ray Daemon
 
 ---
@@ -81,7 +88,7 @@ X-Ray Daemon listens to traffic to UDP 2000 port,
 
 X-Ray is already installed in the elastic beanstalk. To enable the x-ray, update/create a config under the beanstalk extensions, `.ebextensions/x-ray-daemon.config`. This can also be done using by management console.
 max-age
-To get trace data, code must instrumented withe x-ray sdk
+To get trace data, code must instrumented wit the x-ray sdk
 
 ### ECS Integration
 
@@ -89,8 +96,8 @@ To get trace data, code must instrumented withe x-ray sdk
 
 ECS can integrate x-ray by `x-ray daemon` and `side-car` pattern
 
-1. **As Daemon Pattern**: To use x-ray in ecs, we need to use the x-ray daemon container for each of the ecs instances. In this case, the x-ray daemon acts as the x-ray agents.
-2. **As Side Car Pattern**: In this case, each of the container in the ecs will have x-ray daemon inside it.
+1. **As Daemon Pattern**: x-ray daemin in ec2 instance. To use x-ray in ecs, we need to use the x-ray daemon container for each of the ecs instances. In this case, the x-ray daemon acts as the x-ray agents.
+2. **As Side Car Pattern**: x-ray daemin in container. In this case, each of the container in the ecs will have x-ray daemon inside it.
 
 When we need to use x-ray in the fargate, we have to use the `side-car` pattern. Because, we do not have control over the ec2 instances in fargate.
 
@@ -105,7 +112,7 @@ To set up
 
 To implement the X-ray tracing, we need to implement the followings,
 
-- Enable ACtive Tracing from the lambda function configuration. This will run the x-ray daemon for the function
+- Enable `Active Tracing` from the lambda function configuration. This will run the x-ray daemon for the function
 - The attached policy should have write access to the x-ray daemon
 - Following environment policies will require to communicate with x-ray
   - `_X_AMZN_TRACE_ID`: tracing header
@@ -122,6 +129,9 @@ To implement the X-ray tracing, we need to implement the followings,
 To use x-ray we need the x-ray daemon in the ec2 instance. We can install this manually or update the user script to install the daemon.
 
 Also we have to make sure the sg allow UDP of port 2000 for the x-ray daemon
+
+- Inatall daemon in ec2 instance
+- Enable UDP 2000 port
 
 ### API
 

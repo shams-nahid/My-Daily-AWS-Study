@@ -24,6 +24,11 @@
   - prod/app1/config
 - Can track version and roll back
 - Can use TTL to expire values like passwords
+  - Must use `Advanced Tier`
+  - Allow events through cloudwatch
+    - Expiration (Set specific date)
+    - NoChangeNotification
+    - ExpirationNotification
 - Can use to login to `EC2 Instance` using `Run Command` without using `RDP` or `SSH`
 
 **Patch Manager**: Used to patch the managed instances to overcome security vulnarebilities
