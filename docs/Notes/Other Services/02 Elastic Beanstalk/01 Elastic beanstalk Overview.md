@@ -22,6 +22,8 @@
   - `Instance Profile` Used to ensure the interaction with other aws services
   - `Environment Manifest` Used to define environment, stack name, point to launch config etc.
 - If beanstalk does not support the environment by default, can be make use of custom environment named packer
+- For dockerized app, beanstalk has more preferences over ecs when there are requirements of managing
+  - 
 
 **Platform Update**
 
