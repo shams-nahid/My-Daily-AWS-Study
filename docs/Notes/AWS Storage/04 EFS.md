@@ -20,6 +20,9 @@
     - Cons are higher latency
     - Can be used with higher level of throughput
     - Can connect thousands of instances
+- To share logs in single source,
+  - Use one task definition for multiple containers
+  - Mount a EFS volume
 
 ### Storage Tier
 

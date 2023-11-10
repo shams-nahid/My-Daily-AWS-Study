@@ -10,3 +10,5 @@ There are 4 types of integration type, can be used to integrate other services w
 4. `AWS_PROXY` (For Serverless/Lambda)
 
 > With `proxy` integration, there is no need for any mapping and it is easier, it just redirect all the requests, parameters and payloads to the defined endpoint.
+
+> API gateway can use `mapping templates` to transform request. For example, JSON to XML and vice versa. Suitable for legacy application with modern endpoint.

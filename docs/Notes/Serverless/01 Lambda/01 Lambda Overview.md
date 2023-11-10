@@ -260,6 +260,11 @@ To access the EFS file system,
 **Cold Start**
 
 - When first time a lambda function is invoked, it will take some times to execute the codes outside the handler function like db connection, http connection setup etc.
+- To reduce the cold start time
+  - Increase memory allocation
+  - Reduce deployment package size
+  - Move operations like db connections, outside the function
+
 **Provisioned Concurrency** 
 - can be implemented so a certain function will always run and can server the initial requests
 

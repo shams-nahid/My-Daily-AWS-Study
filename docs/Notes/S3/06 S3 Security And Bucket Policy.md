@@ -52,3 +52,11 @@
   - any ACL
   - new Public Bucket
   - Access Point Policies
+
+## Allow cross account permission
+
+To allow a bucket in production account from the development account,
+
+- On production account, create IAM role nd specify the development account as trusted entity
+- Create a policy that will allow the created role to access S3 bucket
+- In development account, using STS assume role create and attach the policy to the IAM user
