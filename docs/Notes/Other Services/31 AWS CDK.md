@@ -36,3 +36,11 @@ For example, when we need to create a `S3` bucket, we can use layer 1. For compl
   - Snapshot Test: Compare with previous template snapshot
 - Can test with my stack or template, that is not in my stack
 
+**Life Cycle**
+
+- Get template
+- Add code to the template
+- Synthesize (optional but good for testing errors)
+- Build the app (optional, required to build app in some of the programming language)
+- Deploy the app
+

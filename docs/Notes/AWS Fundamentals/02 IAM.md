@@ -13,6 +13,7 @@
 - Verify `IAM Policy` by
   - `dry-run` policy can be used to verify if there is available permission
   - `IAM Policy Simulator`
+- By default, the `AWS Billing and Cost Management` does not allow access IAM user. Need to grant access for each user.
 
 > Permission specified in cli with access key and secret overrides the IAM role permissions
 
@@ -38,6 +39,7 @@ Can be used to import 3rd party SSL/TLS certificate.
 
 ---
 
+- When it comes to resource based policy, IAM only supports `Trust Policy`
 - To access a service using cli/api from ec2 instance
   - First need to create policy for the targeted resources
   - Add the ec2 service as the trust policy (So ec2 can use the policy created in the first step)
@@ -63,7 +65,7 @@ This way, we do not need to store any credentials in the ec2 service
 - Example 3: EC2 instance IAM role allows reading a bucket and the bucket's buckets policy is deny to read it from EC2 => EC2 instance can not read from the bucket
 - Example 4: EC2 instance IAM role denys reading a bucket and the bucket's buckets policy allows to read it from EC2 => EC2 instance can not read from the bucket
 
-### Dynamic Policy
+### Dynamic Policy [IAM Policy Variables]
 
 In policy, variables can be used to make one policy for different user. For example, if we have different folder for each user in S3 and we want to allow user access to only their named folder, in this case, instead of creating policy for each of the user, we can use it like `${aws:username}` and attach it to all the users.
 
@@ -78,6 +80,11 @@ In policy, variables can be used to make one policy for different user. For exam
   - Central management
 - Inline Policy
   - Attached to the user or resource
+
+### IAM Access Advisor
+
+- Allow identify, analyze and remove unused roles
+- Good for enhance the security of team members access by implementing minimal permission
 
 ### Best Practices
 

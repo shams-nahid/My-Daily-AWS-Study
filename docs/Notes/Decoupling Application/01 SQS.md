@@ -20,6 +20,10 @@
 - Consumer can pull max `10 messages` at a time
 - After process the message, the consumer has to delete the message, otherwise the message will be appeared in the queue again
 - Can be use to handle extended number of db write operations
+- After a queue is being created, we can not change the type (FIFO vs regular), instead we need to recreate it
+- Properties
+  - `DeleteQueue`: Use to delete the queue along with all messages
+  - `PurgeQueue`: Use to delete the messages of the queue
 
 > We can ignore default message size from `256 KB` to up to `2GB` by making use of `S3` and `SQS Extended library for Java`
 

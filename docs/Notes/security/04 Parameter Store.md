@@ -30,5 +30,6 @@
     - NoChangeNotification
     - ExpirationNotification
 - Can use to login to `EC2 Instance` using `Run Command` without using `RDP` or `SSH`
+- `Cloudtrail` can be used to audit the api calls made to the parameter store
 
 **Patch Manager**: Used to patch the managed instances to overcome security vulnarebilities

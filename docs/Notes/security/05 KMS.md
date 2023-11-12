@@ -1,5 +1,8 @@
 ## KMS
 
+- With customer managed keys (CMK), kms
+  - Store the CMK
+  - Receives data from clients, encrypt the data and send it back
 - When key is managed by in house security team
   - For Encryption
     - Generate data key using Customer managed CMK

@@ -19,6 +19,7 @@
   - Plaintext
   - Parameter store
   - Secret manager
+- By enabling `Codebuild Timeout`, can ensure the code build is not running long time
 
 **Run On Proxy Server**
 

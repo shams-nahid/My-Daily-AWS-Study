@@ -23,7 +23,7 @@
   - `Environment Manifest` Used to define environment, stack name, point to launch config etc.
 - If beanstalk does not support the environment by default, can be make use of custom environment named packer
 - For dockerized app, beanstalk has more preferences over ecs when there are requirements of managing
-  - 
+- To add a resource as a part of Elastic Beanstalk, we can add them in `.ebextensions`. For example, to allow usage of `Elastic Cache`, we can add the config in `.ebextentions`. In this case, any time we deploy a new template, a new version of elastic cache will be created and delete the old ones.
 
 **Platform Update**
 

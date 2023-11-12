@@ -6,13 +6,14 @@
   - Automate the creation and deletion of the `infrastructure` at for certain times
 - `StackSet`:
   - Extends the functionalities of the stack, administrator create the stack template and other accounts can extends the stacks functionality
-  - Allow `Create`, `Update`, `Delete` stacks across multiple accounts and regions
+  - Allow `Create`, `Update`, `Delete` stacks across `multiple accounts and regions`
 - `Change Sets`: Allow to show the changes preview.
 - `Stack Instances`: Reference to a original stack in another account
 - `Artifacts`: Used to conjunction with the code pipeline
 - To share informations between stacks
   - From one template, in the `output` section, put data under `export`
   - In another template, in the input, use `Fn::ImportValue` to get that data
+  - Output values name must be unique within the region
 
 ### Commands
 
@@ -25,3 +26,18 @@
 
 - `SecureString`, in `AWS Parameter Store`: for license keys or external secret values. Cost effective while compare with `AWS Secret Manager`
 - `NoEcho`: prevent displaying the value in plain text
+- Allowed properties in `Cloudformation`
+  - AWSTemplateFormatVersion
+  - Description
+  - Metadata
+  - Parameters
+  - Mappings
+  - Conditions
+  - Transform
+  - Resources
+  - Outputs
+- `FindInMap` method takes 3 parameters, `MapName`, `TopLevelKey`, `SecondLevelKey`
+- `AWS::NoValue`: from return property, remove specified resource property
+- `AWS::Region`: region name, where the stack was created
+- `AWS::StackName`: name of the stack, given during stack initialization
+- `AWS::AccountID`: creator id of the stack

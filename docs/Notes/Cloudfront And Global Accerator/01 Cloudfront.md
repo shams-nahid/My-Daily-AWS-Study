@@ -15,6 +15,7 @@
   - Shield Integration
 - If the `Cache Control` header has `max-age` is `0`, all the request will go to the `Origin`
 - With `cloudfront-viewer-country`, we can determine, from which country the request is being made and redirect the traffic to specific url. To do so, have to make sure, `viewer-request-events` trigger the function
+- Only root users can create cloudfront key-pairs
 
 ### Cloudfront Origin
 

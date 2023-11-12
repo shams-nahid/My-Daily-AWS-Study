@@ -15,4 +15,7 @@
 - `AWS::Serverless::Function`: Use to define Lambda function
 - `AWS::Serverless::LayerVersion`: Use to define Lambda layer version (Runtime/library)
 - `AWS::Serverless::API`: Use to define Api Gateway
+- `AWS::Serverless::HttpApi`:
 - `AWS::Serverless::SimpleTable`: Use to define DynamoDB Table
+- `AWS::Serverless::StateMachine`
+- 

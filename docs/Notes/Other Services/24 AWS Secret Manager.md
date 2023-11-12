@@ -3,7 +3,7 @@
 - Manage secrets for applications
 - Can encrypt the keys and credentials
 - Can be enabled auto rotation
-- Has strong integration with cloudformation
+- Has strong integration with cloudformation and RDS
 - Used for
   - Database credentials
   - API keys

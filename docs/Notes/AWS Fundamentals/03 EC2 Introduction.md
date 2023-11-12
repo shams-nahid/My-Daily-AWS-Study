@@ -11,6 +11,7 @@
   - Download common files while boot up
 - These scripts are run as root user
   - like `sudo` command
+- Scripts are executed with root user previleges
 
 ### EC2 Meta Data
 
