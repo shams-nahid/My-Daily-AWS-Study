@@ -33,6 +33,10 @@
 - Target Tracking Scaling
   - Scaling is done based on specific metric value
   - Example be, want all the CPU average speed 40%. If goes more usage, add instance
+  - Eligible metrics are
+    - CPU
+    - Network
+    - Requests
 - Step Scaling oe Simple Scaling
   - Scaling is done based on set of scaling adjustments
   - Cloudwatch alarm is involved

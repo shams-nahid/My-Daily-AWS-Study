@@ -51,3 +51,6 @@
   - Default is 20
   - Submitting a request to increase the limit can work
 - There is no cost for `EIP`, if there is only one `EIP` and it is associated with running `EC2`
+- Use common key-pairs in different region
+  - Create a public key form a private key
+  - Manually import the public keys to selected regions

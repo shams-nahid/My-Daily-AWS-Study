@@ -22,13 +22,17 @@
 - On Demand
   - Pay as you go
 - Reserved
-  - Regular Reserved Instance
-    - Min 1 to max 3 Years
-  - Convertible Reserved Instance
-    - Can be convert the types like `more cpu optimized`, `more memory optimized`
-  - Scheduled Reserved Instance
-    - Will be up and running for certain times in regular basis
-    - Recommended when the time frame is at least 1 year usage
+  - 3 types in terms of duration
+    - Regular Reserved Instance
+      - Min 1 to max 3 Years
+    - Convertible Reserved Instance
+      - Can be convert the types like `more cpu optimized`, `more memory optimized`
+    - Scheduled Reserved Instance
+      - Will be up and running for certain times in regular basis
+      - Recommended when the time frame is at least 1 year usage
+  - 2 types in terms of capacity reservation
+    - Zonal - Allow capacity reservation, applicable for availability zones reserve instances
+    - Regional - Allow capacity reservation, applicable for regional reserve instances
 - Spot Instance
   - can loose instance
   - very low price

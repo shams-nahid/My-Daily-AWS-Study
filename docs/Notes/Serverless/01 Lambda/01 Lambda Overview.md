@@ -37,6 +37,7 @@ We can provide our own custom runtime by
 - These runtime should be resided in new lambda layer
 - For Lambda Container Image, we must include the Lambda Runtime API in the container image
 - Unless `Lambda Runtime API` is implemented, the docker container should run in ECS or Fargate
+- Does not support multi-architecture container image
 
 ### Lambda Limits
 

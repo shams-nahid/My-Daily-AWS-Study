@@ -115,3 +115,10 @@ To make a object for a certain time,
   - Header manipulation
   - Status code modification and body generation
   - Request Authorization
+
+### Cloudfront Signed URL / Cookies
+
+- Only root user can create key-pairs
+- A root user can make max 2 key pairs
+- After creating the signed url/cookies, public keys stored in cloudfront and privte keys goes to signer.
+- Since, for this account, a root account is required, best practice is to avoid the operation

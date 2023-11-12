@@ -11,6 +11,7 @@
       - System Boot
       - Low latency interactive apps
       - **Dev** and **Test** environment
+    - With 5.3 TB size, the gp2 reached the max IO/PS
   - `IO1`
     - `IO` optimized
     - Used for
@@ -18,6 +19,7 @@
       - Large Database
       - Critical business operation, require high sustained `IO/PS`
       - When huge load and performance for the NoSQL database
+    - IO can be maximum 50x in comparision of storage capacity. For instance, a 200GB storage can have maximum 200 * 50 = 10000 IO/PS
   - `ST1`
     - `Throughput` optimized
     - Used for
