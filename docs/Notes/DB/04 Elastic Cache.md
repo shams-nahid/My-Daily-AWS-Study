@@ -19,6 +19,9 @@
 - `Redis` has authentication feature `Redis Auth`
 - To secure the redis cluster access
   - Use redis auth in transit encryption, enabled for clusters
+- When `Cluster Mode` is enabled
+  - All nodes should reside in the same region
+  - Can not promote any more read replica
 
 In most cases, it's better to use Redis. But should choice `Memcached` when,
 

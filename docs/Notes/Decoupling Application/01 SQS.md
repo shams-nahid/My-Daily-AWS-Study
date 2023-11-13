@@ -35,7 +35,7 @@
   - Allowing other service like `S3`, `SNS`
 - Encryption
   - In flight encryption using the `HTTPS`
-  - At rest encryption using `KMS`
+  - At rest encryption using `KMS`, can be enabled without changing the code
   - Client side encryption
     - Encryption be done by `Message Producers`
     - Decryption can be by the `Message Consumers`

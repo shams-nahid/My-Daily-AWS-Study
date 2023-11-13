@@ -22,3 +22,11 @@
 - Define principal to access resource in the `IAM Role`
 - Use `STS` to retrieve credentials and impersonate the `IAM` role using `AssumeRole API`
 - This credentials valid 15 mins to 1 hour
+
+### Sharing Resource
+
+To share a resource of account A to account B
+
+- Account A creates an IAM role and attach it with a permission policy
+- Account A attaches a trust policy that identifies account B as principle who can assume role
+- Account B create a permission to assume the role of account B

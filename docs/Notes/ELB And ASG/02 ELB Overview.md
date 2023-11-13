@@ -45,6 +45,10 @@
   - using host condition we can forward request to different `Target Groups` based on host name in the header, like
     - abc.site.com
     - def.site.com
+- `ALB` can have 3 types of target,
+  - Instances
+  - IP
+  - Lambda
 
 ### Stickiness
 

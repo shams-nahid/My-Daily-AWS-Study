@@ -2,7 +2,8 @@
 
 ---
 
-AWS service similar to github.
+- AWS service similar to github
+- By default encrypted at rest
 
 Permissions of codecommit,
 

@@ -13,3 +13,4 @@
   - Referrer
   - Turnaround time
   - Error code information
+- Only the owner can have the object level access logs
