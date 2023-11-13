@@ -32,7 +32,7 @@
     - Reuse the connections from the connction pools
     - Instead of directly connected with the database, use the proxy
 - When the db instance CPU is 100% and stopped working, we can
-  - Use read replica
+  - Use read replica or cross-region read replica
   - Use elastic cache in the application layer
   - Shard data among multiple RDS DB instance
 - For async database copy, use `READ Replica`

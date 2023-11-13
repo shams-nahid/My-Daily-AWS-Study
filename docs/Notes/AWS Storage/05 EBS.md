@@ -56,6 +56,7 @@
 ### Encryption
 
 - Encryption is handled by AWS
+- Supports both in-flight and at rest encryption by KMS
 - Use KMS (AES-256)
 - When a `EBS` is `encrypted`
   - All data inside the volume is `encrypted`

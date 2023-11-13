@@ -23,6 +23,7 @@
       - `ECS_ENABLE_TASK_IAM_ROLE`
 - If the associated ec2 instances are in stopped state and we terminate ecs, it will not be de-registered automatically
 - When ecs client is stopped, the instance remain active with agent connection status false
+- Cluster name is set up in `/etc/ecs/ecs.config` file
 
 ### ECS Components
 

@@ -24,3 +24,4 @@
   - `Bucket 1` replicate to `Bucket 2`
   - `Bucket 2` replicate to `Bucket 3`
   - This does not imply `Bucket 1` replicate to `Bucket 3`
+- S3 lifecycle events does not replicate
