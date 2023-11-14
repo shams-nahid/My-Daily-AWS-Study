@@ -61,6 +61,7 @@
 3. `--summary`: Display number of retrieved items, total items etc
 4. `--page-size`: Default is 1000 page. If there are too many items, we can specify number of pages
 5. `--max-items`: Numbers of items to be displayed. If there are too many items, we can specify number items to be printed
+6. `--starting-token`: Previous results signature, so the next results will be shown
 
 When there are too many items, we can make use of `--page-size` and `--max-items`
 
