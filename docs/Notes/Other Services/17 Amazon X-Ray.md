@@ -96,6 +96,12 @@ To get trace data, code must instrumented wit the x-ray sdk
 
 ---
 
+To use,
+
+- Create a docker image, runs x-ray daemon
+- Put the image in docker repository
+- Launch in the ecs cluster
+
 ECS can integrate x-ray by `x-ray daemon` and `side-car` pattern
 
 1. **As Daemon Pattern**: x-ray daemin in ec2 instance. To use x-ray in ecs, we need to use the x-ray daemon container for each of the ecs instances. In this case, the x-ray daemon acts as the x-ray agents.

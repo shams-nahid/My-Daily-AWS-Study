@@ -15,3 +15,6 @@
 **15th November**
 
 - S3 Athena (From Neal Devis, specially the partitioning for Athena)
+- KMS
+- ECS (TASK)
+- STS (Less important)

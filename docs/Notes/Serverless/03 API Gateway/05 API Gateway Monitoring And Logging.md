@@ -11,3 +11,24 @@ Cloudwatch Metrics:
 - `Count` Total number of API request at a certain time frame
 - `IntegrationLatency` Time frame of sending request to lambda and getting response from lambda
 - `Latency` Time to receive request in API Gateway and sending response from API Gateway
+
+### Logging
+
+---
+
+Two types of logging
+
+- API Logging
+  - Typical logs, log streams, log groups
+- Access Logging
+  - Can monitor lambda authorizer
+  - Who accessed
+  - How accessed
+
+### Latency
+
+Two types of latency
+
+- Latency: Time between receive a request from client and response back
+- Integration Latency: Time between api-gateway to lambda request and response from lambda to api-gateway
+

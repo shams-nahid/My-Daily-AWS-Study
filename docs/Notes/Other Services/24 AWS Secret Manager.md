@@ -6,6 +6,7 @@
 - Has strong integration with cloudformation and RDS
 - Used for
   - Database credentials
+  - Generate credentials using aws sdk
   - API keys
   - Other app secrets
 

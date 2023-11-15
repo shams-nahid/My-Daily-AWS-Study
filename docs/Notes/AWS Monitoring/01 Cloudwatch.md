@@ -37,8 +37,9 @@
 
 ### Cloudwatch Dashboard
 
-- Dashboard are `Global`
+- Dashboard are `Global` (cross region, cross account)
 - `Dashboard Graph` includes different `Region`
+- `Dashboard Graph` includes different `Account`
 - Can setup `Auto Refresh`
 - Pricing
   - 3 Dashboard (Up to 50 Metrics) free

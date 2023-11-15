@@ -8,6 +8,8 @@ With dynamoDB
   - For example, user will only get access of data of that user id
 - We can also permissioned for certain rows
   - For example, user will get location information only closer to him
+- **Encryption**
+  - Using dynamoDB client library, we can can encrypt data in server, before submit to the database
 
 **Implementation**
 
