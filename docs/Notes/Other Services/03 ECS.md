@@ -40,6 +40,18 @@ Determine how the tasks will be placed between instances. ECS supports 3 types o
 2. `random`: Place tasks randomly. Make sure tasks are scheduled in instances with enough resources.
 3. `spread`: Placed tasks based on specified value (key-value pairs, instanceId or host). For example, if the field is `instanceId` the task will be distributed evenly in different instances. Another example, if the `field` is `az`, the tasks will be evenly distributed among availability zones.
 
+When a container requires to listen to specic port,
+
+- Specify the port for the container
+- Put `0` as the host port
+
+In this case, the ECS will automatically assign the port.
+
 ### Cluster Query Language
 
 - Allow more fine grained way to place tasks
+
+### Using environment variables
+
+- Use advanced task definition
+- Define environment parameters under the task definition environment variables

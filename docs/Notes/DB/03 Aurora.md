@@ -17,3 +17,6 @@
 - Built in `reader-endpoint` can be used for distribute the traffic between read-replicas
 - If `DB Primary Instance` fails, it create a new `DB Instance` in the same AZ as the `Original Instance` and done by `Best Effort basis`
 - `Read Replicas` can be used to avoid un necessary downtime
+- With `binlog` replication, another aurora cluster can be used as read replica. Aurora cluster can be same or different region
+- Aurora auto scaling policy can be used to adjust performance
+  - Based of number of connections (when the lambda function is using the database)

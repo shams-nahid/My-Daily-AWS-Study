@@ -88,3 +88,8 @@ After perform a DB operation, to get, how much read/write capacity is being used
 - TOTAL: Return total number of capacity consumed 
 - INDEXES: Return total and indexing based capacity consumed
 - NONE: Default, noting return
+
+### Generic Approach
+
+- Reduce scan time by implementing parallel scanning
+- To avoid provision throughput, use smaller page size

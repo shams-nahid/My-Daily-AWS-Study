@@ -7,3 +7,5 @@
 - To reduce cost of query
   - Good to partition data
   - Separate work groups based on users
+- Benefits of using the parti
+  -

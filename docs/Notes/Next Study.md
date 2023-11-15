@@ -11,3 +11,7 @@
 - Dynamodb rcu wcu
 - API and Lambda method/integration request/response
 - Cognito properties like cognito streams
+
+**15th November**
+
+- S3 Athena (From Neal Devis, specially the partitioning for Athena)
