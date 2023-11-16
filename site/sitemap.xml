@@ -1,968 +1,1033 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>http://aws-study.shams-nahid.com/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Next Study/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Next%20Study/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Fundamentals/01 Region and AZ/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Fundamentals/01%20Region%20and%20AZ/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Fundamentals/02 IAM/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Fundamentals/02%20IAM/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Fundamentals/03 EC2 Introduction/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Fundamentals/03%20EC2%20Introduction/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Fundamentals/04 Security Group/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Fundamentals/04%20Security%20Group/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Fundamentals/06 Public Vs Private vs Elastic IP/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Fundamentals/06%20Public%20Vs%20Private%20vs%20Elastic%20IP/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Monitoring/01 Cloudwatch/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Monitoring/01%20Cloudwatch/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Monitoring/02 Cloudtrail/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Monitoring/02%20Cloudtrail/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Monitoring/03 AWS Config/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Monitoring/03%20AWS%20Config/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Storage/01 Snowball/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Storage/01%20Snowball/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Storage/02 Storage Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Storage/02%20Storage%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Storage/03 FSx/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Storage/03%20FSx/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Storage/04 EFS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Storage/04%20EFS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/AWS Storage/05 EBS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/AWS%20Storage/05%20EBS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Cloudfront And Global Accerator/01 Cloudfront/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Cloudfront%20And%20Global%20Accerator/01%20Cloudfront/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Cloudfront And Global Accerator/02 Cloudfront Signed URL or Cloudfront Signed Cookies/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Cloudfront%20And%20Global%20Accerator/02%20Cloudfront%20Signed%20URL%20or%20Cloudfront%20Signed%20Cookies/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Cloudfront And Global Accerator/03 Global Accelerator/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Cloudfront%20And%20Global%20Accerator/03%20Global%20Accelerator/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/01 Redshift/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/01%20Redshift/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/02 RDS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/02%20RDS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/03 Aurora/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/03%20Aurora/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/04 Elastic Cache/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/04%20Elastic%20Cache/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/05 DynamoDB/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/05%20DynamoDB/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/06 S3/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/06%20S3/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/07 Athena/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/07%20Athena/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/08 Neptune/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/08%20Neptune/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/DB/09 Elastic Search/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/DB/09%20Elastic%20Search/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Decoupling Application/01 SQS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Decoupling%20Application/01%20SQS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Decoupling Application/02 SNS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Decoupling%20Application/02%20SNS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Decoupling Application/03 Fan Out/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Decoupling%20Application/03%20Fan%20Out/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Decoupling Application/04 Kinesis Data Stream/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Decoupling%20Application/04%20Kinesis%20Data%20Stream/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Decoupling Application/05 Amazon MQ/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Decoupling%20Application/05%20Amazon%20MQ/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/01 Disaster Recovery/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/01%20Disaster%20Recovery/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/02 RPO & RTO/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/02%20RPO%20%26%20RTO/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/03 Disaster Recovery Strategies/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/03%20Disaster%20Recovery%20Strategies/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/04 DMS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/04%20DMS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/05 On Premise Strategy/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/05%20On%20Premise%20Strategy/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/06 Data Sync/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/06%20Data%20Sync/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Disaster Recovery & Migrations/07 Transferring Large Data Sets/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Disaster%20Recovery%20%26%20Migrations/07%20Transferring%20Large%20Data%20Sets/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/EC2/01 EC2 Instance Recovery/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/EC2/01%20EC2%20Instance%20Recovery/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/EC2/02 EC2 Fundamentals/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/EC2/02%20EC2%20Fundamentals/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/ELB And ASG/01 ASG Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/ELB%20And%20ASG/01%20ASG%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/ELB And ASG/02 ELB Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/ELB%20And%20ASG/02%20ELB%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/ELB And ASG/03 Scalability & High Availability/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/ELB%20And%20ASG/03%20Scalability%20%26%20High%20Availability/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/01 STS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/01%20IAM%20STS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/02 Identity Fedaration/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/02%20IAM%20Identity%20Fedaration/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/03 Directory Service/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/03%20IAM%20Directory%20Service/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/04 Organizations/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/04%20IAM%20Organizations/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/05 IAM Conditions/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/05%20IAM%20Conditions/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/06 IAM for S3/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/06%20IAM%20for%20S3/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/07 IAM vs Resource Policies/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/07%20IAM%20vs%20Resource%20Policies/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/08 IAM Policy Evaluation/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/08%20IAM%20Policy%20Evaluation/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/09 Resource Access Manager/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/09%20IAM%20Resource%20Access%20Manager/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/10 Single Sign On/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/10%20IAM%20Single%20Sign%20On/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/IAM/11 SSL/TLS Certificate/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/12%20IAM%20Access%20Analyzer/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/01 CI-CD_deprecated/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/IAM/11%20SSL/TLS%20Certificate/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/02 Cloudformation/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/01%20CI-CD_deprecated/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/03 ECS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/02%20Cloudformation/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/04 EKS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/03%20ECS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/05 Step Function vs SWF/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/04%20EKS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/06 EMR/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/05%20Step%20Function%20vs%20SWF/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/07 Glue/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/06%20EMR/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/08 Opsworks/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/07%20Glue/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/09 Elastic Transcoder/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/08%20Opsworks/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/10 Workspace/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/09%20Elastic%20Transcoder/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/11 AppSync/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/10%20Workspace/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/12 AWS Polly/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/11%20AppSync/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/13 Managed Blockchain/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/12%20AWS%20Polly/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/14 AWS Quicksight/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/13%20Managed%20Blockchain/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/15 AWS Cloud Search/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/14%20AWS%20Quicksight/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/16 Multiple Account/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/15%20AWS%20Cloud%20Search/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/17 Amazon X-Ray/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/16%20Multiple%20Account/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/18 AWS Workdocs/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/17%20Amazon%20X-Ray/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/19 AWS Batch/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/18%20AWS%20Workdocs/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/20 AWS Trusted Advisor/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/19%20AWS%20Batch/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/21 AWS GreenGrass/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/20%20AWS%20Trusted%20Advisor/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/22 AWS Migration Hub/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/21%20AWS%20GreenGrass/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/23 AWS IoT Core/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/22%20AWS%20Migration%20Hub/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/24 AWS Secret Manager/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/23%20AWS%20IoT%20Core/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/25 AWS Cost Explorer/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/24%20AWS%20Secret%20Manager/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/26 AWS Budget/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/25%20AWS%20Cost%20Explorer/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/27 AWS Inspector/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/26%20AWS%20Budget/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/28 AWS Policy Simulator/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/27%20AWS%20Inspector/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/29 AWS CodeStar/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/28%20AWS%20Policy%20Simulator/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/30 Step Function/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/29%20AWS%20CodeStar/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/31 AWS CDK/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/30%20Step%20Function/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/32 AWS Security Center/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/31%20AWS%20CDK/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/33 AWS Data Pipeline/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/32%20AWS%20Security%20Center/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/01 CI-CD_.md/01 Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/33%20AWS%20Data%20Pipeline/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/01 CI-CD_.md/02 CodeCommit/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/34%20Code%20Artifact/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/01 CI-CD_.md/03 CodeDeploy/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/35%20Code%20Guru/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/01 CI-CD_.md/04 CodeBuild/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/36%20Cloud9/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/02 Elastic Beanstalk/01 Elastic beanstalk Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/37%20AWS%20Amplify/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/02 Elastic Beanstalk/02 Elastic beanstalk Deployment/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/38%20AWS%20Nitro%20Enclaves/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Other Services/02 Elastic Beanstalk/03 Elastic Beanstalk Lifecycle/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/39%20AWS%20Distro/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Route 53/01 Fundamentals/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/40%20AWS%20Macie/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/01 S3 Overview /</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/41%20AWS%20Private%20Certificate%20Authority/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/02 Data Retrival/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/42%20AWS%20AppConfig/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/03 S3 Buckets And Objects/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/43%20AWS%20CoPilot/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/04 S3 Versioning/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/01%20CI-CD_.md/01%20Codepipeline/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/05 S3 Encryption/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/01%20CI-CD_.md/02%20CodeCommit/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/06 S3 Security And Bucket Policy/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/01%20CI-CD_.md/03%20CodeDeploy/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/07 S3 Website/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/01%20CI-CD_.md/04%20CodeBuild/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/08 S3 CORS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/02%20Elastic%20Beanstalk/01%20Elastic%20beanstalk%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/09 S3 Consistency Model/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/02%20Elastic%20Beanstalk/02%20Elastic%20beanstalk%20Deployment/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/10 S3 MFA Delete/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Other%20Services/02%20Elastic%20Beanstalk/03%20Elastic%20Beanstalk%20Lifecycle/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/11 S3 Access Logs/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Route%2053/01%20Route%2053%20Fundamentals/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/12 S3 Replication/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/01%20S3%20Overview%20/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/13 S3 Pre Signed Url/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/02%20S3%20Data%20Retrival/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/14 S3 Storage Tiers/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/03%20S3%20Buckets%20And%20Objects/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/15 S3 Lifecycle Policy/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/04%20S3%20Versioning/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/16 S3 Performance/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/05%20S3%20Encryption/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/17 S3 Select and Glacier Select/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/06%20S3%20Security%20And%20Bucket%20Policy/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/18 S3 Athena/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/07%20S3%20Website/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/19 S3 Athena Vs Select/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/08%20S3%20CORS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/20 S3 Event Notification/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/09%20S3%20Consistency%20Model/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/21 S3 Object Lock And Glacier Lock/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/10%20S3%20MFA%20Delete/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/22 S3 Protect Object Deletion/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/11%20S3%20Access%20Logs/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/23 S3 Object ACL/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/12%20S3%20Replication/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/24 S3 VPC Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/13%20S3%20Pre%20Signed%20Url/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/25 S3 Event Processing/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/14%20S3%20Storage%20Tiers/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/S3/26 S3 Permissions/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/15%20S3%20Lifecycle%20Policy/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda_deprecated/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/16%20S3%20Performance/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB_deprecated/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/17%20S3%20Select%20and%20Glacier%20Select/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway_deprecated/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/18%20S3%20Athena/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04 AWS Cognito/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/19%20S3%20Athena%20Vs%20Select/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/05 SAM_legacy/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/20%20S3%20Event%20Notification/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/01 Lambda Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/21%20S3%20Object%20Lock%20And%20Glacier%20Lock/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/02 Lambda Attach With VPC/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/22%20S3%20Protect%20Object%20Deletion/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/03 Lambda Versioning and Alias/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/23%20S3%20Object%20ACL/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/04 Lambda Performance/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/24%20S3%20VPC%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/05 Lambda Integrations/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/25%20S3%20Event%20Processing/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/06 Lambda Best Practices/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/26%20S3%20Permissions/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01 Lambda/07 Lambda Deployments/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/S3/27%20S3%20Object%20Lambda/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/01 DynamoDB Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda_deprecated/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/02 DynamoDB Caching/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB_deprecated/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/03 DynamoDB TTL/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway_deprecated/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/04 DynamoDB Streams/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04%20AWS%20Cognito/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/05 DynamoDB Performance/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/05%20SAM_legacy/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/06 DynamoDB Indexing/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/01%20Lambda%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/07 DynamoDB Permissions/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/02%20Lambda%20Attach%20With%20VPC/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02 DynamoDB/10. DynamoDB Misc/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/03%20Lambda%20Versioning%20and%20Alias/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway/01 API Gateway Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/04%20Lambda%20Performance/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway/02 API Gateway Response Code/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/05%20Lambda%20Integrations/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway/03 API Gateway Deployment/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/06%20Lambda%20Best%20Practices/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway/04 API Gateway Caching/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/01%20Lambda/07%20Lambda%20Deployments/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway/05 API Gateway Monitoring/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/01%20DynamoDB%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03 API Gateway/07 API Gateway Integration Types/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/02%20DynamoDB%20Caching/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04 SAM/01 SAM Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/03%20DynamoDB%20TTL/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04 SAM/02 SAM Properties/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/04%20DynamoDB%20Streams/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04 SAM/03 SAM Deployments/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/05%20DynamoDB%20Performance/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04 SAM/04 SAM vs Serverless Application Framework/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/06%20DynamoDB%20Indexing/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/01 Caching Strategies/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/07%20DynamoDB%20Permissions/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/02 Blocking IP Address/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/10.%20DynamoDB%20Misc/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/03 HPC/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/02%20DynamoDB/11%20DynamoDB%20CLI/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/04 ENA & EFA/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway/01%20API%20Gateway%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/05 Automation & Orchestration/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway/02%20API%20Gateway%20Response%20Code/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/06 Highly Available EC2 Instance/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway/03%20API%20Gateway%20Deployment/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Solution Architect Misc/07 Bastion Host HA/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway/04%20API%20Gateway%20Caching/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/Study Point/01 README/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway/05%20API%20Gateway%20Monitoring%20And%20Logging/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/01 CIDR/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/03%20API%20Gateway/07%20API%20Gateway%20Integration%20Types/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/02 Default VPC/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04%20SAM/01%20SAM%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/04 VPC Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04%20SAM/02%20SAM%20Properties/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/05 Subnet Overview/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04%20SAM/03%20SAM%20Deployments/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/06 Internet Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Serverless/04%20SAM/04%20SAM%20vs%20Serverless%20Application%20Framework/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/07 Route Table/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/01%20Caching%20Strategies/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/08 Internet Connection To Public Subnet/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/02%20Blocking%20IP%20Address/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/09 NAT Instance/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/03%20HPC/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/10 NAT Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/04%20ENA%20%26%20EFA/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/11 DNS Resolution/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/05%20Automation%20%26%20Orchestration/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/12 Route 53 Private Zone/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/06%20Highly%20Available%20EC2%20Instance/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/13 NACL & SG/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Solution%20Architect%20Misc/07%20Bastion%20Host%20HA/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/14 VPC Peering/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/Study%20Point/01%20README/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/15 VPC Endpoints/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/01%20CIDR/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/16 Flow Logs/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/02%20Default%20VPC/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/17 Bastion Host/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/04%20VPC%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/18 Site To Site VPN/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/05%20Subnet%20Overview/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/19 Direct Connect/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/06%20Internet%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/20 Direct Connect Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/07%20Route%20Table/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/21 Site to Site VPN vs DC vs DCG/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/08%20Internet%20Connection%20To%20Public%20Subnet/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/22 Egress Only Internet Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/09%20NAT%20Instance/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/23 AWS Private Link/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/10%20NAT%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/24 Classic Link/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/11%20DNS%20Resolution/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/25 AWS Cloud Hub/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/12%20Route%2053%20Private%20Zone/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/26 Transit Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/13%20NACL%20%26%20SG/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/27 Cloud Hub vs Transit Gateway/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/14%20VPC%20Peering/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/28 Networking Cost/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/15%20VPC%20Endpoints/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/29 Global Accelerator/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/16%20Flow%20Logs/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/VPC/30 VPN Connection/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/17%20Bastion%20Host/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/security/01 Security Threat/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/18%20Site%20To%20Site%20VPN/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/security/02 Cloud HSM/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/19%20Direct%20Connect/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/security/04 Parameter Store/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/20%20Direct%20Connect%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://aws-study.shams-nahid.com/Notes/security/05 KMS/</loc>
-     <lastmod>2021-10-12</lastmod>
-     <changefreq>daily</changefreq>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/21%20Site%20to%20Site%20VPN%20vs%20DC%20vs%20DCG/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/22%20Egress%20Only%20Internet%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/23%20AWS%20Private%20Link/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/24%20Classic%20Link/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/25%20AWS%20Cloud%20Hub/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/26%20Transit%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/27%20Cloud%20Hub%20vs%20Transit%20Gateway/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/28%20Networking%20Cost/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/29%20Global%20Accelerator/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/VPC/30%20VPN%20Connection/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/security/01%20Security%20Threat/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/security/02%20Cloud%20HSM/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/security/04%20Parameter%20Store/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://aws-study.shams-nahid.com/Notes/security/05%20KMS/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>
