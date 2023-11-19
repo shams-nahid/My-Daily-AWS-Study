@@ -4,6 +4,7 @@
 
 - AWS service similar to github
 - By default encrypted at rest
+- With AWS SDK, we can directly put file in repository, no need for any git commands
 
 Permissions of codecommit,
 
