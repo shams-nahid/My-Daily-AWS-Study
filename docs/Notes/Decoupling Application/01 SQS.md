@@ -104,6 +104,7 @@
 ### Performance
 
 - Use long poling
+  - Increase the time by `ReceiveMessageWaitTimeSeconds`
 - Use batch processing
 - With AWS Lambda
   - For standard queue use the long poling

@@ -91,6 +91,11 @@ We can provide our own custom runtime by
 
 ### Event Source Mapping
 
+- Allowed by,
+  - DynamoDB
+  - SQS
+  - Kinesis
+
 **Important**
 
 - Event source mapping poll data and return results

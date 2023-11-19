@@ -18,3 +18,5 @@
 - KMS
 - ECS (TASK)
 - STS (Less important)
+- x-ray
+- SAM (Commands for deploy, package)

@@ -17,3 +17,4 @@
   - Put the digest in separate folder
 - `Cloudtrail Global Event Logs` can only done by `AWS CLI`, not `Console`
 - To monitor `API` calls in the `Redshift Cluster`, need to use `Cloudtrail`
+- To monitor api calls in multiple region, create cloudtrail once and apply to all the regions
