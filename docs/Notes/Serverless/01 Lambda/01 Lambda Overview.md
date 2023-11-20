@@ -165,9 +165,9 @@ We can provide our own custom runtime by
   - Lambda will need `AWSLambdaVPCAccessExecutionRole`
   - In the VPC, the resources (Like RDS, ElasticCache, ELB etc) security group should allow Lambda security group
 - By default, the Lambda deployed in a subnet (even though the subnet is public), does not have the internet access
-- To manage access the internet from a Lambda, that is deployed in the subnet, need to use the NAT Gateway or NAT Instance (this will talk with the Internet Gatewayh)
+- To manage access the internet from a Lambda, that is deployed in the subnet, need to use the NAT Gateway or NAT Instance (this will talk with the Internet Gateway) and update the lambda security group to allow outbound traffic.
 - However a Lambda, that is deployed in the subnet, can access other AWS services using the VPC endpoint.
-- One exception is CloudWatch logs, that will work without any NAT instace / NAT Gateway / VPC Endpoint.
+- One exception is CloudWatch logs, that will work without any NAT instance / NAT Gateway / VPC Endpoint.
 
 ### Execution Context
 

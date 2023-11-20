@@ -19,6 +19,11 @@ Deployment commands,
 4. `sam deploy`: deploy
 5. `sam publish`: take packaged template and publish
 
+`codeUri` expects
+
+- Either a local path of lambda function
+- Or a zipped packaged S3 url
+
 ### Developer perspective
 
 After creating a SAM template as a developer, deploy it by the following process,
