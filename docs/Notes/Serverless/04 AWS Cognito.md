@@ -42,7 +42,8 @@
 ---
 
 - Supports
-  - Pulic providers
+  - Guest / unauthenticated users
+  - Public providers
   - CUP
   - Open ID or SAML compatible providers
   - Developer Authenticated Identities (Custom Login Server)
@@ -53,7 +54,9 @@
     - Verify the token
     - Using `STS` generate temporary credentials for the `APP`
     - App can use these credentials and access `AWS Resource`
-- To allow access of not authenticated user, allows, guest access
+- To allow access of not authenticated (unauthenticated) user, 
+  - allows, guest access
+  - Use identity pools
 
 ### Developer Authenticated Identities
 

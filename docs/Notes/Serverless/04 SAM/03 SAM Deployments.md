@@ -9,6 +9,8 @@ After develop and test locally, we can deploy code using
 1. `sam package` (Includes in the `sam package`)
 2. `sam deploy`
 
+Alternatives of `sam package` and `sam deploy` are `aws cloudformation package` and `aws cloudformation deploy` respectively.
+
 Deployment commands,
 
 1. `sam init`: Initialize app using sam template
