@@ -53,10 +53,10 @@ We can provide our own custom runtime by
   - Compressed deployment size: 50MB
   - Uncompressed deployment size: 250MB
 
-### Synchronus Invocation
+### Synchronous Invocation
 
 - When the lambda function directly invoked and return the results right away
-- These do the synchronus invocation
+- These do the synchronous invocation
   - SDK
   - CLI
   - API Gateway
@@ -74,18 +74,18 @@ We can provide our own custom runtime by
 - The ALB security group should have the permission to execute (invoke) the lambda function
 - In this case, the ALB act as a trigger of the lambda function
 
-### Asynchronus invocation
+### Asynchronous invocation
 
-- Happnes through event queue [Origin can be S3, SNS, Cloudwatch Event]
+- Happens through event queue [Origin can be S3, SNS, Cloudwatch Event]
 - Retry lambda on errors (3 times)
   - 1st time invoked and encounter errors
   - 2nd one just after 1 minute
   - 3rd one after 2 minutes wait
 - DLQ (Dead letter queue can be used to put the error events)
-- Services uses the asynchronus invocation
+- Services uses the asynchronous invocation
   - S3 event notification
   - SNS
-  - Cloudwatch events / event brdige
+  - Cloudwatch events / event bridge
   - CodeCommit/CodePipeline
   - Simple Email Service
 
