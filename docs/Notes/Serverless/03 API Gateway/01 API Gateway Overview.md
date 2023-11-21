@@ -46,8 +46,10 @@
 
 ### Premium Users
 
-- Api keys can be used to allow special previllages to the resources using API keys
-- In this case, the API keys should be associated with the usage plan by invoking `CreateUsagePlan`
+- Api keys can be used to allow special privileges to the resources using API keys
+- To do so,
+  - Generate key by `CreateApiKey`
+  - In this case, the API keys should be associated with the usage plan by invoking `CreateUsagePlanKey`
 
 ### Security
 
