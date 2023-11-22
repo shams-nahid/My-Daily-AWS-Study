@@ -20,3 +20,4 @@
 - STS (Less important)
 - x-ray
 - SAM (Commands for deploy, package)
+- API gateway and Lambda Integrations
