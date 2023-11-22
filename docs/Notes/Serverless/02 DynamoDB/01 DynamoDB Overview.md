@@ -62,7 +62,7 @@
 
 - RCU and WCU are evenly distributed over all the partitions   
 
-We can controll the capacity of the table with two of the following ways,
+We can control the capacity of the table with two of the following ways,
 
 - Provisioned Mode
 - On Demand Mode

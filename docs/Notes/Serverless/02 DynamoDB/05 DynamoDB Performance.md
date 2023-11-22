@@ -21,6 +21,8 @@
   - `Conditional Writing`: DynamoDB allows conditional writing, where write operation is being happened if certain defined condition matched.
 - Rate limit parallel scan can reduce the cost
 
+> `Locking` vs `Conditional Write`: `Locking` checking update is done as the same object of the client while the conditional writing ensure, the writing is meeting certain condition of the object
+
 ### Getting Write Consumed Capacity
 
 ---
