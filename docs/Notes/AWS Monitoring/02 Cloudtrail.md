@@ -12,6 +12,7 @@
 - By default `Cloudtrail Logs` are encrypted by `S3 Server Side Encryption`
 - Also we can use `KMS` for encryption
 - Enabling `Cloudtrail Log File Integrity` ensure
+  - No one can temper the log files
   - Non compliance log
   - Generate public and private key of the logs
   - Put the digest in separate folder
