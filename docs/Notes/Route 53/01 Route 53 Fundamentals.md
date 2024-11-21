@@ -80,3 +80,7 @@
 - To import 3rd party domain to Route 53
   - Create a hosted zone in Route53
   - Update NS record on 3rd party website to use Route53
+
+### With ALB
+- Enable `Evaluate Target Health` to evaluate the instance health check behid `ALB`
+- To check health of instances from `Route 53` enabling `Health check on ELB` in `ALB` is not enough
