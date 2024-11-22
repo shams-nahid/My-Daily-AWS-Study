@@ -65,8 +65,3 @@
 
 When there are too many items, we can make use of `--page-size` and `--max-items`
 
-### S3 Inventory
-
----
-
-When an `S3` bucket has versioning enabled and a single object has millions of versions, it can throttling and throw 503 error. To determine these objects, can be used the `S3 Inventory`.

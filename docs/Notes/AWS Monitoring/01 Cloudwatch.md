@@ -142,3 +142,4 @@ While creating a cloudwatch event, we can set
 
 - Collect system info and log files
 - Can track memory, swap and disk space
+- Can use plugin like `procstat` to get individual process moniroting

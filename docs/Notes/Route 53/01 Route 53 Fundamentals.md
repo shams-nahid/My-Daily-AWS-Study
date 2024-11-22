@@ -19,6 +19,9 @@
   - `Active-Passive` Failover
     - `Primary Resource` available all the time
     - In case of `Failover`, `Secondary Resource` always in standby
+  - Health checks can be done by **Moniroting**
+    - Monitoring the endpoing
+    - Monitoring the `Cloudwatch Alarm`
 - Support
   - A (Address Record)
   - AAAA (IP V6 address record)

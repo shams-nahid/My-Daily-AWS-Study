@@ -20,6 +20,7 @@
     - Cons are higher latency
     - Can be used with higher level of throughput
     - Can connect thousands of instances
+    - Can not modify, instead, create a new EFS and use `Data Sync` to migrate data
 - To share logs in single source,
   - Use one task definition for multiple containers
   - Mount a EFS volume

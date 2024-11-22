@@ -17,6 +17,7 @@
     - The application can get the IP from header `x-forwarded-for`
     - The application can get the protocol from header `x-forwarded-proto`
     - The application can get the port from header `x-forwarded-port`
+    - `Dual Stack Settings` when it handles both `IPv4` and `IPv6`
   - Network Load Balancer
     - Handle `TCP`, `TLS` aka `Secure TCP` and `UDP`
     - Supports one EIP for each AZ, that is helpful for whitelisting the IP
@@ -31,7 +32,13 @@
   - 5xx for application induced error
   - 503 for `at capacity` or `no registered target`
 - Monitoring
+  - `Access Logging` is disabled by default
   - `ALB` access logs can provide details of `API Calls`
+  - It logs,
+    - Client’s IP address
+    - Latencies
+    - Request paths
+    - Server responses
   - Cloudwatch for aggregate statistics
 - `ELB` does the health check by
   - HTTP

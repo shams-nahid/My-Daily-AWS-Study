@@ -8,6 +8,10 @@
   - Extends the functionalities of the stack, administrator create the stack template and other accounts can extends the stacks functionality
   - Allow `Create`, `Update`, `Delete` stacks across `multiple accounts and regions`
 - `Change Sets`: Allow to show the changes preview.
+- `Nested Sets`
+  - There is a original or parent cloudformation template
+  - Other templates can refer/reference the parent template
+  - Using `Nested Sets` if the parent one updated, the clild, which is referencing, also update the sets
 - `Stack Instances`: Reference to a original stack in another account
 - `Artifacts`: Used to conjunction with the code pipeline
 - `Drift Detection`: Allows to check if created resourses changed over time or not. Helps to resolve `out-of-bound` fixes
