@@ -13,3 +13,6 @@
   - Check `EC2 Instance`
   - Check `EC2 Instance Underlying Hardware`
 - `SNS Topic` can be used to notify this incident
+- EC2Rescue
+  - Compatible for Linux and Windows
+  - Can read the log files and determine the connection issues
