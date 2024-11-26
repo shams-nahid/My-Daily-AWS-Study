@@ -17,6 +17,7 @@
   - Backup
   - Snapshot
   - Point in time restore
+  - Backtracking
 - Managed and scheduled maintenance
 - Monitoring through `Cloudwatch`
 - `IAM` authentication can be used as a feature in
@@ -88,3 +89,8 @@
   - Error Log
   - General Log
   - Slow query log
+
+## Backtracking vs Point-in-time Recovery
+
+- Backtracking does not create a new DB, faster to restore a previous version and better than point in time revovery
+- Point-in-time create a new db, outdated and slow

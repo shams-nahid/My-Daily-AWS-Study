@@ -22,6 +22,7 @@
 - When `Cluster Mode` is enabled
   - All nodes should reside in the same region
   - Can not promote any more read replica
+- Use `online resizing` to scale up or down the Elastic Cache for Redis
 
 In most cases, it's better to use Redis. But should choice `Memcached` when,
 

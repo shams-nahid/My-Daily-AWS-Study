@@ -22,6 +22,7 @@
 
 - Use for `Volumes` and `Block Storage`
 - Use for `iSCSI` protocol
+- Cloud-backed `iSCSI` block storage
 - Backed by `EBS Snapshot`
 - Two types of `Volume Gateway`
   - Cached Volume

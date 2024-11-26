@@ -2,8 +2,8 @@
 
 - `S3` is `Evenly Consistent`
 - `S3 AlowMethod` has 5 methods support
-  - `GET`
-  - `PUT`
+  - `GET`: s3:GetObject = arn:aws:s3:::tutorialsdojo/*
+  - `PUT`: s3:ListBucket = arn:aws:s3:::tutorialsdojo
   - `POST`
   - `DELETE`
   - `HEAD`

@@ -86,3 +86,7 @@
   - Use both on-demand and spot instances
   - Can use t2 burst feature
   - Recommended by AWS
+
+### Disable Termimation
+- To investigate a instance before taking down, can add a lifecycle policy, to not to terminate
+- This will allow ASG to grow at max 10%

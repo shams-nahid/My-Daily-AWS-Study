@@ -10,7 +10,7 @@
   - Internal HTTP endpoints
   - External HTTP endpoints (Even on-premise server)
 - Security
-  - DDoS Protection
+  - DDoS Protection (WAF)
   - AWS Firewall
   - Shield Integration
 - If the `Cache Control` header has `max-age` is `0`, all the request will go to the `Origin`

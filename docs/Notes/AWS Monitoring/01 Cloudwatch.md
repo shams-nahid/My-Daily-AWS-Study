@@ -14,6 +14,7 @@
 - Each `Metric` can have up to `10 Dimensions`
 - `Metrics` have `Timestamps`
 - Using `metric`, the `Cloudwatch Dashboard` is generated
+- `Metric Math` allows collect data from multiple region
 
 ### Cloudwatch Detailed Monitoring
 
